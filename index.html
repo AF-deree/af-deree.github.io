@@ -1093,7 +1093,7 @@ function renderTrack(p,s,t){
     h+=`<p class="trackline">${esc(tr.why)}</p>`;
     h+=items.length?`<ul class="tlist">${items.map(i=>{const st=t[i.id]?["d","Done"]:open(i,s)?["o","Open"]:["l","Locked"];return `<li><span class="code">${esc(i.code)}</span><span>${esc(i.name)}</span><span class="st ${st[0]}">${st[1]}</span></li>`}).join("")}</ul>`:`<p class="muted">None of this track's courses are on this program's sheet. A free elective may still fit; ask your advisor.</p>`;
     h+=`<p class="muted" style="margin:10px 0 0">Your plan now picks these for your option groups where it can. They are suggestions from the A&amp;F Society, not degree requirements, so ask a professor before you build your schedule around them.</p>`;
-  }else h+=`<p class="muted" style="margin:8px 0 0">Pick a direction to see which of your electives fit it. Not sure yet? Try the Society's <a href="${CAREER_MAP}" target="_blank" rel="noopener">Career Map</a>.</p>`;
+  }else h+=`<p class="muted" style="margin:8px 0 0">Pick a direction to see which of your electives fit it.</p>`;
   return h;
 }
 
