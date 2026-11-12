@@ -1,0 +1,668 @@
+{
+ "society": {
+  "name": "Accounting & Finance Society",
+  "shortName": "A&F Society",
+  "college": "Deree – The American College of Greece",
+  "founded": "2009",
+  "headline": "Greece's first student accounting & finance society.",
+  "tagline": "Greece's first student accounting and finance society.",
+  "mission": "We connect Deree students with the people, firms and skills that shape accounting and finance, through talks, company visits, competitions and professional programmes.",
+  "email": "dc.afsoc@acg.edu",
+  "instagram": "https://www.instagram.com/deree_afsociety",
+  "linkedin": "https://www.linkedin.com/company/accounting-finance-society",
+  "joinForm": "https://forms.cloud.microsoft/e/Vzj69WUK97",
+  "certificateCheck": "https://af-deree.github.io/verify/",
+  "contactFormKey": "6010aa4d-0193-4d3a-9693-6cace8e293e2",
+  "liveHosts": [
+   "af-deree.github.io"
+  ]
+ },
+ "stats": [
+  {
+   "value": "2009",
+   "label": "Founded"
+  },
+  {
+   "value": "≈300",
+   "label": "Members"
+  },
+  {
+   "value": "15+",
+   "label": "Events in 2025–26"
+  },
+  {
+   "value": "19",
+   "label": "Firms and institutions, 2024–26"
+  }
+ ],
+ "board": {
+  "year": "2026–27",
+  "members": [
+   {
+    "name": "Faidon Papathanasiou",
+    "role": "President",
+    "photo": "assets/board/faidon.jpg",
+    "linkedin": "https://www.linkedin.com/in/faidon-papathanasiou-716600358"
+   },
+   {
+    "name": "Harry Andriadakis",
+    "role": "Vice President",
+    "photo": "assets/board/harry.jpg",
+    "linkedin": "https://www.linkedin.com/in/harry-andriadakis-3a6b1736b/"
+   },
+   {
+    "name": "Joud Zakout",
+    "role": "Treasurer",
+    "photo": "assets/board/joud.jpg",
+    "linkedin": "https://www.linkedin.com/in/joud-zakout-28a1a1352/"
+   },
+   {
+    "name": "Shahd Ismail",
+    "role": "Secretary",
+    "photo": "assets/board/shahd.jpg",
+    "linkedin": "https://www.linkedin.com/in/shahd-ismail-190a4629a"
+   },
+   {
+    "name": "Sandeep Kaur",
+    "role": "PR Officer",
+    "photo": "assets/board/sandeep.jpg",
+    "linkedin": "https://www.linkedin.com/in/sandeep-k-070173oma"
+   }
+  ],
+  "advisor": {
+   "name": "Prof. George Sainis",
+   "role": "Faculty Advisor"
+  }
+ },
+ "programmes": [
+  {
+   "title": "Company and institution visits",
+   "text": "Small groups inside the places where finance happens: the Athens Stock Exchange, the Bank of Greece, Deloitte and PwC."
+  },
+  {
+   "title": "Finance Recruitment Events",
+   "text": "Small, selective sessions where senior professionals walk students through real deals and cases."
+  },
+  {
+   "title": "Professional qualifications",
+   "text": "Information sessions on the CFA® Program, ACCA and other qualifications, led by qualified professionals."
+  },
+  {
+   "title": "Business Week speakers",
+   "text": "Each March the Society brings senior speakers to Deree's Business Week."
+  },
+  {
+   "title": "Athens Investment Forum",
+   "text": "Each year Society members attend the Athens Investment Forum."
+  },
+  {
+   "title": "Competitions",
+   "text": "Members have represented Deree at the CFA Institute Research Challenge and Nestlé's Finance Skills Day."
+  }
+ ],
+ "upcoming": [],
+ "years": [
+  {
+   "year": "2026–27",
+   "events": [
+    {
+     "date": "Nov 2026",
+     "title": "9th Athens Investment Forum",
+     "text": "Society members represented Deree at the 9th Athens Investment Forum.",
+     "photo": "assets/events/forum26.jpg",
+     "highlight": true,
+     "type": "Conferences"
+    }
+   ]
+  },
+  {
+   "year": "2025–26",
+   "events": [
+    {
+     "date": "May 2026",
+     "title": "PwC Greece office visit",
+     "text": "40 members visited PwC Greece to learn about careers in finance and consulting.",
+     "photo": "",
+     "type": "Visits"
+    },
+    {
+     "date": "May 2026",
+     "title": "Nestlé Finance Skills Day",
+     "text": "Ten members represented Deree at Nestlé Hellas's headquarters, working on a real investment case with the Nestlé finance team.",
+     "photo": "assets/events/nestle.jpg",
+     "highlight": true,
+     "type": "Competitions"
+    },
+    {
+     "date": "Apr 2026",
+     "title": "Baker Tilly case study",
+     "text": "A transaction advisory case study with Baker Tilly Greece in the Trading Room.",
+     "photo": "",
+     "type": "Workshops"
+    },
+    {
+     "date": "Mar 2026",
+     "title": "Business Week 2026",
+     "text": "Four speakers: Kostas Tsigkourakos, Chris Aesopos, Vassilis Boukas and Memos Kotrozos.",
+     "photo": "assets/events/bw26.jpg",
+     "highlight": true,
+     "type": "Talks"
+    },
+    {
+     "date": "Mar 2026",
+     "title": "Finance and careers webinar",
+     "text": "With MyReLearning: speakers from Papaya Global, real estate investment management and National Bank of Greece.",
+     "photo": "",
+     "type": "Talks"
+    },
+    {
+     "date": "Mar 2026",
+     "title": "CFA® Program information session",
+     "text": "Two CFA® charterholders on the programme, the exams and careers it leads to.",
+     "photo": "",
+     "type": "Qualifications"
+    },
+    {
+     "date": "Mar 2026",
+     "title": "Athens Stock Exchange visit",
+     "text": "A guided visit to ATHEX on how securities are traded.",
+     "photo": "assets/events/athex25.jpg",
+     "highlight": true,
+     "type": "Visits"
+    },
+    {
+     "date": "2026",
+     "title": "SAP: finance in the cloud",
+     "text": "SAP's Office of the CFO on digital finance and enterprise systems.",
+     "photo": "assets/events/sap.jpg",
+     "type": "Talks"
+    },
+    {
+     "date": "2026",
+     "title": "CFA Institute Research Challenge",
+     "text": "Society members on the Deree team produced an equity research report on Athens International Airport.",
+     "photo": "",
+     "type": "Competitions"
+    },
+    {
+     "date": "Jan 2026",
+     "title": "2nd Finance Recruitment Event",
+     "text": "Damian Damalitis of iGrow Venture Partners on investment banking, M&A advisory and private capital markets.",
+     "photo": "",
+     "type": "Recruitment"
+    },
+    {
+     "date": "Nov 2025",
+     "title": "1st Finance Recruitment Event",
+     "text": "Antonis Vidakis, CFA (National Bank of Greece) and Elina Litsa, CFA (Grant Thornton Greece) on corporate finance and deals.",
+     "photo": "assets/events/recruit1.jpg",
+     "highlight": true,
+     "type": "Recruitment"
+    },
+    {
+     "date": "Nov 2025",
+     "title": "8th Athens Investment Forum",
+     "text": "40 members attended at the Athens Concert Hall.",
+     "photo": "assets/events/forum25.jpg",
+     "type": "Conferences"
+    },
+    {
+     "date": "Oct 2025",
+     "title": "Mastercard x Deree",
+     "text": "Careers, a live case study and networking with Mastercard.",
+     "photo": "",
+     "type": "Workshops"
+    },
+    {
+     "date": "Autumn 2025",
+     "title": "Leaders of the Greek Economy",
+     "text": "Naftemporiki's event with business leaders at the old Athens Stock Exchange.",
+     "photo": "",
+     "type": "Conferences"
+    }
+   ]
+  },
+  {
+   "year": "2024–25",
+   "events": [
+    {
+     "date": "Apr 2025",
+     "title": "Gen Z in the Big 4",
+     "text": "A panel with talent leads from EY, Deloitte, PwC and KPMG, with the Office of Career Services.",
+     "photo": "assets/events/big4.jpg",
+     "highlight": true,
+     "type": "Talks"
+    },
+    {
+     "date": "Mar 2025",
+     "title": "Business Week 2025",
+     "text": "Speakers Paraskevi Spanoudaki (COSMOTE Payments) and Demetrios Mallios.",
+     "photo": "",
+     "type": "Talks"
+    },
+    {
+     "date": "Mar 2025",
+     "title": "CFA® Program information session",
+     "text": "Speakers including a CFA® charterholder on the programme and how to start preparing.",
+     "photo": "",
+     "type": "Qualifications"
+    },
+    {
+     "date": "Mar 2025",
+     "title": "Deloitte corporate finance visit",
+     "text": "Presentations and a group case study at Deloitte Greece, with Alba Graduate Business School students.",
+     "photo": "assets/events/deloitte24.jpg",
+     "highlight": true,
+     "type": "Visits"
+    },
+    {
+     "date": "Feb 2025",
+     "title": "Bank of Greece (second visit)",
+     "text": "The Greek economy from 2010 to the present, and the Bank's museum.",
+     "photo": "",
+     "highlight": true,
+     "type": "Visits"
+    },
+    {
+     "date": "Jan 2025",
+     "title": "Bank of Greece (first visit)",
+     "text": "The Bank of Greece in the Eurosystem and euro area monetary policy.",
+     "photo": "",
+     "type": "Visits"
+    },
+    {
+     "date": "Jan 2025",
+     "title": "Athens Stock Exchange visit",
+     "text": "How securities, bonds and derivatives are traded.",
+     "photo": "assets/events/athex24.jpg",
+     "type": "Visits"
+    },
+    {
+     "date": "Nov 2024",
+     "title": "Stout valuation workshop",
+     "text": "With the Economics Society: valuing complex financial instruments.",
+     "photo": "",
+     "type": "Workshops"
+    },
+    {
+     "date": "Nov 2024",
+     "title": "7th Athens Investment Forum",
+     "text": "40 members attended at the Athens Concert Hall.",
+     "photo": "assets/events/forum24.jpg",
+     "type": "Conferences"
+    }
+   ]
+  },
+  {
+   "year": "2023–24",
+   "events": [
+    {
+     "date": "Mar 2024",
+     "title": "Morgan Stanley, London",
+     "text": "18 members visited Morgan Stanley's offices in Canary Wharf: talks with professionals across the bank's divisions, and time with Deree alumni working there.",
+     "photo": "",
+     "highlight": true,
+     "type": "Visits"
+    }
+   ]
+  }
+ ],
+ "partners": {
+  "intro": "We work with firms that want to meet strong students early: through talks, office visits, case studies and small recruitment sessions.",
+  "offer": [
+   "Speak at a Society event or at Deree's Business Week",
+   "Host a group of 10–40 students at your offices",
+   "Run a case study or a small-cohort recruitment session",
+   "Meet students who have already chosen a career in finance"
+  ],
+  "organisations": [
+   "Athens Stock Exchange",
+   "Bank of Greece",
+   "Deloitte",
+   "PwC",
+   "EY",
+   "KPMG",
+   "Grant Thornton",
+   "Baker Tilly",
+   "Stout",
+   "National Bank of Greece",
+   "Mastercard",
+   "Nestlé Hellas",
+   "SAP",
+   "iGrow Venture Partners",
+   "COSMOTE Payments",
+   "Papaya Global",
+   "Naftemporiki",
+   "Athens Investment Forum",
+   "CFA Society Greece"
+  ]
+ },
+ "join": {
+  "who": "Accounting and Finance majors and minors at Deree are members automatically. Students from any other major are welcome as associate members.",
+  "steps": [
+   "Fill in the short sign-up form with your ACG email (@acg.edu).",
+   "Ask to join the members' WhatsApp group from the link at the end of the form. We approve requests once we've matched them to your sign-up.",
+   "Come to an event. Sign-ups for visits and limited places go to members first."
+  ],
+  "formNote": "Use your ACG email (@acg.edu). Sign-ups with personal emails aren't accepted.",
+  "faq": [
+   [
+    "Who is a member of the Society?",
+    "Every Accounting and Finance major and minor at Deree is a member automatically. Signing up adds you to our list so you hear about events and limited places."
+   ],
+   [
+    "Can students from other majors join?",
+    "Yes. Students from any major can join as associate members and take part in our events."
+   ],
+   [
+    "Why do I need my ACG email?",
+    "The Society is for current Deree students, and your ACG email is how we confirm that. Sign-ups with personal emails are not accepted."
+   ],
+   [
+    "How will I hear about events?",
+    "After signing up you get the link to the members' WhatsApp group. Once we approve your request, you'll see announcements, sign-ups and members-only codes there first. Events are also posted on Instagram and LinkedIn."
+   ]
+  ]
+ },
+ "home": {
+  "statement": "For over fifteen years the Society has opened the doors of the profession to Deree students: the exchange floor, the central bank, the Big 4 and the deal table.",
+  "intro": "Since 2009 the Society has connected Deree students with the people and firms that shape accounting and finance: exchange floors, central banks, Big 4 offices and deal teams.",
+  "sub": "Since 2009 we have brought the profession onto campus, and taken our members into it.",
+  "slides": [
+   {
+    "photo": "assets/events/forum26-wide.jpg",
+    "caption": "9th Athens Investment Forum · 2026",
+    "duration": 11000
+   },
+   {
+    "photo": "assets/events/bw26.jpg",
+    "caption": "Business Week · 2026"
+   },
+   {
+    "photo": "assets/events/forum25.jpg",
+    "caption": "Athens Investment Forum · 2025"
+   },
+   {
+    "photo": "assets/events/nestle.jpg",
+    "caption": "Nestlé Finance Skills Day · 2026"
+   },
+   {
+    "photo": "assets/events/deloitte24.jpg",
+    "caption": "Deloitte Greece · 2025"
+   }
+  ],
+  "heritage": "Society of the Year, Deree School of Business & Economics, 2023 and 2024.",
+  "pillars": [
+   {
+    "title": "Inside the institutions",
+    "text": "Small groups of members visit the places where finance happens: the Athens Stock Exchange, the Bank of Greece, Deloitte, PwC and Nestlé Hellas.",
+    "photo": "assets/events/deloitte24.jpg",
+    "link": "events"
+   },
+   {
+    "title": "Senior professionals on campus",
+    "text": "Recruitment sessions with professionals from National Bank of Greece, Grant Thornton and iGrow, and the Society's speakers at Deree's Business Week.",
+    "photo": "assets/events/bw26.jpg",
+    "link": "events"
+   },
+   {
+    "title": "Qualifications and competition",
+    "text": "Information sessions on the CFA® Program and ACCA led by qualified professionals, and Deree teams at the CFA Institute Research Challenge and Nestlé's Finance Skills Day.",
+    "photo": "assets/events/nestle.jpg",
+    "link": "events"
+   }
+  ]
+ },
+ "alumni": {
+  "draft": false,
+  "intro": "Deree graduates have built careers at global banks, consultancies, the Big 4 and international institutions, as well as at Greece's leading banks.",
+  "firms": [
+   {
+    "name": "McKinsey & Company",
+    "logo": "assets/alumni/mckinsey.png",
+    "ratio": 3.23,
+    "scale": 1.2
+   },
+   {
+    "name": "Deutsche Bank",
+    "logo": "assets/alumni/db.png",
+    "ratio": 2.2,
+    "scale": 1.12
+   },
+   {
+    "name": "UBS",
+    "logo": "assets/alumni/ubs.png",
+    "ratio": 2.6
+   },
+   {
+    "name": "HSBC",
+    "logo": "assets/alumni/hsbc.png",
+    "ratio": 1.57
+   },
+   {
+    "name": "Barclays",
+    "logo": "assets/alumni/barclays.png",
+    "ratio": 5.92
+   },
+   {
+    "name": "Société Générale",
+    "logo": "assets/alumni/sg.png",
+    "ratio": 5.17
+   },
+   {
+    "name": "Crédit Agricole",
+    "logo": "assets/alumni/ca.png",
+    "ratio": 1.81,
+    "scale": 1.18
+   },
+   {
+    "name": "World Bank Group",
+    "logo": "assets/alumni/worldbank.png",
+    "ratio": 1.41,
+    "scale": 1.22
+   },
+   {
+    "name": "Mastercard",
+    "logo": "assets/alumni/mastercard.png",
+    "ratio": 1.29,
+    "scale": 0.95
+   },
+   {
+    "name": "Microsoft",
+    "logo": "assets/alumni/microsoft.png",
+    "ratio": 4.66
+   },
+   {
+    "name": "Deloitte",
+    "logo": "assets/alumni/deloitte.png",
+    "ratio": 5.36
+   },
+   {
+    "name": "PwC",
+    "logo": "assets/alumni/pwc.png",
+    "ratio": 2.07
+   },
+   {
+    "name": "EY",
+    "logo": "assets/alumni/ey.png",
+    "ratio": 0.99
+   },
+   {
+    "name": "National Bank of Greece",
+    "logo": "assets/alumni/nbg.png",
+    "ratio": 1.59,
+    "scale": 1.28
+   },
+   {
+    "name": "Alpha Bank",
+    "logo": "assets/alumni/alpha.png",
+    "ratio": 4.73
+   },
+   {
+    "name": "Eurobank",
+    "logo": "assets/alumni/eurobank.png",
+    "ratio": 7.56
+   }
+  ]
+ },
+ "numbers": [
+  [
+   "Members",
+   "≈300"
+  ],
+  [
+   "Events in 2025–26",
+   "15+"
+  ],
+  [
+   "Firms and institutions we worked with, 2024–26",
+   "19"
+  ]
+ ],
+ "pages": {
+  "about": "assets/events/bw26.jpg",
+  "events": "assets/events/forum26-wide.jpg",
+  "partners": "assets/events/deloitte24.jpg",
+  "join": "assets/events/forum24.jpg"
+ },
+ "desks": {
+  "term": "Spring 2027",
+  "opens": "2026-11-16T00:00:00+02:00",
+  "closes": "2026-11-29T23:59:59+02:00",
+  "deadlineText": "Sunday 29 November 2026",
+  "opensText": "Monday 16 November 2026",
+  "form": "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=QGqjbKQAc0a9uFDvBV2IpWPVhpcyDORJoN4xhe69-GZUQ0VXSUZBOFFJQVIwUFcxT1IxSERLVTNNTC4u",
+  "photo": "assets/events/athex25.jpg",
+  "intro": "The Society is building its first student team, organised into three Desks. Twelve roles for students who want real experience: research that gets published, events with industry speakers, and content that reaches hundreds of students.",
+  "list": [
+   {
+    "name": "Research Desk",
+    "roles": [
+     [
+      "Financial Analysts",
+      4
+     ],
+     [
+      "Accounting Analysts",
+      2
+     ]
+    ],
+    "lead": "Produce the Society's educational content, from the Greek Market Report to quizzes and explainers, and check the numbers behind everything we publish.",
+    "tasks": [
+     "Research and write the Greek Market Report: markets, the economy, deals, sectors, accounting and regulation",
+     "Prepare the numbers behind our weekly Market Snapshot",
+     "Write the facts and questions for our quizzes",
+     "Fact-check our Finance in 60 Seconds videos",
+     "Prepare briefs and audience questions before speaker events"
+    ],
+    "credit": "Your name on everything you publish."
+   },
+   {
+    "name": "Events Desk",
+    "roles": [
+     [
+      "Events Associates",
+      3
+     ]
+    ],
+    "lead": "Run the Society's events from start to finish, including our part in Deree's Business Week.",
+    "tasks": [
+     "Venues, bookings and approvals",
+     "Registration, tickets and check-in at the door",
+     "Looking after speakers on the day",
+     "Attendance, feedback and follow-up after each event"
+    ],
+    "credit": "Credited at every event you run."
+   },
+   {
+    "name": "Media Desk",
+    "roles": [
+     [
+      "Social Media Associates",
+      2
+     ],
+     [
+      "Content Producer",
+      1
+     ]
+    ],
+    "lead": "Run the Society's Instagram and LinkedIn, and make our video content.",
+    "tasks": [
+     "Weekly posts and stories: quizzes, Market Snapshot and event announcements",
+     "Finance in 60 Seconds Reels, filmed and edited",
+     "Photos and video at every event, and recaps within 48 hours",
+     "Member spotlights, polls and replies to our community"
+    ],
+    "credit": "Your work seen by hundreds of students every week."
+   }
+  ],
+  "benefits": [
+   [
+    "A real title",
+    "For your CV and LinkedIn, e.g. Financial Analyst, Research Desk."
+   ],
+   [
+    "Published work",
+    "Reports, posts and videos with your name on them."
+   ],
+   [
+    "A Society certificate",
+    "Signed and verifiable online, at the end of the semester."
+   ],
+   [
+    "Priority access",
+    "First places on trips, company visits and limited events."
+   ]
+  ],
+  "commitment": "2–3 hours a week for one semester, renewable. Each Desk meets every two weeks, and weekly work pauses during exam weeks.",
+  "timeline": [
+   [
+    "16 Nov",
+    "Applications open"
+   ],
+   [
+    "29 Nov",
+    "Deadline, 23:59"
+   ],
+   [
+    "2–4 Dec",
+    "Short chats with shortlisted applicants"
+   ],
+   [
+    "8 Dec",
+    "Results by email"
+   ],
+   [
+    "January 2027",
+    "The Desks start, with the first week of spring classes"
+   ]
+  ],
+  "ambassadors": "Not ready to commit? Become a Society Rep: share our events in your classes and help us grow, about an hour a week. Tick the box on the same form. Society Reps are a Society role, separate from Student Government's Council of Representatives.",
+  "faq": [
+   [
+    "Who can apply?",
+    "Any current Deree student. Accounting and Finance majors and minors are members automatically, and students from every other major are welcome as associate members."
+   ],
+   [
+    "Do I need experience?",
+    "No. We look for curiosity and commitment. For analyst roles, the form includes a short task: pick one company listed on the Athens Stock Exchange and tell us in about 100 words why it's interesting."
+   ],
+   [
+    "Can I apply for more than one role?",
+    "Yes. Rank up to three roles in order of preference on the form."
+   ],
+   [
+    "Is it paid?",
+    "No. These are volunteer student roles. What you get is experience, a title, published work and priority access to Society opportunities."
+   ],
+   [
+    "What happens during exams?",
+    "Weekly work pauses during midterm and final exam weeks. We plan around them from the start."
+   ],
+   [
+    "What happens after I apply?",
+    "We contact shortlisted applicants for a short chat between 2 and 4 December. The Governing Body decides, and everyone hears back by 8 December."
+   ]
+  ]
+ }
+}
