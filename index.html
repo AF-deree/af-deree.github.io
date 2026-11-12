@@ -1,0 +1,2225 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta charset="utf-8">
+<title>A&amp;F Society Deree</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="The Accounting & Finance Society at Deree – The American College of Greece. Greece's first student accounting and finance society, since 2009.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: institutional, in the manner of private banks and old societies. Every page opens on a photograph under navy;
+   below it, stone and white sections, centred statements in a light serif, the logo used as a crest between hairlines.
+   Fun is kept to a few quiet moments: the hero film, rolling figures, the wax-sealed letter and the member card. */
+:root{
+  --stone:#F6F5F2; --white:#FFFFFF; --navy:#1E3644; --navy-deep:#13232D; --text:#4A4B4A; --muted:#7A7A76; --rule:#E2DFD8;
+  --gold:#A57F35; --gold-l:#D5BA80; --focus:#2C78B0;
+  --serif:"Newsreader","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--white);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.65}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--navy-deep)}
+a{color:inherit} img{max-width:100%} p{margin:0}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:300;color:var(--navy);margin:0;text-wrap:balance;letter-spacing:-.015em}
+h2{font-size:clamp(2.1rem,4.4vw,3.5rem);line-height:1.08}
+h3{font-size:clamp(1.6rem,2.6vw,2.4rem);line-height:1.12}
+section{padding-block:120px}
+section.s{padding-block:88px}
+.stone{background:var(--stone)}
+@media (max-width:700px){section{padding-block:76px}section.s{padding-block:60px}}
+
+/* labels, crest divider, links, buttons */
+.label{display:block;font:600 .8rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin-bottom:22px}
+.label::before{content:"";display:block;width:36px;height:1px;background:var(--gold);margin-bottom:14px}
+.center{text-align:center}
+.center .label::before{margin-inline:auto}
+.crest{display:flex;align-items:center;justify-content:center;gap:28px;margin:60px auto 0;max-width:520px}
+.crest span{flex:1;height:1px;background:var(--rule)}
+.crest img{width:68px;height:auto}
+.statement{font-family:var(--serif);font-weight:300;font-size:clamp(1.6rem,3vw,2.35rem);line-height:1.3;color:var(--navy);letter-spacing:-.01em;max-width:30ch;margin:0 auto;text-wrap:balance}
+.more{display:inline-flex;align-items:center;gap:10px;font:600 .82rem var(--sans);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--navy);padding-bottom:4px;border-bottom:1px solid var(--gold)}
+.more::after{content:"→";transition:transform .25s}
+.more:hover::after{transform:translateX(4px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;font:600 .8rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid var(--navy);background:var(--navy);color:#fff;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.btn:hover{background:transparent;color:var(--navy)}
+.btn.ghost{background:transparent;color:var(--navy)}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+.btn.w{background:transparent;border-color:rgba(255,255,255,.75);color:#fff}
+.btn.w:hover{background:#fff;color:var(--navy);border-color:#fff}
+.btn.g{background:var(--gold);border-color:var(--gold);color:#fff}
+.btn.g:hover{background:#fff;border-color:#fff;color:var(--navy)}
+.btn:disabled{opacity:.6;cursor:wait}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--white);border-bottom:1px solid var(--rule);transition:background .35s,border-color .35s}
+.top .wrap{display:flex;align-items:center;gap:28px;min-height:104px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--navy);min-width:0}
+.brand img{height:76px;width:auto;flex:none}
+.brand .lw{display:none}
+.brand span{font:400 1.3rem/1.1 var(--serif);letter-spacing:-.005em}
+.brand small{display:block;font:600 .64rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.nav{margin-left:auto;display:flex;align-items:center;gap:34px}
+.nav a{text-decoration:none;font:600 .78rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--navy);padding:6px 0;border-bottom:1px solid transparent}
+.nav a[aria-current="page"]{border-bottom-color:var(--gold)}
+.nav a.btn{padding:13px 20px;color:#fff;border-bottom:1px solid var(--navy)}
+.nav a.btn:hover{color:var(--navy)}
+.menu-btn{display:none;margin-left:auto;font:600 .74rem var(--sans);letter-spacing:.16em;background:none;border:1px solid var(--navy);padding:11px 14px;color:var(--navy);cursor:pointer}
+.top.over{background:transparent;border-bottom-color:rgba(255,255,255,.16)}
+.top.over .brand,.top.over .nav a{color:#fff}
+.top.over .brand small{color:rgba(255,255,255,.7)}
+.top.over .brand .ln{display:none}.top.over .brand .lw{display:block}
+.top.over .nav a.btn{background:transparent;border-color:rgba(255,255,255,.75)}
+.top.over .nav a.btn:hover{background:#fff;color:var(--navy)}
+.top.over .menu-btn{color:#fff;border-color:rgba(255,255,255,.75)}
+.drawer{background:var(--white)}
+.drawer .wrap{display:grid;padding-block:6px 22px}
+.drawer a{text-decoration:none;font:300 1.8rem var(--serif);color:var(--navy);padding:12px 0;border-bottom:1px solid var(--rule)}
+@media (max-width:900px){.nav{display:none}.menu-btn{display:block}.brand img{height:58px}.brand small{display:none}.top .wrap{min-height:86px}}
+@media (max-width:400px){.brand span{font-size:1.1rem}}
+@media (min-width:901px){.drawer{display:none}}
+
+/* photo heads (home hero + page heads) */
+.head{position:relative;margin-top:-105px;background:var(--navy-deep);color:#fff;overflow:hidden;isolation:isolate}
+@media (max-width:900px){.head{margin-top:-87px}}
+.head .ph,.slides{position:absolute;inset:0;z-index:-2}
+.head .ph img,.slide img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.7)}
+.head::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(19,35,45,.72) 0%,rgba(19,35,45,.62) 45%,rgba(19,35,45,.9) 100%)}
+.slide{position:absolute;inset:0;margin:0;opacity:0;transition:opacity 2s ease}
+.slide.on{opacity:1}
+.slide.on img{animation:kb 10s ease-out both}
+@keyframes kb{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero .inner{min-height:clamp(660px,100vh,960px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding-block:160px 70px}
+.hero .mark{width:clamp(110px,11vw,150px);height:auto;margin-bottom:34px}
+.over-l{font:600 .78rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l);margin-bottom:24px}
+.hero h1{color:#fff;font-size:clamp(2.6rem,6vw,5.4rem);line-height:1.04;max-width:16ch}
+.hero .sub{margin-top:26px;font-size:clamp(1.05rem,1.6vw,1.22rem);color:rgba(255,255,255,.82);max-width:46ch}
+.hero .ctas{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:40px}
+.hero .film{position:absolute;left:0;right:0;bottom:30px;display:flex;justify-content:center;align-items:center;gap:18px}
+.film .cap{font:600 .7rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.film .dots{display:flex;gap:6px}
+.film button{width:38px;height:16px;padding:7px 0;border:0;background:none;cursor:pointer}
+.film button span{display:block;height:2px;background:rgba(255,255,255,.28);overflow:hidden}
+.film button span i{display:block;height:100%;width:0;background:var(--gold-l)}
+.film button[aria-current="true"] span i{width:100%;transition:width var(--dur,7s) linear}
+@media (max-width:600px){.hero .film{flex-direction:column;gap:8px;bottom:22px}.hero .inner{padding-bottom:90px}}
+.phead .inner{min-height:clamp(420px,58vh,560px);display:flex;flex-direction:column;justify-content:flex-end;padding-block:150px 64px}
+.phead .over-l{margin-bottom:18px}
+.phead h1{color:#fff;font-size:clamp(2.8rem,6vw,5rem);line-height:1.02;max-width:16ch}
+.phead p:not(.over-l){margin-top:20px;color:rgba(255,255,255,.82);font-size:1.15rem;max-width:52ch}
+
+/* home: pillars */
+.pillars{display:grid;gap:110px;margin-top:80px}
+.pillar{display:grid;grid-template-columns:7fr 5fr;gap:72px;align-items:center}
+.pillar:nth-child(even){grid-template-columns:5fr 7fr}
+.pillar:nth-child(even) .pimg{order:2}
+.pillar > *{min-width:0}
+.pimg{overflow:hidden}
+.pimg img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.pillar:hover .pimg img{transform:scale(1.04)}
+.pillar .no{font:300 1rem var(--serif);color:var(--gold);letter-spacing:.06em;margin-bottom:14px;display:block}
+.pillar p{margin:20px 0 28px}
+@media (max-width:860px){.pillars{gap:72px}.pillar,.pillar:nth-child(even){grid-template-columns:1fr;gap:28px}.pillar:nth-child(even) .pimg{order:0}}
+
+/* figures */
+.figs{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px}
+.fig{text-align:center;padding:6px 18px}
+.fig + .fig{border-left:1px solid var(--rule)}
+.odo{display:inline-flex;align-items:flex-end;font:300 clamp(3rem,6vw,4.8rem)/1 var(--serif);height:1em;overflow:hidden;color:var(--navy);font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.02em}
+.odo .col{display:block;height:1em;overflow:hidden}
+.odo .col span{display:block;transition:transform 1.6s cubic-bezier(.16,.84,.3,1)}
+.odo .col i{display:block;font-style:normal;height:1em}
+.odo .sym{color:var(--gold)}
+.fig p{margin-top:16px;font:600 .74rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);max-width:22ch;margin-inline:auto}
+@media (max-width:760px){.figs{grid-template-columns:1fr 1fr;row-gap:44px}.fig:nth-child(3){border-left:0}}
+
+/* heritage band */
+.heritage{background:var(--navy);color:#fff;text-align:center;position:relative;overflow:hidden}
+.heritage::after{content:none}
+.heritage .wrap{position:relative;z-index:1}
+.heritage img.m{width:110px;height:auto}
+.heritage h2{color:#fff;margin:30px auto 0;max-width:20ch;font-size:clamp(2.2rem,4.8vw,3.8rem)}
+.heritage p{margin-top:24px;font:600 .78rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l)}
+
+/* alumni wall */
+.draft{display:inline-block;font:600 .74rem var(--sans);letter-spacing:.04em;background:#F3EBDA;color:#6E5420;padding:7px 12px;margin-top:22px}
+.logos{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;border-top:1px solid var(--rule)}
+.logo{min-height:150px;display:grid;place-items:center;padding:24px 16px;text-align:center;border-bottom:1px solid var(--rule);border-left:1px solid var(--rule);min-width:0;--ls:1}
+.logo:nth-child(4n+1){border-left:0}
+.logo img{max-width:72%;max-height:60px;object-fit:contain;filter:grayscale(1);opacity:.85;transition:filter .3s,opacity .3s}
+.logo img.sz{height:calc(var(--h)*var(--ls));max-height:none;width:auto}
+.logo:hover img{filter:none;opacity:1}
+.logo span{font:600 .76rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#8B8A85;line-height:1.4}
+@media (max-width:900px){.logo{--ls:.8;min-height:130px}}
+@media (max-width:560px){.logos{grid-template-columns:1fr 1fr}.logo:nth-child(4n+1){border-left:1px solid var(--rule)}.logo:nth-child(2n+1){border-left:0}.logo{min-height:110px;--ls:.6}.logo img{max-width:80%}}
+@media (hover:none){.logo img{filter:none;opacity:1}}
+
+/* latest */
+.toprow{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px 40px}
+.toprow > div{min-width:0}
+.latest{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:56px}
+.card{text-decoration:none;min-width:0;display:block}
+.card .im{overflow:hidden;background:var(--rule)}
+.card img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.card:hover img{transform:scale(1.05)}
+.meta{display:block;font:600 .72rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:22px 0 10px}
+.card h3{font-size:1.6rem;transition:color .2s}
+.card:hover h3{color:var(--gold)}
+@media (max-width:860px){.latest{grid-template-columns:1fr;gap:48px}}
+
+/* two-way call to action */
+.twoway{display:grid;grid-template-columns:1fr 1fr}
+.twoway > div{padding:96px 64px;text-align:center;min-width:0}
+.twoway > div + div{border-left:1px solid var(--rule)}
+.twoway .label::before{margin-inline:auto}
+.twoway h3{margin:0 auto 18px;max-width:16ch}
+.twoway p{max-width:36ch;margin:0 auto 32px}
+@media (max-width:820px){.twoway{grid-template-columns:1fr}.twoway > div{padding:64px 0}.twoway > div + div{border-left:0;border-top:1px solid var(--rule)}}
+
+/* about */
+.split{display:grid;grid-template-columns:5fr 7fr;gap:80px;align-items:start}
+.split > div{min-width:0}
+.split .body p + p{margin-top:20px}
+.split .body p:first-child{font:300 1.6rem/1.4 var(--serif);color:var(--navy)}
+@media (max-width:860px){.split{grid-template-columns:1fr;gap:28px}}
+.rows{margin-top:56px;border-top:1px solid var(--navy)}
+.row{display:grid;grid-template-columns:5fr 7fr;gap:80px;padding:34px 0;border-bottom:1px solid var(--rule)}
+.row > *{min-width:0}
+.row h3{font-size:1.75rem}
+@media (max-width:860px){.row{grid-template-columns:1fr;gap:10px}}
+.people{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;margin-top:56px}
+.person{min-width:0;text-align:center}
+.person .im{overflow:hidden;background:var(--rule)}
+.person img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.person:hover img{transform:scale(1.05)}
+.person h3{font-size:1.5rem;margin-top:18px;display:inline-block;background:linear-gradient(var(--gold),var(--gold)) no-repeat 0 100%/0 1px;padding-bottom:4px;transition:background-size .4s}
+.person:hover h3{background-size:100% 1px}
+.person .role{display:block;font:600 .8rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-top:8px}
+.person a{display:inline-block;margin-top:10px;font-size:.95rem;color:var(--muted)}
+@media (max-width:1000px){.people{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.people{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 18px}.person h3{font-size:1.25rem}.person .role{font-size:.66rem}}
+.advisor{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;align-items:baseline;margin-top:56px;padding-top:24px;border-top:1px solid var(--rule)}
+.advisor b{font:300 1.6rem var(--serif);color:var(--navy)}
+.advisor span{font:600 .72rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+
+/* events */
+.notice{border:1px solid var(--rule);background:var(--white);padding:44px 28px;text-align:center}
+.notice h3{font-size:1.9rem}
+.notice p{margin-top:12px}
+.feature{display:grid;grid-template-columns:7fr 5fr;gap:64px;align-items:center}
+.feature > *{min-width:0}
+.feature img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.feature p{margin-top:18px}
+@media (max-width:860px){.feature{grid-template-columns:1fr;gap:28px}}
+.filters{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;margin-top:48px;padding-bottom:22px;border-bottom:1px solid var(--navy)}
+.filters .grp{display:flex;flex-wrap:wrap;gap:8px}
+.filters button{font:600 .74rem var(--sans);letter-spacing:.12em;text-transform:uppercase;background:none;border:1px solid var(--rule);color:var(--muted);padding:9px 14px;cursor:pointer;transition:all .2s}
+.filters button:hover{border-color:var(--navy);color:var(--navy)}
+.filters button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.filters .sep{width:1px;height:26px;background:var(--rule)}
+@media (max-width:700px){.filters .sep{display:none}}
+.ev{display:grid;grid-template-columns:150px 1fr 200px;gap:10px 44px;padding:34px 0;border-bottom:1px solid var(--rule);align-items:start}
+.ev > *{min-width:0}
+.ev .d{font:300 1.15rem var(--serif);color:var(--navy);padding-top:2px}
+.ev .meta{margin:0 0 8px}
+.ev h3{font-size:1.65rem}
+.ev p{margin-top:10px;max-width:62ch}
+.ev .im{overflow:hidden}
+.ev img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover}
+.empty{padding:40px 0;color:var(--muted)}
+@media (max-width:820px){.ev{grid-template-columns:1fr;gap:6px}.ev img{margin-top:14px;max-width:420px}}
+
+/* partners */
+.offers{display:grid;grid-template-columns:1fr 1fr;margin-top:56px;border-top:1px solid var(--navy)}
+.offer{padding:36px 40px 36px 0;border-bottom:1px solid var(--rule);min-width:0}
+.offer:nth-child(even){padding-left:40px;border-left:1px solid var(--rule)}
+.offer .no{display:block;font:300 1rem var(--serif);color:var(--gold);margin-bottom:12px}
+.offer h3{font-size:1.75rem}
+@media (max-width:760px){.offers{grid-template-columns:1fr}.offer:nth-child(even){padding-left:0;border-left:0}.offer{padding-right:0}}
+.orglist{columns:3;column-gap:48px;margin:48px 0 0;padding:0;list-style:none}
+.orglist li{break-inside:avoid;font:300 1.35rem/1.3 var(--serif);color:var(--navy);padding:14px 0;border-bottom:1px solid var(--rule)}
+@media (max-width:860px){.orglist{columns:2}}
+@media (max-width:480px){.orglist{columns:1}}
+.contact{display:grid;grid-template-columns:5fr 7fr;gap:72px;align-items:center}
+.contact > div{min-width:0}
+.topics{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.topics button{font:600 .74rem var(--sans);letter-spacing:.1em;text-transform:uppercase;background:var(--white);border:1px solid var(--rule);color:var(--navy);padding:10px 14px;cursor:pointer;transition:all .2s}
+.topics button:hover{border-color:var(--navy)}
+.topics button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.side{margin-top:30px;font-size:.95rem;color:var(--muted)}
+.side + .side{margin-top:12px}
+.side .em{color:var(--navy);user-select:all}
+.tl{background:none;border:0;border-bottom:1px solid var(--gold);font:inherit;font-weight:600;cursor:pointer;padding:0 0 2px;color:var(--navy)}
+.env{padding:10px;background:var(--navy);box-shadow:0 30px 60px rgba(19,35,45,.16)}
+.letter{position:relative;background:var(--white);padding:44px 40px 34px;outline:1px solid var(--gold);outline-offset:-10px}
+.lhead{display:flex;align-items:center;gap:14px;padding-bottom:18px;margin-bottom:12px;border-bottom:1px solid var(--gold);max-width:calc(100% - 124px)}
+.lhead img{height:62px;width:auto}
+.lhead span{font:600 .6rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--navy);line-height:1.6}
+.wax{position:absolute;top:26px;right:30px;width:104px;height:104px;border-radius:50% 46% 52% 48%/48% 52% 46% 50%;background:radial-gradient(circle at 35% 30%,#3B5A6C 0%,#1E3644 45%,#122630 100%);box-shadow:0 6px 14px rgba(19,33,43,.35),inset 0 -4px 8px rgba(0,0,0,.35),inset 0 3px 6px rgba(255,255,255,.12);display:grid;place-items:center}
+.wax::before{content:"";position:absolute;inset:9px;border-radius:50%;border:1.5px solid rgba(213,186,128,.65);box-shadow:inset 0 2px 4px rgba(0,0,0,.35)}
+.wax img{width:56px;height:auto;position:relative;filter:drop-shadow(0 1px 1px rgba(0,0,0,.4))}
+.fld{padding:12px 0;border-bottom:1px solid var(--rule)}
+.fld .k{font:600 .66rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.fld .v{font:300 1.35rem/1.25 var(--serif);color:var(--navy);margin-top:4px;overflow-wrap:anywhere}
+.letter label{display:block;font:600 .66rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.letter input,.letter textarea{display:block;width:100%;font:300 1.2rem var(--serif);color:var(--navy);background:transparent;border:0;border-bottom:1px solid var(--rule);padding:6px 0 10px;margin-bottom:14px;border-radius:0}
+.letter textarea{min-height:170px;resize:vertical;line-height:34px;background:repeating-linear-gradient(transparent 0 33px,var(--rule) 33px 34px);background-attachment:local;border-bottom:0;padding:0}
+.letter input:focus,.letter textarea:focus{outline:none;border-bottom-color:var(--navy)}
+.letter input::placeholder,.letter textarea::placeholder{color:#AAA8A2}
+.dear{font:300 1.4rem var(--serif);color:var(--navy);margin:20px 0 8px}
+.from{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.from > div{min-width:0}
+.from .wide{grid-column:1/-1}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ferr{color:#A2382D;font-size:.92rem;margin-top:12px}
+.sign{margin-top:18px;font-size:.85rem;color:var(--muted)}
+.sent{text-align:center;padding:34px 6px 14px}
+.sent .pm{width:150px;height:150px;margin:0 auto 22px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;transform:rotate(-12deg);color:var(--gold);font:600 .66rem var(--sans);letter-spacing:.18em;animation:thud .5s cubic-bezier(.3,1.6,.5,1) both}
+.sent .pm b{display:block;font:300 2.2rem var(--serif);letter-spacing:0}
+@keyframes thud{from{transform:rotate(-12deg) scale(1.6);opacity:0}to{transform:rotate(-12deg) scale(1);opacity:1}}
+.sent p{margin-top:10px}
+@media (max-width:900px){.contact{grid-template-columns:1fr;gap:44px}}
+@media (max-width:520px){.letter{padding:30px 22px 26px}.wax{width:78px;height:78px;top:22px;right:18px}.wax img{width:42px}.lhead{max-width:calc(100% - 92px)}.lhead img{height:50px}.lhead span{font-size:.52rem}.from{grid-template-columns:1fr}}
+
+/* join */
+.joingrid{display:grid;grid-template-columns:6fr 5fr;gap:88px;align-items:center}
+.joingrid > div{min-width:0}
+.steps{list-style:none;margin:40px 0;padding:0;counter-reset:s;border-top:1px solid var(--navy)}
+.steps li{counter-increment:s;display:grid;grid-template-columns:64px 1fr;gap:12px;padding:24px 0;border-bottom:1px solid var(--rule)}
+.steps li::before{content:counter(s,upper-roman);font:300 1.6rem/1.1 var(--serif);color:var(--gold)}
+.note{margin-top:16px;font-size:.92rem;color:var(--muted);max-width:52ch}
+.mcard{aspect-ratio:1.586;width:100%;max-width:470px;margin-inline:auto;background:linear-gradient(135deg,#27424F 0%,#1B303C 55%,#13232D 100%);color:#EEF2F4;border-radius:16px;padding:28px 30px;position:relative;overflow:hidden;box-shadow:0 30px 60px rgba(19,35,45,.3);transition:transform .5s}
+.mcard:hover{transform:translateY(-6px)}
+.mcard::after{content:"";position:absolute;right:-60px;bottom:-70px;width:280px;height:280px;background:url(assets/mark-white.png) no-repeat center/contain;opacity:.05}
+.mcard::before{content:"";position:absolute;inset:10px;border:1px solid rgba(213,186,128,.35);border-radius:10px;pointer-events:none}
+.mcard .r1{display:flex;justify-content:space-between;align-items:flex-start;position:relative;z-index:1}
+.mcard .r1 img{height:76px;width:auto}
+@media (max-width:480px){.mcard .r1 img{height:58px}}
+.mcard .kind{font:600 .6rem var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-l)}
+.mcard .chip{position:absolute;left:30px;top:47%;width:44px;height:34px;border-radius:6px;background:linear-gradient(135deg,#E2C98F,#A57F35);z-index:1}
+@media (max-width:420px){.mcard .chip{width:30px;height:22px;top:47%}.mcard .nm{bottom:42px}}
+.mcard .nm{position:absolute;left:30px;right:30px;bottom:50px;font:300 clamp(1.3rem,3.2vw,1.9rem) var(--serif);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;z-index:1}
+.mcard .mt{position:absolute;left:30px;right:30px;bottom:24px;display:flex;justify-content:space-between;gap:12px;font:600 .58rem var(--sans);letter-spacing:.18em;color:rgba(238,242,244,.7);z-index:1}
+.namebox{max-width:470px;margin:40px auto 0}
+.namebox label{display:block;font:600 .7rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+.namebox input{width:100%;font:300 1.2rem var(--serif);padding:13px 0;border:0;border-bottom:1px solid var(--navy);background:transparent;color:var(--navy);border-radius:0}
+.namebox input:focus{outline:none;border-bottom-color:var(--gold)}
+.namebox small{display:block;margin-top:8px;color:var(--muted);font-size:.85rem}
+@media (max-width:900px){.joingrid{grid-template-columns:1fr;gap:56px}}
+.faq{max-width:860px;margin:56px auto 0;border-top:1px solid var(--navy)}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;padding:26px 0;font:300 1.45rem/1.3 var(--serif);color:var(--navy)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:300 1.6rem/1 var(--sans);color:var(--gold);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 28px;max-width:64ch}
+
+/* desks */
+.callout{background:var(--stone);border-bottom:1px solid var(--rule)}
+.callout .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 40px;padding-block:30px}
+.callout .k{font:600 .74rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.callout p{font:300 clamp(1.3rem,2.2vw,1.7rem)/1.3 var(--serif);color:var(--navy);margin-top:6px}
+.callout > .wrap > div{min-width:0}
+.desks{margin-top:56px;border-top:1px solid var(--navy)}
+.desk{display:grid;grid-template-columns:5fr 7fr;gap:80px;padding:56px 0;border-bottom:1px solid var(--rule)}
+.desk > div{min-width:0}
+.desk .no{display:block;font:300 1rem var(--serif);color:var(--gold);letter-spacing:.06em;margin-bottom:14px}
+.desk h3{font-size:clamp(2rem,3.4vw,2.8rem)}
+.desk .lead{margin-top:18px}
+.roles{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.roles span{display:inline-flex;align-items:baseline;gap:10px;border:1px solid var(--navy);padding:9px 14px;font:600 .72rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+.roles b{font:300 1.35rem/1 var(--serif);color:var(--gold);letter-spacing:0}
+.tasks{list-style:none;margin:0;padding:0}
+.tasks li{display:grid;grid-template-columns:28px 1fr;padding:14px 0;border-bottom:1px solid var(--rule)}
+.tasks li:first-child{padding-top:4px}
+.tasks li::before{content:"";width:14px;height:1px;background:var(--gold);margin-top:.85em}
+.credit{margin-top:20px;font:300 italic 1.3rem var(--serif);color:var(--navy)}
+@media (max-width:860px){.desk{grid-template-columns:1fr;gap:28px;padding:44px 0}}
+.bens{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:1px solid var(--navy)}
+.ben{padding:30px 24px 30px 0;min-width:0}
+.ben + .ben{padding-left:24px;border-left:1px solid var(--rule)}
+.ben .no{display:block;font:300 1rem var(--serif);color:var(--gold);margin-bottom:12px}
+.ben h3{font-size:1.45rem}
+.ben p{margin-top:10px;font-size:1rem}
+@media (max-width:1000px){.bens{grid-template-columns:1fr 1fr}.ben,.ben + .ben{padding:28px 24px 28px 0;border-left:0;border-bottom:1px solid var(--rule)}.ben:nth-child(even){padding-left:24px;border-left:1px solid var(--rule)}}
+@media (max-width:560px){.bens{grid-template-columns:1fr}.ben:nth-child(even){padding-left:0;border-left:0}}
+.commit{font:300 clamp(1.4rem,2.4vw,1.85rem)/1.35 var(--serif);color:var(--navy);max-width:34ch;margin:0 auto;text-wrap:balance}
+.tline{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);margin:56px 0 0;padding:0}
+.tline li{position:relative;padding:34px 18px 0 0;border-top:1px solid var(--navy);min-width:0}
+.tline li::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--gold)}
+.tline b{display:block;font:300 1.45rem/1.2 var(--serif);color:var(--navy)}
+.tline span{display:block;margin-top:8px;font-size:1rem}
+@media (max-width:860px){.tline{grid-template-columns:1fr;border-left:1px solid var(--navy);margin-left:5px}.tline li{border-top:0;padding:0 0 30px 30px}.tline li::before{top:6px;left:-6px}}
+.applyband{background:var(--navy);color:#fff;text-align:center}
+.applyband h2{color:#fff;max-width:18ch;margin:0 auto}
+.applyband .when{margin-top:22px;font:600 .78rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l)}
+.applyband .ctas{margin-top:36px;display:flex;justify-content:center}
+.applyband .wait{display:inline-block;padding:16px 28px;border:1px solid rgba(255,255,255,.4);font:600 .8rem/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+.applyband .amb{margin:40px auto 0;max-width:56ch;color:rgba(255,255,255,.78);font-size:1rem}
+
+/* footer */
+footer{background:var(--navy-deep);color:rgba(238,242,244,.66);font-size:.95rem}
+footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-block:80px 40px}
+footer .wrap > div{min-width:0}
+footer img{height:128px;width:auto}
+footer h4{font:600 .7rem var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-l);margin:0 0 18px}
+footer a{display:block;text-decoration:none;padding:4px 0}
+footer a:hover{color:#fff}
+footer .base .tm{flex-basis:100%;opacity:.8}
+footer .base{grid-column:1/-1;margin-top:20px;padding-top:24px;border-top:1px solid rgba(238,242,244,.14);font-size:.82rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+footer .madeby{grid-column:1/-1;margin-top:20px;padding-top:24px;border-top:1px solid rgba(238,242,244,.14);font:600 .95rem/1.4 var(--sans);letter-spacing:.04em;color:var(--gold-l)}
+footer .madeby + .base{margin-top:16px;padding-top:0;border-top:0}
+@media (max-width:860px){footer .wrap{grid-template-columns:1fr 1fr}footer .wrap > div:first-child{grid-column:1/-1}}
+.view{animation:fade .5s ease both}
+@keyframes fade{from{opacity:.4}to{opacity:1}}
+.err{padding:180px 0 120px;color:var(--muted)}
+.nav a{white-space:nowrap}
+@media (max-width:1340px) and (min-width:901px){.nav{gap:22px}.brand small{display:none}}
+@media (max-width:1120px) and (min-width:901px){.nav{gap:16px}.nav a{font-size:.7rem;letter-spacing:.1em}.nav a.btn{padding:12px 14px}.brand span{font-size:1.05rem}.brand img{height:62px}}
+
+/* ---- Degree Planner page (scoped to #plRoot) ---- */
+#plRoot{font-size:16px;line-height:1.6}
+#plRoot .plhead .inner{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:36px 64px;align-items:end;min-height:0;padding-block:170px 60px}
+@media (max-width:900px){#plRoot .plhead .inner{grid-template-columns:minmax(0,1fr);padding-block:130px 44px}}
+#plRoot .plhead h1{max-width:14ch}
+#plRoot .pick{margin-top:30px;display:grid;gap:14px}
+#plRoot .prow{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+#plRoot .plabel{font:600 .68rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold-l);width:72px}
+#plRoot .seg{display:flex;flex-wrap:wrap;gap:8px}
+#plRoot .seg button{font:600 .74rem var(--sans);letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;background:transparent;border:1px solid rgba(255,255,255,.4);color:#fff;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+#plRoot .seg button:hover{border-color:#fff}
+#plRoot .seg button[aria-pressed="true"]{background:#fff;color:var(--navy);border-color:#fff}
+#plRoot .hint{font-size:.88rem;color:rgba(255,255,255,.65);margin:0}
+#plRoot .ledger{width:min(100%,320px);display:grid;gap:12px;padding:22px;background:rgba(19,35,45,.72);border:1px solid rgba(213,186,128,.35);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+#plRoot .lgh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+#plRoot .lnum{font:300 clamp(3.4rem,5.5vw,4.4rem)/.9 var(--serif);color:#fff;font-variant-numeric:lining-nums tabular-nums;letter-spacing:-.03em}
+#plRoot .lof{font:300 1.3rem var(--serif);color:var(--gold-l)}
+#plRoot .lsub{width:100%;font:600 .66rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62)}
+#plRoot .cells{display:grid;gap:3px;width:100%}
+#plRoot .cells i{display:block;aspect-ratio:1;background:rgba(255,255,255,.07);transition:background .35s}
+#plRoot .cells i.e.le{box-shadow:inset 0 0 0 1px rgba(213,186,128,.25)} #plRoot .cells i.e.core{box-shadow:inset 0 0 0 1px rgba(255,255,255,.16)} #plRoot .cells i.e.elec{box-shadow:inset 0 0 0 1px rgba(165,127,53,.45)}
+#plRoot .cells i.f.le{background:var(--gold-l)} #plRoot .cells i.f.core{background:#fff} #plRoot .cells i.f.elec{background:var(--gold)}
+#plRoot .lcap{font:italic 300 .85rem var(--serif);color:rgba(255,255,255,.6)}
+#plRoot .lkey{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:.84rem;color:rgba(255,255,255,.75)}
+#plRoot .lkey b{color:#fff;font-weight:600;font-variant-numeric:tabular-nums}
+#plRoot .dot{display:inline-block;width:9px;height:9px;margin-right:7px;vertical-align:0}
+
+#plRoot .summary{position:sticky;top:calc(env(safe-area-inset-top,0px) + 105px);z-index:15;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
+@media (max-width:900px){#plRoot .summary{top:calc(env(safe-area-inset-top,0px) + 87px)}}
+#plRoot .summary .wrap{display:flex;align-items:center;gap:18px;min-height:50px}
+#plRoot .sprog{font:400 1.05rem var(--serif);color:var(--navy);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+#plRoot .scr{font:600 .7rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--navy);white-space:nowrap}
+#plRoot .bar{flex:1;display:flex;height:3px;background:var(--rule);min-width:60px}
+#plRoot .bar span{display:block;height:100%}
+@media (max-width:560px){#plRoot .sprog{display:none}}
+
+#plRoot .work{background:var(--stone)}
+#plRoot .grid{display:grid;grid-template-columns:minmax(0,1fr) 390px;gap:40px;align-items:start;padding-block:40px 64px}
+@media (max-width:1040px){#plRoot .grid{grid-template-columns:minmax(0,1fr)}}
+#plRoot .viewtabs{display:flex;gap:30px;border-bottom:1px solid var(--rule);margin-bottom:22px}
+#plRoot .viewtabs button{font:600 .76rem var(--sans);letter-spacing:.14em;text-transform:uppercase;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:12px 0;color:var(--muted);cursor:pointer}
+#plRoot .viewtabs button[aria-pressed="true"]{color:var(--navy);border-bottom-color:var(--gold)}
+#plRoot .tools{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-bottom:22px}
+#plRoot .search{flex:1 1 240px;display:flex;align-items:center;gap:10px;background:var(--white);border:1px solid var(--rule);padding:0 14px;min-width:0;margin:0}
+#plRoot .search:focus-within{border-color:var(--navy)}
+#plRoot .search svg{flex:none;width:16px;height:16px;stroke:var(--muted)}
+#plRoot .search input{flex:1;min-width:0;border:0;background:transparent;font:400 1rem var(--sans);color:var(--navy);padding:12px 0}
+#plRoot .search input:focus{outline:none}
+#plRoot .filters{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;border:0}
+#plRoot .filters button{font:600 .7rem var(--sans);letter-spacing:.12em;text-transform:uppercase;background:var(--white);border:1px solid var(--rule);color:var(--muted);padding:10px 13px;cursor:pointer}
+#plRoot .filters button:hover{border-color:var(--navy);color:var(--navy)}
+#plRoot .filters button[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+#plRoot .filters b{font-weight:600;opacity:.7;margin-left:5px}
+
+#plRoot .group-h{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:40px 0 14px;padding-bottom:12px;border-bottom:1px solid var(--navy)}
+#plRoot .group-h:first-child{margin-top:0}
+#plRoot .group-h span:first-child{font:300 1.85rem/1.1 var(--serif);color:var(--navy);letter-spacing:-.015em}
+#plRoot .group-h span:last-child{font:600 .72rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+#plRoot .block{background:var(--white);border:1px solid var(--rule);margin-bottom:14px}
+#plRoot .bh{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:center;padding:16px 22px}
+#plRoot .bh h3{font:400 1.25rem/1.2 var(--serif);color:var(--navy)}
+#plRoot .bh .rule{font:600 .68rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+#plRoot .bh .rule.ok{color:var(--gold)}
+#plRoot .bprog{grid-column:1/-1;height:2px;background:var(--rule);margin-top:10px}
+#plRoot .bprog i{display:block;height:100%;background:var(--gold);transition:width .4s}
+#plRoot .fold{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:0 22px 16px;font-size:.92rem;color:var(--muted)}
+#plRoot .row{display:grid;grid-template-columns:22px 96px minmax(0,1fr) auto 26px;gap:14px;align-items:start;padding:14px 22px;border-top:1px solid var(--rule);border-bottom:0}
+#plRoot .row h3{font-size:inherit}
+#plRoot .row input[type=checkbox]{appearance:none;-webkit-appearance:none;width:20px;height:20px;margin:2px 0 0;border:1px solid var(--navy);background:var(--white);display:grid;place-content:center;cursor:pointer;transition:background .15s}
+#plRoot .row input[type=checkbox]:checked{background:var(--navy)}
+#plRoot .row input[type=checkbox]:checked::after{content:"";width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+#plRoot .row.blocked input[type=checkbox]{border:1px dashed var(--muted);background:var(--stone);cursor:not-allowed}
+#plRoot .code{font:600 .76rem var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--navy);padding-top:3px;white-space:nowrap}
+#plRoot .code a{text-decoration:none;border-bottom:1px solid var(--gold-l)}
+#plRoot .code a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+#plRoot .name{min-width:0;color:var(--navy);font-size:1rem}
+#plRoot .name label{cursor:pointer}
+#plRoot .name input[type=text]{width:100%;font:400 .95rem var(--sans);color:var(--navy);padding:8px 0;border:0;border-bottom:1px solid var(--rule);background:transparent;margin-top:2px;border-radius:0}
+#plRoot .name input[type=text]:focus{outline:none;border-bottom-color:var(--navy)}
+#plRoot .slotname{color:var(--muted);font-size:.95rem}
+#plRoot .cr{font:300 1.05rem var(--serif);color:var(--muted);text-align:right}
+#plRoot .tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end;padding-top:2px}
+#plRoot .pill{font:600 .62rem var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:4px 8px;white-space:nowrap;line-height:1.3;border:1px solid var(--rule);color:var(--muted)}
+#plRoot .pill.lock{border-color:transparent;background:#F6E7DF;color:#A2522D}
+#plRoot .pill.wv{border-color:transparent;background:#F3EBDA;color:#6E5420}
+#plRoot .pill.ulk{border-color:var(--gold-l);color:var(--gold)}
+#plRoot .pill.trk{border-color:transparent;background:var(--navy);color:var(--gold-l)}
+#plRoot .ok-pill{border-color:transparent;background:var(--navy);color:#fff}
+#plRoot .row.done .name,#plRoot .row.done .code{color:var(--muted)}
+#plRoot .row.intrack{box-shadow:inset 3px 0 0 var(--gold)}
+#plRoot .pre{font-size:.86rem;color:var(--muted);margin-top:6px;line-height:1.55}
+#plRoot .pre .pm{color:var(--navy)} #plRoot .pre .px{color:#A2522D;font-weight:600} #plRoot .pre .pc{color:var(--text)} #plRoot .pre .pn{font-family:var(--serif);font-style:italic}
+#plRoot .lockline{font-size:.86rem;margin-top:6px;color:var(--muted)}
+#plRoot .lockline .pn{font-family:var(--serif);font-style:italic} #plRoot .lockline .px{color:#A2522D;font-weight:600}
+#plRoot .linkbtn{background:none;border:0;border-bottom:1px solid var(--gold);font:600 .86rem var(--sans);cursor:pointer;padding:0 0 1px;color:var(--navy)}
+#plRoot .pempty{background:var(--white);border:1px solid var(--rule);padding:40px 24px;text-align:center}
+#plRoot .pempty h3{font:300 1.6rem var(--serif)}
+#plRoot .pempty p{margin-top:8px;color:var(--muted)}
+@media (max-width:640px){
+  #plRoot .row{grid-template-columns:22px minmax(0,1fr) 26px;row-gap:4px;padding:14px 16px}
+  #plRoot .row .code{grid-column:2;grid-row:1} #plRoot .row .name{grid-column:2} #plRoot .row .tags{grid-column:2;justify-content:flex-start}
+  #plRoot .row .cr{grid-column:3;grid-row:1}
+  #plRoot .row input[type=checkbox]{grid-row:1/3}
+  #plRoot .bh,#plRoot .fold{padding-left:16px;padding-right:16px}
+}
+
+#plRoot aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 175px);min-width:0}
+@media (max-width:1040px){#plRoot aside{position:static}}
+#plRoot .rail{background:var(--white);border:1px solid var(--rule);min-width:0}
+#plRoot .railtabs{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--rule)}
+#plRoot .railtabs button{font:600 .64rem var(--sans);letter-spacing:.14em;text-transform:uppercase;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:16px 4px;color:var(--muted);cursor:pointer}
+#plRoot .railtabs button[aria-pressed="true"]{color:var(--navy);border-bottom-color:var(--gold)}
+#plRoot .railbody{padding:24px;max-height:calc(100vh - 250px);overflow:auto;overflow-wrap:anywhere}
+@media (max-width:1040px){#plRoot .railbody{max-height:none}}
+#plRoot .railbody h2{font:300 1.65rem/1.15 var(--serif);color:var(--navy);margin-bottom:14px}
+#plRoot .unlock{display:grid;gap:8px;margin-bottom:6px}
+#plRoot .ul{display:flex;gap:12px;align-items:center;font-size:.95rem;color:var(--navy)}
+#plRoot .ul .pill{min-width:36px;text-align:center}
+#plRoot .railbody h4{margin:22px 0 8px;font:600 .66rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+#plRoot .open ul,#plRoot .tlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+#plRoot .open li,#plRoot .tlist li{display:flex;gap:12px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--rule);font-size:.95rem;color:var(--navy)}
+#plRoot .open li .code,#plRoot .tlist .code{flex:0 0 auto;min-width:74px;padding:0;font-size:.7rem}
+#plRoot .open li>span:not(.code),#plRoot .tlist li>span:not(.code){min-width:0}
+#plRoot .ulk-t{font:600 .6rem var(--sans);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;margin-left:auto;color:var(--gold)}
+#plRoot .muted{color:var(--muted);font-size:.9rem}
+#plRoot .plab{display:block;font:600 .66rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+#plRoot .est{font:300 2.6rem/1 var(--serif);color:var(--navy);letter-spacing:-.02em}
+#plRoot .cmp{margin-top:10px;padding:10px 12px;background:var(--stone);font-size:.92rem;color:var(--navy)}
+#plRoot .cmp b{font-weight:600}
+#plRoot .opts{margin-top:6px}
+#plRoot label.inline{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;font:600 .68rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--navy);margin-top:12px}
+#plRoot select{font:400 .95rem var(--sans);letter-spacing:0;text-transform:none;color:var(--navy);padding:9px 34px 9px 12px;border:1px solid var(--rule);background-color:var(--white);border-radius:0;appearance:none;-webkit-appearance:none;max-width:100%;
+  background-image:linear-gradient(45deg,transparent 50%,var(--navy) 50%),linear-gradient(135deg,var(--navy) 50%,transparent 50%);background-position:calc(100% - 17px) 52%,calc(100% - 12px) 52%;background-size:5px 5px;background-repeat:no-repeat}
+#plRoot .plan{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+#plRoot .plan li{display:grid;grid-template-columns:104px minmax(0,1fr);gap:12px;padding:10px 0;border-bottom:1px solid var(--rule)}
+#plRoot .plan .tn{font:400 .98rem/1.25 var(--serif);color:var(--navy)}
+#plRoot .plan .tn b{display:block;font:600 .58rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:3px}
+#plRoot .plan .tc{font:600 .7rem/1.7 var(--sans);letter-spacing:.06em;color:var(--navy)}
+#plRoot .plan .tc i{font:italic 400 .82rem var(--serif);letter-spacing:0;color:var(--muted)}
+#plRoot .plan li.su .tn{color:var(--gold)}
+#plRoot .btns{display:flex;flex-wrap:wrap;gap:10px}
+#plRoot .btn{padding:14px 20px;font-size:.72rem}
+#plRoot .btn.warn{background:#A2522D;border-color:#A2522D;color:#fff}
+#plRoot .toast{font-size:.9rem;color:var(--gold);min-height:1.2em;margin-top:10px;font-weight:600}
+#plRoot textarea.fallback{width:100%;min-height:120px;font:400 .8rem ui-monospace,Menlo,monospace;margin-top:10px;background:var(--stone);color:var(--text);border:1px solid var(--rule)}
+#plRoot .trackline{font:300 1.15rem/1.4 var(--serif);color:var(--navy);margin:16px 0 8px}
+#plRoot .tlist .st{font:600 .58rem var(--sans);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;margin-left:auto}
+#plRoot .st.d{color:var(--muted)} #plRoot .st.o{color:var(--navy)} #plRoot .st.l{color:#A2522D}
+#plRoot .wi-num{font:300 3rem/1 var(--serif);color:var(--navy);font-variant-numeric:lining-nums tabular-nums;margin-top:18px;letter-spacing:-.02em}
+#plRoot .wi-num small{font:600 .64rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-left:6px}
+#plRoot .wi p{margin:12px 0 0;font-size:.95rem}
+#plRoot .wi .codes{font:600 .7rem var(--sans);letter-spacing:.08em;color:var(--navy)}
+#plRoot .sep{height:1px;background:var(--rule);margin:26px 0}
+
+#plRoot .mapintro{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 24px;align-items:baseline;margin-bottom:22px}
+#plRoot .mapintro p{color:var(--muted);font-size:.95rem;max-width:56ch}
+#plRoot .legend{display:flex;flex-wrap:wrap;gap:8px 18px;font:600 .64rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+#plRoot .legend span{display:inline-flex;align-items:center;gap:8px}
+#plRoot .legend i{display:inline-block;width:14px;height:14px;border:1px solid var(--navy);background:var(--white)}
+#plRoot .legend i.d{background:var(--navy)} #plRoot .legend i.lk{border-style:dashed;border-color:var(--muted);background:var(--stone)}
+#plRoot .legend i.na{background:var(--gold);border-color:var(--gold)}
+#plRoot .lvl{display:grid;grid-template-columns:150px minmax(0,1fr);gap:20px;padding:22px 0;border-top:1px solid var(--rule)}
+#plRoot .lvl:last-child{border-bottom:1px solid var(--rule)}
+#plRoot .lvl h4{font:300 1.45rem/1.1 var(--serif);color:var(--navy)}
+#plRoot .lvl h4 small{display:block;font:600 .62rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+#plRoot .tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px}
+@media (max-width:640px){#plRoot .lvl{grid-template-columns:1fr;gap:12px}#plRoot .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
+#plRoot .tile{font:inherit;text-align:left;display:grid;gap:3px;align-content:start;padding:11px 12px;border:1px solid var(--rule);background:var(--white);color:var(--navy);cursor:pointer;position:relative;min-width:0;transition:border-color .2s,transform .2s,box-shadow .2s}
+#plRoot .tile:hover{border-color:var(--navy);transform:translateY(-2px);box-shadow:0 10px 24px rgba(19,35,45,.08)}
+#plRoot .tile .mc{font:600 .64rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+#plRoot .tile .mn{font-size:.88rem;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#plRoot .tile .ux{font:600 .58rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+#plRoot .tile.opt{border-style:dashed}
+#plRoot .tile.st-done{background:var(--navy);border-color:var(--navy);color:#fff} #plRoot .tile.st-done .mc{color:var(--gold-l)} #plRoot .tile.st-done .ux{color:rgba(255,255,255,.6)}
+#plRoot .tile.st-locked{background:var(--stone);color:var(--muted)} #plRoot .tile.st-locked .mc{color:#A2522D}
+#plRoot .tile.trk::after{content:"";position:absolute;top:0;right:0;border-style:solid;border-width:0 14px 14px 0;border-color:transparent var(--gold) transparent transparent}
+#plRoot .chain{position:relative;display:flex;gap:56px;overflow-x:auto;padding:8px 2px 18px}
+#plRoot .ccol{display:flex;flex-direction:column;gap:10px;justify-content:center;flex:0 0 190px;min-width:0;position:relative;z-index:1}
+#plRoot .ccol h5{margin:0 0 4px;font:600 .62rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+#plRoot .ccol.me{flex-basis:230px}
+#plRoot .ccol.me .tile{border:2px solid var(--gold);padding:16px;box-shadow:0 14px 34px rgba(19,35,45,.12)}
+#plRoot .ccol.me .tile .mn{font:400 1.15rem/1.25 var(--serif);-webkit-line-clamp:3}
+#plRoot svg.edges{position:absolute;left:0;top:0;pointer-events:none;overflow:visible;z-index:0}
+#plRoot .focusbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;margin-bottom:18px}
+#plRoot .focusbar h3{font:300 1.9rem/1.1 var(--serif)}
+#plRoot .focusbar .label{margin-bottom:10px}
+#plRoot .mdetail{background:var(--white);border:1px solid var(--rule);padding:22px 24px;margin-top:18px}
+#plRoot .dmeta{font:600 .66rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+#plRoot .mdetail .row{border:0;padding:14px 0 0;grid-template-columns:22px minmax(0,1fr)}
+#plRoot .notes{background:var(--white);border-top:1px solid var(--rule)}
+#plRoot .notes .wrap{padding-block:40px 56px;display:grid;gap:10px;font-size:.88rem;color:var(--muted)}
+#plRoot .notes .wrap>div{max-width:86ch}
+#plRoot .notes b{color:var(--navy);font-weight:600}
+
+/* ---- My plan ---- */
+#plRoot .vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;padding:0;margin:-1px}
+#plRoot .planhead{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,260px);gap:22px 36px;align-items:end;background:var(--navy-deep);color:#fff;padding:30px 32px;margin-bottom:18px;position:relative;overflow:hidden;isolation:isolate}
+#plRoot .planhead::after{content:"";position:absolute;right:-60px;bottom:-90px;width:300px;height:300px;background:url(assets/mark-white.png) no-repeat center/contain;opacity:.05;z-index:-1}
+@media (max-width:720px){#plRoot .planhead{grid-template-columns:minmax(0,1fr);padding:24px 22px}}
+#plRoot .planhead .plab{color:var(--gold-l)}
+#plRoot .pfin{font:300 clamp(2.6rem,5vw,3.8rem)/1 var(--serif);color:#fff;margin-top:12px;letter-spacing:-.02em}
+#plRoot .planhead .muted{color:rgba(255,255,255,.72);margin-top:12px;font-size:.95rem}
+#plRoot .planhead .cmp{display:inline-block;background:rgba(255,255,255,.08);color:#fff;margin-top:14px}
+#plRoot .pset{display:grid;gap:10px}
+#plRoot .pset label{display:grid;grid-template-columns:96px minmax(0,1fr);align-items:center;gap:10px;font:600 .62rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold-l);margin:0}
+#plRoot .pset select{background-color:rgba(255,255,255,.04);color:#fff;border-color:rgba(255,255,255,.3);width:100%;
+  background-image:linear-gradient(45deg,transparent 50%,#fff 50%),linear-gradient(135deg,#fff 50%,transparent 50%)}
+#plRoot .pset select option{color:var(--navy);background:#fff}
+#plRoot .pstatus{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+#plRoot .pchip{font:600 .62rem var(--sans);letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border:1px solid var(--rule);background:var(--white);color:var(--muted)}
+#plRoot .pchip.ed{background:#F3EBDA;border-color:transparent;color:#6E5420}
+#plRoot .psaved{margin-left:auto;font:italic 300 1rem var(--serif);color:var(--navy)}
+#plRoot .phint{margin:10px 0 18px}
+#plRoot .terms{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:14px}
+#plRoot .term{background:var(--white);border:1px solid var(--rule);min-width:0}
+#plRoot .term.su{background:#FBF7EE;border-color:#E9DCC0}
+#plRoot .term header{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:10px;padding:14px 16px 12px;border-bottom:1px solid var(--rule)}
+#plRoot .term.su header{border-bottom-color:#E9DCC0}
+#plRoot .tno{font:300 .9rem var(--serif);color:var(--gold)}
+#plRoot .term h4{font:400 1.22rem/1.15 var(--serif);color:var(--navy);margin:0}
+#plRoot .term.su h4{color:var(--gold)}
+#plRoot .tcr{font:600 .6rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+#plRoot .tcr.over{color:#A2522D}
+#plRoot .term ol{list-style:none;margin:0;padding:4px 0}
+#plRoot .pc+.pc{border-top:1px solid var(--rule)}
+#plRoot .term.su .pc+.pc{border-top-color:#EFE5CF}
+#plRoot .pcb{appearance:none;font:inherit;text-align:left;background:none;border:0;color:inherit;display:grid;grid-template-columns:72px minmax(0,1fr) 18px;gap:10px;align-items:baseline;width:100%;padding:10px 16px;cursor:pointer}
+#plRoot .pcb:hover,#plRoot .pc.ed .pcb{background:rgba(30,54,68,.04)}
+#plRoot .pcb:focus-visible{outline:2px solid var(--focus);outline-offset:-2px}
+#plRoot .pcb .code{font-size:.66rem;padding:0;position:relative}
+#plRoot .pnm{font-size:.92rem;color:var(--navy);line-height:1.3;min-width:0}
+#plRoot .pcr{font:300 .95rem var(--serif);color:var(--muted);text-align:right}
+#plRoot .pc.pin .pcb .code::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin-left:6px;vertical-align:1px}
+#plRoot .pc.warn .pnm{color:#A2522D}
+#plRoot .pw{font-size:.8rem;line-height:1.4;color:#A2522D;padding:0 16px 10px 98px;margin:0}
+#plRoot .ped{background:var(--stone);padding:12px 16px 14px;display:grid;gap:12px;border-top:1px dashed var(--rule)}
+#plRoot .ped label{display:grid;gap:6px;font:600 .6rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+#plRoot .ped select{width:100%;font-size:.88rem;background-color:var(--white)}
+#plRoot .pedb{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px}
+#plRoot .pedb .linkbtn,#plRoot .pedb .muted{font-size:.8rem;text-decoration:none}
+@media (max-width:640px){#plRoot .pw{padding-left:16px}}
+#plRoot .pnote{margin-top:16px;background:var(--white);border:1px solid var(--rule);padding:16px 18px}
+#plRoot .pnote p{margin-top:8px;color:var(--navy)}
+#plRoot .rmv{list-style:none;margin:8px 0 0;padding:0}
+#plRoot .rmv li{display:flex;gap:12px;align-items:baseline;padding:8px 0;border-top:1px solid var(--rule);color:var(--navy);font-size:.92rem}
+#plRoot .rmv li .code{min-width:72px;padding:0;font-size:.66rem}
+#plRoot .rmv .linkbtn{margin-left:auto;font-size:.8rem}
+#plRoot .saveband{margin-top:28px;background:var(--white);border:1px solid var(--rule);border-top:2px solid var(--gold);padding:30px 32px}
+@media (max-width:640px){#plRoot .saveband{padding:24px 20px}}
+#plRoot .svgrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:36px}
+@media (max-width:860px){#plRoot .svgrid{grid-template-columns:minmax(0,1fr)}}
+#plRoot .saveband h3{font:300 1.65rem/1.15 var(--serif);color:var(--navy);margin:10px 0 18px}
+#plRoot .svrow{display:flex;flex-wrap:wrap;gap:10px;align-items:stretch}
+#plRoot .svrow input{flex:1 1 170px;min-width:0;font:400 1rem var(--sans);color:var(--navy);padding:12px 14px;border:1px solid var(--rule);border-radius:0;background:var(--white)}
+#plRoot .svrow input:focus{outline:none;border-color:var(--navy)}
+#plRoot .exp{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:18px}
+@media (max-width:420px){#plRoot .exp{grid-template-columns:minmax(0,1fr)}}
+#plRoot .exb{font:inherit;text-align:left;display:grid;gap:3px;padding:13px 14px;border:1px solid var(--rule);background:var(--white);cursor:pointer;color:var(--navy);transition:border-color .2s,background .2s}
+#plRoot .exb:hover{border-color:var(--navy);background:var(--stone)}
+#plRoot .exb b{font:600 .7rem var(--sans);letter-spacing:.14em;text-transform:uppercase}
+#plRoot .exb span{font-size:.84rem;color:var(--muted);line-height:1.35}
+#plRoot .splist{border-top:1px solid var(--navy);margin-top:12px}
+#plRoot .sp{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--rule)}
+#plRoot .sp>div:first-child{min-width:0}
+#plRoot .sp b{display:block;font:400 1.15rem/1.2 var(--serif);color:var(--navy)}
+#plRoot .sp span{font-size:.82rem;color:var(--muted)}
+#plRoot .sp.on b::before{content:"";display:inline-block;width:7px;height:7px;background:var(--gold);margin-right:8px;vertical-align:3px}
+#plRoot .spb{display:flex;gap:16px;flex:none;align-items:baseline}
+#plRoot .spb .linkbtn{font-size:.82rem}
+#plRoot .spb .linkbtn.arm{color:#A2522D;border-bottom-color:#A2522D}
+#plRoot .spcur{font:600 .6rem var(--sans)!important;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)!important}
+#plRoot .spempty{margin-top:12px;padding:18px;background:var(--stone);color:var(--muted);font-size:.92rem}
+#plRoot .bk{margin-top:16px;font-size:.9rem}
+#plRoot .bk .linkbtn{font-size:.86rem}
+#plRoot .bkc{margin-top:14px;background:#F3EBDA;padding:16px 18px;color:var(--navy)}
+#plRoot .ppart{display:inline-block;margin-left:8px;font:600 .56rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--gold);vertical-align:1px}
+#plRoot .pill.sum{border-color:transparent;background:#EEF2F4;color:var(--navy)}
+#plRoot .pill.nosp{border-color:transparent;background:#F6E7DF;color:#A2522D}
+#plRoot .mvh{text-transform:none;letter-spacing:0;font:400 .76rem var(--sans);color:var(--muted)}
+#plRoot .ptrk{margin-top:14px;font-size:.92rem;color:rgba(255,255,255,.85)}
+#plRoot .ptrk b{color:var(--gold-l);font-weight:600}
+#plRoot .lb-l{color:#fff;border-bottom-color:var(--gold-l);font-size:.85rem;margin-left:4px}
+#plRoot .ppart.trk{color:var(--navy);background:#F3EBDA;padding:1px 6px}
+#plRoot .pdisc{margin-top:18px!important;display:inline-block;max-width:60ch;padding:10px 14px;border-left:2px solid var(--gold-l);background:rgba(19,35,45,.55);font-size:.95rem!important;color:rgba(255,255,255,.88)!important}
+#plRoot .pdisc b{color:#fff;font-weight:600}
+#plRoot .chk{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:.95rem;color:var(--navy);cursor:pointer}
+#plRoot .chk input{width:18px;height:18px;margin:2px 0 0;accent-color:var(--navy);flex:none}
+#plRoot .pwarn{margin-top:14px;padding:10px 12px;background:#F6E7DF;color:#A2522D;font-size:.9rem}
+#plRoot .acca .tlist li>span:first-child{min-width:0}
+#plRoot .lk{width:12px;height:12px;margin-left:6px;vertical-align:-1px;fill:none;stroke:currentColor;stroke-width:1.6}
+#plRoot .gate{background:var(--white);border:1px solid var(--rule);border-top:2px solid var(--gold);padding:34px 32px;max-width:640px}
+#plRoot .gate.sm{border:0;border-top:0;padding:0;max-width:none}
+#plRoot .gate h3{font:300 1.8rem/1.15 var(--serif);color:var(--navy);margin:10px 0 12px}
+#plRoot .gate.sm h3{font-size:1.45rem}
+#plRoot .gate p{color:var(--text)}
+#plRoot .gsteps{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:12px;counter-reset:g}
+#plRoot .gsteps li{display:grid;grid-template-columns:28px minmax(0,1fr);align-items:center;counter-increment:g}
+#plRoot .gsteps li::before{content:counter(g);font:300 1.3rem var(--serif);color:var(--gold)}
+#plRoot .gsteps .btn{justify-self:start}
+#plRoot .gin{display:flex;flex-wrap:wrap;gap:8px}
+#plRoot .gin input{flex:1 1 140px;min-width:0;font:600 .95rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--navy);padding:12px 14px;border:1px solid var(--rule);border-radius:0;background:var(--white)}
+#plRoot .gin input:focus{outline:none;border-color:var(--navy)}
+#plRoot .gin input::placeholder{text-transform:none;letter-spacing:0;font-weight:400;color:#AAA8A2}
+#plRoot .gerr{color:#A2522D;font-size:.9rem;min-height:1.2em;margin:10px 0 6px 28px}
+#plRoot .gate .muted{margin-top:6px}
+#plRoot .gforgot{margin:4px 0 12px 28px;font-size:.9rem;color:var(--text)}
+#plRoot .gforgot summary{cursor:pointer;color:var(--navy);font-weight:600;list-style:none;display:inline-block;border-bottom:1px solid var(--gold)}
+#plRoot .gforgot summary::-webkit-details-marker{display:none}
+#plRoot .gforgot ul{margin:10px 0 0;padding-left:18px;display:grid;gap:6px}
+#plRoot .gforgot a{color:var(--navy)}
+#plRoot .gforgot .em{user-select:all;color:var(--navy);font-weight:600}
+</style>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="brand" href="#home"><img class="ln" src="assets/logo-navy.png" alt=""><img class="lw" src="assets/logo-white.png" alt=""><span>Accounting &amp; Finance Society<small>Deree – The American College of Greece</small></span></a>
+    <nav class="nav" aria-label="Main"><a href="#about">About</a><a href="#events">Events</a><a href="#partners">Partners</a><a href="#desks">Join a Desk</a><a href="#planner">Degree Planner</a><a class="btn" href="#join">Join the Society</a></nav>
+    <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="drawer">MENU</button>
+  </div>
+  <div class="drawer" id="drawer" hidden><div class="wrap"><a href="#home">Home</a><a href="#about">About</a><a href="#events">Events</a><a href="#partners">Partners</a><a href="#desks">Join a Desk</a><a href="#planner">Degree Planner</a><a href="#join">Join the Society</a></div></div>
+</header>
+
+<main id="app"><div class="wrap err">Loading…</div></main>
+<footer id="foot"></footer>
+
+<script>
+/* A&F Degree Planner page */
+(function(){
+
+const C=(code,name,lvl,cr)=>({code,name,lvl:lvl||null,cr:cr||3});
+const lv=code=>{const d=+(code.match(/\d/)||[0])[0];return d===2?4:d===3?5:d===4?6:null};
+const P=(code,name)=>C(code,name,lv(code));
+const S=(name,cr)=>({slot:true,name,cr:cr||3,lvl:null});
+const plist=s=>s.trim().split("\n").map(l=>{const m=l.trim().match(/^([A-Z]{2,3} \d{4})\s+(.*)$/);return P(m[1],m[2])});
+
+const finL5=`MG 3033 New Ventures Creation
+AF 3104 Financial Reporting I
+AF 3116 Managerial Accounting
+AF 3131 Intermediate Financial Accounting
+EC 3134 Environmental and Resource Economics
+FN 3219 International Finance
+EC 3125 Real Estate Economics
+EC 3226 Credit and Lending
+EC 3232 Economics of the European Union
+EC 3240 Money and Banking
+EC 3324 Insurance
+EC 3542 Public Economics`;
+
+const PROGRAMS={
+ fin26:{prog:"fin",label:"BSc Finance",catalog:"Fall 2026",type:"major",total:121,blocks:[
+  {g:"le",title:"Liberal Education – required",items:[
+   C("WP 1010","Fundamentals of Argumentation"),C("WP 1111","Argument through Research"),C("PH 1004","Character Education"),C("HC 2300","Professional Communication"),
+   C("MA 1008","College Algebra (or higher) – STEM"),C("PH 3005","Business Ethics",5),C("EC 1101","Principles of Macroeconomics",4),
+   C("BAN 1023","Intro to Data Science (Business World)"),C("CS 1070","Introduction to Information Systems")]},
+  {g:"le",title:"Liberal Education – designated electives",items:[
+   S("LE course in Natural Science with lab",4),S("LE course in Aesthetic Expression"),S("LE course in Human Experience in Context (not PH)"),
+   S("LE course in Society and Community (not EC)"),S("LE course in Environment and Sustainability")]},
+  {g:"core",title:"Core courses",items:[
+   C("AF 2007","Financial Accounting",4),C("BU 2003","Business Legal Issues",4),C("EC 1000","Principles of Microeconomics",4),C("FN 2028","Principles of Finance",4),
+   C("FN 2127","Financial Markets and Instruments",4),C("MA 2021","Applied Statistics",4),C("MA 2105","Applied Calculus",4),
+   C("EC 3046","Investment Analysis and Management I",5),C("FN 3213","Corporate Finance",5),C("EC 3470","Managerial Economics",5),C("EC 3537","Econometrics I",5),
+   C("EC 4129","Investment Analysis and Management II",6),C("EC 4655","Econometrics II",6),C("FN 4980","Dissertation in Finance",6,6)]},
+  {g:"core",title:"Level 5 options",n:3,items:plist(finL5)},
+  {g:"core",title:"Level 6 options",n:4,items:plist(`EC 4007 Sustainable Finance and Investing
+EC 4009 Behavioural Economics and Finance
+FN 4045 Fintech
+AF 4045 Corporate Governance and Accountability
+AF 4096 Mergers and Acquisitions
+MG 4173 Entrepreneurial Finance
+AF 4207 Financial Reporting II
+AF 4242 Cost and Control Management
+CS 4267 Applied Business Analytics
+AF 4323 Financial Statement Analysis
+FN 4430 Financial Derivatives
+FN 4451 Commercial Bank Management
+FN 4452 Fixed Income Securities
+FN 4535 Financial Modeling
+FN 4243 Alternative Investment Funds`)},
+  {g:"core",title:"Internship, consulting or trading",n:2,items:plist(`FN 4090 Internship in Finance
+BU 4950 Business Consulting
+FN 4044 Fundamentals of Trading
+FN 4047 Equity Trading
+FN 4049 Foreign Exchange Trading
+FN 4150 Fixed Income Trading
+FN 4157 Derivatives Trading
+FN 4242 Student Run Endowment
+FN 4548 Value Investing`)},
+  {g:"elec",title:"Free electives",items:[S("Elective 1"),S("Elective 2")]}]},
+
+ fin21:{prog:"fin",label:"BSc Finance",catalog:"Fall 2021",type:"major",total:121,blocks:[
+  {g:"le",title:"Liberal Education – required",items:[
+   C("WP 1010","Introduction to Academic Writing"),C("WP 1111","Integrated Academic Writing and Ethics"),C("WP 1212","Academic Writing and Research"),C("HC 2300","Professional Communication"),
+   C("MA 1008","College Algebra (or higher)"),C("CS 3051","Business Driven Technology"),C("EC 1101","Principles of Macroeconomics",4),C("PH 3005","Business Ethics",5)]},
+  {g:"le",title:"Liberal Education – designated electives",items:[
+   S("LE course in Natural Science with lab",4),S("LE course in Natural Science (STEM)"),S("LE course in the Humanities (not PH)"),
+   S("LE course in Social Sciences (1st discipline)"),S("LE course in Social Sciences (2nd discipline)"),S("LE course in Fine & Performing Arts")]},
+  {g:"core",title:"Core courses",items:[
+   C("AF 2007","Financial Accounting",4),C("BU 2003","Business Legal Issues",4),C("EC 1000","Principles of Microeconomics",4),C("FN 2028","Principles of Finance",4),
+   C("FN 2127","Financial Markets and Instruments",4),C("MA 2021","Applied Statistics",4),C("MA 2105","Applied Calculus",4),
+   C("EC 3046","Investment Analysis and Management I",5),C("FN 3213","Corporate Finance",5),C("EC 3470","Managerial Economics",5),C("FN 3437","Financial Econometrics I",5),
+   C("EC 4129","Investment Analysis and Management II",6),C("FN 4955","Financial Econometrics II",6),C("FN 4980","Dissertation in Finance",6,6)]},
+  {g:"core",title:"Level 5 options",n:3,items:plist(finL5.replace("Managerial Accounting","Management Accounting"))},
+  {g:"core",title:"Level 6 options",n:4,items:plist(`EC 4007 Sustainable Finance and Investing
+EC 4009 Behavioural Economics and Finance
+FN 4045 Fintech
+AF 4045 Corporate Governance and Accountability
+AF 4096 Mergers and Acquisitions
+MG 4173 Entrepreneurial Finance
+AF 4207 Financial Reporting II
+AF 4242 Cost and Control Management
+CS 4267 Applied Business Analytics
+AF 4323 Financial Statement Analysis and Equity Valuation
+FN 4430 Financial Derivatives / Derivative Products
+FN 4451 Commercial Bank Management
+FN 4452 Fixed Income Securities
+FN 4535 Financial Modeling`)},
+  {g:"core",title:"Internship, consulting or trading",n:2,items:[P("FN 4090","Internship in Finance and Financial Analysis"),P("BU 4950","Business Consulting"),S("Trading course (prerequisites apply)"),S("Second trading course (prerequisites apply)")]},
+  {g:"elec",title:"Free electives",items:[S("Elective 1"),S("Elective 2")]}]},
+
+ af26:{prog:"af",label:"BSc Business Administration – Accounting & Finance",catalog:"Fall 2026",type:"major",total:121,blocks:[
+  {g:"le",title:"Liberal Education – required",items:[
+   C("WP 1010","Fundamentals of Argumentation"),C("WP 1111","Argument through Research"),C("PH 1004","Character Education"),C("HC 2300","Professional Communication"),
+   C("MA 2105","Applied Calculus – STEM",4),C("PH 3005","Business Ethics",5),C("EC 1101","Principles of Macroeconomics",4),
+   C("BAN 1023","Intro to Data Science (Business World)"),C("CS 1070","Introduction to Information Systems (or higher)")]},
+  {g:"le",title:"Liberal Education – designated electives",items:[
+   S("LE course in Natural Science with lab",4),S("LE course in Aesthetic Expression"),S("LE course in Human Experience in Context (not PH)"),
+   S("LE course in Society and Community (not EC)"),S("LE course in Environment and Sustainability")]},
+  {g:"core",title:"Core courses",items:[
+   C("AF 2007","Financial Accounting",4),C("BU 2003","Business Legal Issues",4),C("CS 2179","Business Information Systems",4),C("FN 2028","Principles of Finance",4),
+   C("MA 2021","Applied Statistics",4),C("MG 2003","Management Principles",4),C("EC 1000","Principles of Microeconomics"),C("MK 2030","Introduction to Marketing"),
+   C("AF 3104","Financial Reporting I",5),C("BU 3133 / EC 3537","Business Research Methods or Econometrics I",5),C("AF 3131","Intermediate Financial Accounting",5),
+   C("AF 3116","Managerial Accounting",5),C("FN 3213","Corporate Finance",5),C("MG 3034","Managing People & Organizations",5),
+   C("AF 4242","Cost & Control Management",6),C("AF 4323","Financial Statement Analysis & Equity Valuation",6),C("AF 4460","Accounting & Finance Capstone",6),C("MG 4415","Strategic Management",6)]},
+  {g:"core",title:"Level 5 option",n:1,items:plist(`AF 3337 Accounting Information Systems
+EC 3125 Real Estate Economics
+EC 3226 Credit and Lending
+EC 3240 Money & Banking
+EC 3324 Insurance
+MG 3033 New Ventures Creation
+EC 3046 Investment Analysis and Management I
+FN 3219 International Finance`)},
+  {g:"core",title:"Level 6 options",n:4,items:plist(`AF 4045 Corporate Governance & Accountability
+AF 4096 Mergers & Acquisitions
+AF 4141 Business Taxation
+AF 4207 Financial Reporting II
+AF 4218 Auditing
+AF 4244 Forensic Accounting
+CS 4267 Applied Business Analytics
+EC 4007 Sustainable Finance & Investing
+FN 4045 FinTech
+FN 4254 Taxation of Structured Finance
+FN 4535 Financial Modeling
+SH 4176 Maritime Accounting & Reporting
+MG 4343 Operations Management
+MG 4173 Entrepreneurial Finance
+EC 4129 Investment Analysis and Management II`)},
+  {g:"core",title:"Internship, consulting or another course",n:1,items:[P("AF 4090","Internship in Accounting and Financial Management"),P("BU 4950","Business Consulting"),S("Another EC / AF / FN course (prerequisites apply)")]},
+  {g:"elec",title:"Free electives",items:[S("Elective 1"),S("Elective 2")]}]},
+
+ af21:{prog:"af",label:"BSc Business Administration – Accounting & Finance",catalog:"Fall 2021",type:"major",total:121,blocks:[
+  {g:"le",title:"Liberal Education – required",items:[
+   C("WP 1010","Introduction to Academic Writing"),C("WP 1111","Integrated Academic Writing and Ethics"),C("WP 1212","Academic Writing and Research"),C("HC 2300","Professional Communication"),
+   C("CS 1070","Introduction to Information Systems (or equivalent)"),C("EC 1101","Principles of Macroeconomics",4),C("MG 3034","Managing People and Organizations",5),C("PH 3005","Business Ethics",5)]},
+  {g:"le",title:"Liberal Education – designated electives",items:[
+   S("LE course in Natural Science with lab",4),S("LE course in Natural Science (STEM)"),S("LE course in the Humanities (not PH)"),
+   S("LE course in Social Sciences (1st discipline)"),S("LE course in Social Sciences (2nd discipline)"),S("LE course in Fine & Performing Arts")]},
+  {g:"core",title:"Core courses",items:[
+   C("AF 2007","Financial Accounting",4),C("BU 2003","Business Legal Issues",4),C("CS 2179","Business Information Systems",4),C("FN 2028","Principles of Finance",4),
+   C("MA 2021","Applied Statistics",4),C("MA 2105","Applied Calculus",4),C("MG 2003","Management Principles",4),C("EC 1000","Principles of Microeconomics"),C("MK 2030","Introduction to Marketing"),
+   C("AF 3104","Financial Reporting I",5),C("BU 3233 / FN 3437","Business Research Methods or Financial Econometrics I",5),C("AF 3131","Intermediate Financial Accounting",5),
+   C("AF 3116","Management Accounting",5),C("FN 3213","Corporate Finance",5),
+   C("AF 4242","Cost & Control Management",6),C("AF 4323","Financial Statement Analysis & Equity Valuation",6),C("AF 4450","Contemporary Issues in Accounting & Finance",6),C("MG 4415","Strategic Management",6)]},
+  {g:"core",title:"Level 5 option",n:1,items:plist(`AF 3437 Accounting Information Systems
+EC 3125 Real Estate Economics
+EC 3226 Credit and Lending
+EC 3240 Money & Banking
+EC 3324 Insurance
+MG 3033 New Ventures Creation`)},
+  {g:"core",title:"Level 6 options",n:4,items:plist(`AF 4045 Corporate Governance & Accountability
+AF 4096 Mergers & Acquisitions
+AF 4141 Business Taxation
+AF 4207 Financial Reporting II
+AF 4218 Auditing
+AF 4244 Forensic Accounting
+CS 4267 Applied Business Analytics
+EC 4007 Sustainable Finance & Investing
+FN 4045 FinTech
+FN 4254 Taxation of Structured Finance
+FN 4535 Financial Modeling
+MG 4176 Maritime Accounting & Reporting
+MG 4343 Operations Management
+MG 4173 Entrepreneurial Finance
+MK 4070 Personal Branding for Professionals`)},
+  {g:"core",title:"Internship, consulting or another course",n:1,items:[P("AF 4090","Internship in Accounting and Financial Management"),P("BU 4950","Business Consulting"),S("Another EC / AF / FN course (prerequisites apply)")]},
+  {g:"elec",title:"Free electives",items:[S("Elective 1"),S("Elective 2")]}]},
+
+ minfin:{prog:"minfin",label:"Minor in Finance",catalog:"Fall 2026",type:"minor",total:18,blocks:[
+  {g:"core",title:"Required courses",items:[P("AF 2007","Financial Accounting"),P("FN 2028","Principles of Finance"),P("EC 3046","Investment Analysis and Management I"),P("FN 3213","Corporate Finance")]},
+  {g:"core",title:"Options (prerequisites apply)",n:2,items:plist(`FN 2127 Financial Markets and Instruments
+FN 3219 International Finance
+EC 3240 Money and Banking
+FN 3437 Financial Econometrics I
+EC 4007 Sustainable Finance and Investing
+EC 4009 Behavioral Economics and Finance
+FN 4045 Fintech
+AF 4045 Corporate Governance & Accountability
+AF 4096 Mergers and Acquisitions
+EC 4129 Investment Analysis and Management II
+CS 4267 Applied Business Analytics
+FN 4044 Fundamentals of Trading
+FN 4243 Alternative Investment Funds
+FN 4430 Derivative Products
+FN 4452 Fixed Income Securities
+FN 4535 Financial Modeling
+FN 4955 Financial Econometrics II`)}]},
+
+ minafm:{prog:"minafm",label:"Minor in Accounting & Financial Management",catalog:"Fall 2021",type:"minor",total:18,blocks:[
+  {g:"core",title:"Required courses",items:[P("AF 2007","Financial Accounting (may be waived by the department advisor)"),P("AF 3116","Management Accounting"),P("FN 3105","Financial Management")]},
+  {g:"core",title:"Options (prerequisites apply)",n:3,items:plist(`AF 3104 Financial Reporting I
+AF 3131 Intermediate Financial Accounting
+AF 3437 Accounting Information Systems
+AF 4045 Corporate Governance and Accountability
+AF 4096 Mergers & Acquisitions
+AF 4242 Cost and Control Management
+AF 4323 Financial Statement Analysis & Equity Valuation
+EC 3046 Investment Analysis and Management I
+EC 4007 Sustainable Finance and Investing
+FN 4535 Financial Modeling
+MG 3033 New Ventures Creation
+MG 4173 Entrepreneurial Finance`)}]}
+};
+// Prerequisites from Deree syllabi (acg.edu), read Nov 2026. Each inner list = one requirement; codes in it are alternatives.
+// Typos in a few syllabi matched by course title: FN 2128→FN 2028, EC/FN 3046→EC 3046, EC 3536→EC 3537, EC 3270→EC 3470.
+const PRE={
+ AF3104:{r:[["AF2007"]]}, AF3116:{r:[["AF2007"]]}, AF3131:{r:[["AF2007"]]},
+ AF3337:{r:[["AF2007"],["CS1070"],["CS2179"]]},
+ AF3437:{r:[["AF2007"],["AF3113"],["CS1070"],["CS2179"]],note:"Syllabus (Fall 2021) lists AF 3113 Intermediate Accounting, an older code."},
+ AF4141:{r:[["AF2007"]]}, AF4207:{r:[["AF2007"],["AF3104"]]},
+ AF4218:{r:[["AF2007"],["AF3131","AF3104"]]}, AF4244:{r:[["AF2007"],["AF3131","AF3104"]]},
+ AF4242:{r:[["AF2007"],["AF3116","EC3470"]]},
+ AF4323:{r:[["AF2007"],["FN2028"],["FN3213"]]},
+ AF4450:{r:[["AF2007"],["AF3116"],["FN2028"],["AF3104"]],note:"Taken from the current AF 4450 syllabus, which is titled Accounting and Finance Capstone."},
+ AF4460:{r:[["AF2007"],["AF3116"],["FN2028"],["AF3104"]],note:"AF 4460's own syllabus couldn't be read. These come from the AF 4450 Capstone syllabus; confirm with your advisor."},
+ AF4090:{cr:70,approval:true}, FN4090:{cr:70,approval:true},
+ BU4950:{cr:90,approval:true,note:"Open to business and economics students; needs approval from the Department Head and the instructor."},
+ BU3133:{r:[["MA2021"]]}, BU3233:{r:[["MA2021"]],note:"Alternatively MA 2010 and MA 3111."},
+ CS2179:{r:[["CS1070"]]},
+ CS4267:{text:"CS 3051 or CS 1070 or ITC 1070, and CS 2179 (as written in the syllabus; check the exact rule with your advisor)"},
+ EC1101:{r:[["EC1000"]]}, EC3125:{r:[["EC1000"]]}, EC3134:{r:[["EC1000"]]},
+ EC3226:{r:[["EC1000"],["EC1101"]]}, EC3232:{r:[["EC1000"],["EC1101"]]}, EC3240:{r:[["EC1000"],["EC1101"]]},
+ EC3324:{r:[["EC1000"],["MA1008"],["MA2021"]]},
+ EC3470:{r:[["EC1000"],["EC1101"],["MA1008"],["MA2105"]]},
+ EC3537:{r:[["EC1000"],["EC1101"],["MA1008"],["MA2021"],["MA2105"]]},
+ EC3542:{r:[["EC1000"],["EC1101"],["MA1008"],["MA2105"],["EC3470"]]},
+ EC4129:{r:[["EC3046"]]},
+ EC4655:{r:[["EC1000"],["EC1101"],["EC3537"],["MA1008"],["MA2021"],["MA2105"]]},
+ FN2028:{text:"The syllabus doesn't list prerequisites (it says to see the catalog)."},
+ FN2127:{r:[["EC1000"]]}, FN3105:{r:[["AF2007"]]}, FN3213:{r:[["AF2007"],["FN2028"]]},
+ FN3219:{r:[["EC1000"],["EC1101"]]},
+ FN3437:{r:[["EC1000"],["EC1101"],["MA1008"],["MA2021"]]},
+ FN4150:{r:[["FN4044","FN4047","FN4049","FN4157"]],note:"Any one trading course."},
+ FN4157:{r:[["FN4044","FN4047","FN4049","FN4150"]],note:"Any one trading course."},
+ FN4242:{r:[["FN2028"],["EC3046"]]}, FN4243:{r:[["FN2028"],["EC3046"]]},
+ FN4254:{r:[["AF2007"],["FN2028","FN3105"]]},
+ FN4430:{r:[["EC3046"],["MA1008"],["MA2105"],["MA2021"]]},
+ FN4451:{r:[["AF2007"],["FN2028"],["EC3046"],["FN3213"]]},
+ FN4452:{r:[["AF2007"],["FN2028"],["EC3046"],["FN3213","FN3105"]]},
+ FN4535:{r:[["AF2007"],["EC1000"],["FN2028","FN3105"],["FN3213"],["MA2021"]]},
+ FN4548:{r:[["AF2007"],["EC1000"],["EC1101"],["MA1008"],["MA2021"]]},
+ FN4955:{r:[["AF2007"],["EC1000"],["EC1101"],["EC3046"],["FN2028"],["FN3213"],["FN3437"],["MA1008"],["MA2021"]]},
+ FN4980:{r:[["EC1000"],["EC1101"],["MA1008"],["AF2007"],["MA2021"],["FN2028"],["EC3046"],["FN3213"],["FN3437"]],note:"Syllabus last updated Fall 2021."},
+ MA2105:{r:[["MA1008","MA1024"]]},
+ MG4173:{r:[["MG3033"]]}, MG4176:{r:[["AF2007"]]}, SH4176:{r:[["AF2007"]]},
+ MG4343:{r:[["MG2003","MG3034"],["MA1008"],["MA2021"]]},
+ MG4415:{r:[["AF2007"],["EC1000"],["FN2028","FN3105"],["MG2003","MG3034"]]},
+ WP1111:{r:[["WP1010"]]}, WP1212:{r:[["WP1010"],["WP1111"]]},
+ HC2300:{r:[["WP1010"],["WP1111"],["WP1212"]]}
+};
+const fmt=c=>c.replace(/^([A-Z]+)(\d+)$/,"$1 $2");
+const codesOf=i=>i.slot?[]:i.code.split(" / ").map(c=>c.replace(" ",""));
+const syl=c=>`https://www.acg.edu/dereeacg/files/pdfs/${c}.pdf`;
+
+// stable ids
+for(const [k,p] of Object.entries(PROGRAMS)){p.key=k;p.blocks.forEach((b,bi)=>b.items.forEach((it,ii)=>{it.id=it.slot?`s${bi}-${ii}`:it.code}))}
+
+const PROG_TABS=[["fin","Finance"],["af","Accounting & Finance"],["minfin","Finance minor"],["minafm","Acc. & Fin. Mgmt minor"]];
+const CAT={fin:["fin26","fin21"],af:["af26","af21"],minfin:["minfin"],minafm:["minafm"]};
+const GROUPS={le:["Liberal Education","var(--le)"],core:["Concentration","var(--accent)"],elec:["Electives","var(--elec)"]};
+const CAREER_MAP="https://claude.ai/artifact/WtoUZpBpk1QVNWhShjh6Re";
+const TRACKS=[
+ {id:"ib",name:"Investment banking & M&A",short:"IB/M&A",why:"Valuation, deal structuring and the financial modelling that analyst interviews test.",codes:["AF4096","AF4323","FN4535","AF4207","FN4243","EC4129"]},
+ {id:"audit",name:"Big Four audit & accounting",short:"Audit",why:"The reporting, audit and tax core that audit and assurance teams expect.",codes:["AF4218","AF4207","AF4141","AF4045","AF3337","AF3437","AF4244"]},
+ {id:"risk",name:"Forensic, risk & compliance",short:"Risk",why:"Fraud investigation, controls and governance, plus the quantitative side of risk.",codes:["AF4244","AF4045","AF4218","FN4430","CS4267","FN4451"]},
+ {id:"markets",name:"Markets, trading & asset management",short:"Markets",why:"Portfolio management, derivatives, fixed income and hands-on trading.",codes:["EC4129","FN4430","FN4452","FN4243","FN4242","FN4548","FN4044","FN4047","FN4049","FN4150","FN4157"]},
+ {id:"banking",name:"Banking & credit",short:"Banking",why:"How banks lend, price credit and manage their balance sheets.",codes:["EC3226","EC3240","FN4451","FN4452","EC3324"]},
+ {id:"shipping",name:"Shipping finance",short:"Shipping",why:"Greece's signature industry: maritime reporting, cross-border finance and lending.",codes:["SH4176","MG4176","FN3219","EC3226","FN4535"]},
+ {id:"fintech",name:"Fintech & data",short:"Fintech",why:"Financial technology, analytics and the econometrics behind quant work.",codes:["FN4045","CS4267","EC4655","FN4955","FN3437","EC3537"]},
+ {id:"esg",name:"Sustainable finance",short:"ESG",why:"ESG investing, corporate governance and environmental economics.",codes:["EC4007","EC3134","AF4045","EC4009"]},
+ {id:"venture",name:"Startups & venture capital",short:"Venture",why:"Building new ventures and how they are financed.",codes:["MG3033","MG4173","FN4243","FN4535"]}
+];
+
+let store={cur:"fin26",ticks:{},notes:{},waived:{},view:"list",track:"",whatif:""};
+try{const s=JSON.parse(localStorage.getItem("af-planner")||"null");if(s&&PROGRAMS[s.cur])store=Object.assign(store,s)}catch(e){}
+store.waived=store.waived||{};
+const save=()=>{try{localStorage.setItem("af-planner",JSON.stringify(store))}catch(e){}};
+const T=()=>store.ticks[store.cur]||(store.ticks[store.cur]={});
+const N=()=>store.notes[store.cur]||(store.notes[store.cur]={});
+const W=()=>store.waived[store.cur]||(store.waived[store.cur]={});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ui={sel:null};
+const cidOf=i=>`cb-${i.id.replace(/[^\w-]/g,"_")}`;
+
+function compute(p,tk){
+  const t=tk||T();const g={le:[0,0],core:[0,0],elec:[0,0]};
+  const blocks=p.blocks.map(b=>{
+    const done=b.items.filter(i=>t[i.id]);
+    let have,need;
+    if(b.n){need=b.n*3;have=Math.min(done.length,b.n)*3}
+    else{need=b.items.reduce((a,i)=>a+i.cr,0);have=done.reduce((a,i)=>a+i.cr,0)}
+    g[b.g][0]+=have;g[b.g][1]+=need;
+    return{b,done,have,need,complete:have>=need};
+  });
+  const all=p.blocks.flatMap(b=>b.items);
+  const ticked=all.filter(i=>t[i.id]);
+  const l4req=p.blocks.filter(b=>!b.n).flatMap(b=>b.items).filter(i=>i.lvl===4);
+  const l4done=ticked.filter(i=>i.lvl===4).length;
+  const l5done=ticked.filter(i=>i.lvl===5).length;
+  const l4left=l4req.filter(i=>!t[i.id]).length;
+  const major=p.type==="major";
+  const can5=!major||l4done>=4;
+  const can6=!major||(l4left===0&&l5done>=4);
+  const have=Object.values(g).reduce((a,x)=>a+x[0],0);
+  const done=new Set(ticked.flatMap(codesOf));
+  const inProg=progCodes(p);
+  return{blocks,g,have,l4done,l5done,l4left,can5,can6,major,done,inProg};
+}
+const lvlOpen=(i,s)=>i.lvl===5?s.can5:i.lvl===6?s.can6:true;
+function preFor(code,s){
+  const p=PRE[code];if(!p)return{code,groups:[],missing:0,checks:0,crShort:0};
+  const groups=(p.r||[]).map(alts=>{
+    const met=alts.some(a=>s.done.has(a)||(a==="MA1008"&&s.done.has("MA2105")));
+    const onSheet=alts.some(a=>s.inProg.has(a));
+    return{alts,state:met?"met":onSheet?"missing":"check"};
+  });
+  const crShort=p.cr&&s.have<p.cr?p.cr-s.have:0;
+  return{code,p,groups,missing:groups.filter(x=>x.state==="missing").length,checks:groups.filter(x=>x.state==="check").length,crShort};
+}
+function prereq(i,s){
+  const paths=codesOf(i).map(c=>preFor(c,s));
+  if(!paths.length)return null;
+  paths.sort((a,b)=>(a.missing+(a.crShort?1:0))-(b.missing+(b.crShort?1:0)));
+  const best=paths[0];best.blocked=best.missing>0||best.crShort>0;best.all=paths;return best;
+}
+const locked=(i,s)=>{if(i.slot)return null;const lv=s.major&&!lvlOpen(i,s);const r=prereq(i,s);const pre=!!(r&&r.blocked);return lv||pre?{lv,pre}:null};
+const open=(i,s)=>!locked(i,s)||!!W()[i.id];
+function preHTML(i,s){
+  const r=prereq(i,s);if(!r)return"";
+  const out=[];
+  r.all.forEach(pth=>{
+    const p=pth.p;if(!p)return;
+    const head=r.all.length>1?`<b>${fmt(pth.code)}:</b> `:"";
+    if(pth.groups.length){
+      out.push(head+"Requires "+pth.groups.map(g=>{
+        const txt=g.alts.map(fmt).join(" or ");
+        return g.state==="met"?`<span class="pm">✓ ${txt}</span>`:g.state==="missing"?`<span class="px">${txt}</span>`:`<span class="pc" title="Not on this requirement sheet">${txt}*</span>`;
+      }).join(" · "));
+    }
+    if(p.cr)out.push(head+(pth.crShort?`<span class="px">Needs ${p.cr} credits (you have ${s.have})</span>`:`<span class="pm">✓ ${p.cr}+ credits</span>`)+(p.approval?" · plus department approval":""));
+    if(p.text)out.push(head+esc(p.text));
+    if(p.note)out.push(`<span class="pn">${esc(p.note)}</span>`);
+  });
+  if(r.all.some(x=>x.checks))out.push(`<span class="pn">* Not on this requirement sheet. Make sure you've taken it, placed out of it or had it waived.</span>`);
+  return out.length?`<div class="pre">${out.join("<br>")}</div>`:"";
+}
+
+// ---- prerequisite graph ----
+const DEP={};
+for(const [c,p] of Object.entries(PRE))(p.r||[]).flat().forEach(a=>(DEP[a]=DEP[a]||new Set()).add(c));
+function progCodes(p){return p._codes||(p._codes=new Set(p.blocks.flatMap(b=>b.items).flatMap(codesOf)))}
+function itemByCode(p){return p._ic||(p._ic=Object.fromEntries(p.blocks.flatMap(b=>b.items).filter(i=>!i.slot).flatMap(i=>codesOf(i).map(c=>[c,i]))))}
+function walk(starts,next){const seen=new Set(),st=[...starts];while(st.length){const c=st.pop();next(c).forEach(a=>{if(!seen.has(a)){seen.add(a);st.push(a)}})}starts.forEach(c=>seen.delete(c));return seen}
+function itemUnlocks(i,p){const own=codesOf(i);const inP=progCodes(p);const ids=new Set();walk(own,c=>[...(DEP[c]||[])]).forEach(c=>{if(inP.has(c)){const it=itemByCode(p)[c];if(it&&it.id!==i.id)ids.add(it.id)}});return ids}
+function itemNeeds(i,p){const own=codesOf(i);const inP=progCodes(p);const ids=new Set();walk(own,c=>(PRE[c]?.r||[]).flat()).forEach(c=>{if(inP.has(c)){const it=itemByCode(p)[c];if(it&&it.id!==i.id)ids.add(it.id)}});return ids}
+const trackOf=()=>TRACKS.find(x=>x.id===store.track);
+const inTrack=i=>{const tr=isMember()?trackOf():null;return !!tr&&codesOf(i).some(c=>tr.codes.includes(c))};
+
+// lock UI shared by checklist rows and the map detail card
+function lockParts(i,s,on,cid){
+  const lk=locked(i,s),wv=!!W()[i.id];
+  const blocked=!!lk&&!wv&&!on;
+  let extra="";
+  if(lk&&!wv){
+    const why=lk.lv&&lk.pre?"Level rule and prerequisites not met.":lk.lv?(i.lvl===5?"Level 5 opens after 4 Level 4 courses.":"Level 6 opens after all Level 4 courses and 4 Level 5 courses."):"";
+    extra=`<div class="lockline" id="why-${cid}">${on?`<span class="px">Ticked, but its requirements are no longer met.</span> `:why?`<span class="px">${why}</span> `:""}<button type="button" class="linkbtn" data-waive="${esc(i.id)}">I had this waived</button></div>`;
+  }else if(wv){
+    extra=`<div class="lockline"><span class="pn">Waiver noted. It's listed in your advisor summary.</span> <button type="button" class="linkbtn" data-unwaive="${esc(i.id)}">Undo</button></div>`;
+  }
+  return{lk,wv,blocked,extra};
+}
+const codeLinks=i=>i.slot?"—":codesOf(i).map(c=>`<a href="${syl(c)}" target="_blank" rel="noopener" title="Open the ${fmt(c)} syllabus">${fmt(c)}</a>`).join(" / ");
+const checkbox=(i,on,blocked,id,cid)=>`<input type="checkbox" id="${id}" data-id="${esc(i.id)}" ${on?"checked":""} ${blocked?`disabled aria-describedby="why-${cid}"`:""} aria-label="${esc((i.slot?"":i.code+" ")+i.name)} completed">`;
+
+const qa=v=>String(v).replace(/["\\]/g,"\\$&");
+function renderTrack(p,s,t){
+  const tr=trackOf();
+  let h=`<h2>Career track</h2><label class="inline" for="trackSel" style="margin-top:0">Highlight courses for <select id="trackSel"><option value="">No track</option>${TRACKS.map(x=>`<option value="${x.id}" ${x.id===store.track?"selected":""}>${esc(x.name)}</option>`).join("")}</select></label>`;
+  if(tr){
+    const items=[];const seen=new Set();
+    p.blocks.forEach(b=>b.items.forEach(i=>{if(!i.slot&&!seen.has(i.id)&&codesOf(i).some(c=>tr.codes.includes(c))){seen.add(i.id);items.push(i)}}));
+    h+=`<p class="trackline">${esc(tr.why)}</p>`;
+    h+=items.length?`<ul class="tlist">${items.map(i=>{const st=t[i.id]?["d","Done"]:open(i,s)?["o","Open"]:["l","Locked"];return `<li><span class="code">${esc(i.code)}</span><span>${esc(i.name)}</span><span class="st ${st[0]}">${st[1]}</span></li>`}).join("")}</ul>`:`<p class="muted">None of this track's courses are on this program's sheet. A free elective may still fit; ask your advisor.</p>`;
+    h+=`<p class="muted" style="margin:10px 0 0">Your plan now picks these for your option groups where it can. They are suggestions from the A&amp;F Society, not degree requirements, so ask a professor before you build your schedule around them.</p>`;
+  }else h+=`<p class="muted" style="margin:8px 0 0">Pick a direction to see which of your electives fit it. Not sure yet? Try the Society's <a href="${CAREER_MAP}" target="_blank" rel="noopener">Career Map</a>.</p>`;
+  return h;
+}
+
+function carry(target){
+  const cur=PROGRAMS[store.cur],t=T(),s0=compute(cur);
+  const slotNames=new Set(cur.blocks.flatMap(b=>b.items).filter(i=>i.slot&&t[i.id]).map(i=>i.name));
+  const tk={};
+  target.blocks.forEach(b=>b.items.forEach(i=>{if(i.slot?slotNames.has(i.name):codesOf(i).some(c=>s0.done.has(c)))tk[i.id]=true}));
+  const used=new Set(target.blocks.flatMap(b=>b.items).filter(i=>tk[i.id]).flatMap(codesOf));
+  const unused=cur.blocks.flatMap(b=>b.items).filter(i=>t[i.id]&&!i.slot&&!codesOf(i).some(c=>used.has(c)));
+  return{tk,s:compute(target,tk),unused};
+}
+function renderWhatIf(p){
+  const others=Object.values(PROGRAMS).filter(x=>x.key!==p.key);
+  if(!others.some(x=>x.key===store.whatif))store.whatif="";
+  let h=`<h2>What if…</h2><label class="inline" for="wiSel" style="margin-top:0">I switched to or added <select id="wiSel"><option value="">Choose a program</option>${others.map(x=>`<option value="${x.key}" ${x.key===store.whatif?"selected":""}>${esc(x.type==="minor"?x.label:x.label.replace("BSc Business Administration – ","BSc ")+" ("+x.catalog+")")}</option>`).join("")}</select></label>`;
+  if(!store.whatif){h+=`<p class="muted">See how many of the courses you've ticked would count toward another major or a minor.</p>`;return h}
+  const tg=PROGRAMS[store.whatif],{tk,s,unused}=carry(tg);
+  const req=s.blocks.filter(x=>!x.b.n&&!x.complete).flatMap(x=>x.b.items).filter(i=>!tk[i.id]&&!i.slot);
+  const picks=s.blocks.filter(x=>x.b.n&&!x.complete);
+  h+=`<div class="wi-num">${s.have}<small> / ${tg.total} credits already count</small></div>`;
+  h+=`<p>${tg.total-s.have} credits to go.</p>`;
+  if(req.length)h+=`<p>Required courses you haven't done (${req.length}): <span class="codes">${req.slice(0,12).map(i=>esc(i.code)).join(", ")}${req.length>12?", …":""}</span></p>`;
+  if(picks.length)h+=`<p>Option groups still open: ${picks.map(x=>`${esc(x.b.title)} (${x.b.n-x.done.length} more)`).join("; ")}.</p>`;
+  if(unused.length)h+=`<p class="muted">Wouldn't count toward its requirements: <span class="codes">${unused.map(i=>esc(i.code)).join(", ")}</span>${tg.type==="major"?" (some could fill free electives)":""}.</p>`;
+  h+=`<p class="muted">${tg.type==="minor"?"Whether a course can count toward both your major and a minor depends on Deree's rules. Check with Advising.":"Switching majors needs Advising's approval, and you may be moved to the current catalog."}</p>`;
+  h+=`<div class="btns" style="margin-top:10px"><button type="button" class="btn ghost" data-adopt="${tg.key}">Open it with these courses ticked</button></div>`;
+  return h;
+}
+
+// ================= view state =================
+store.filter=store.filter||"all";store.tab=store.tab||"next";store.plan=store.plan||{};store.saved=store.saved||{};
+ui.q="";ui.expanded=new Set();ui.edges=[];ui.edit=null;ui.delArm=null;ui.pendingImport=null;ui.planned=new Set();
+const norm=x=>String(x).toLowerCase().replace(/\s+/g,"");
+const allItems=p=>p.blocks.flatMap(b=>b.items);
+
+// ================= checklist =================
+function rowVisible(i,s,t){
+  const on=!!t[i.id];
+  if(ui.q){const q=norm(ui.q);if(!norm(i.code||"").includes(q)&&!norm(i.name).includes(q))return false}
+  if(store.filter==="todo")return !on;
+  if(store.filter==="open")return !on&&!i.slot&&open(i,s);
+  if(store.filter==="done")return on;
+  return true;
+}
+function rowHTML(i,s,t,nt,p){
+  const on=!!t[i.id];const cid=cidOf(i);
+  const {lk,wv,blocked,extra}=lockParts(i,s,on,cid);
+  const tags=[];
+  if(wv)tags.push(`<span class="pill wv" title="You marked the prerequisites or level rule as waived">Waived</span>`);
+  else if(lk&&lk.lv&&!on)tags.push(`<span class="pill lock" title="Level rules not yet met">L${i.lvl} locked</span>`);
+  else if(lk&&!on)tags.push(`<span class="pill lock" title="Prerequisites not yet ticked">Prereqs needed</span>`);
+  else if(i.lvl)tags.push(`<span class="pill">Level ${i.lvl}</span>`);
+  if(!on&&!i.slot){const n=itemUnlocks(i,p).size;if(n>=2)tags.push(`<span class="pill ulk" title="Later courses on your sheet that need this one">Unlocks ${n}</span>`)}
+  if(!on&&!i.slot&&!runsInSpring(i))tags.push(`<span class="pill nosp" title="Not running in ${SPRING_SRC} (14 Jan – 23 Apr 2027)">Not in Spring 2027</span>`);
+  if(!on&&ranInSummer(i))tags.push(`<span class="pill sum" title="Ran in ${SUMMER_SRC}">Summer</span>`);
+  const tr=inTrack(i);if(tr)tags.push(`<span class="pill trk">${esc(trackOf().short)}</span>`);
+  const name=i.slot?`<div class="slotname">${esc(i.name)}</div><input type="text" id="nt-${cid}" data-note="${esc(i.id)}" value="${esc(nt[i.id]||"")}" placeholder="Course you took (optional)">`:`<label for="${cid}">${esc(i.name)}</label>${on?"":preHTML(i,s)}${extra}`;
+  return `<div class="row${on?" done":""}${blocked?" blocked":""}${tr?" intrack":""}">${checkbox(i,on,blocked,cid,cid)}
+    <span class="code">${codeLinks(i)}</span><div class="name">${name}</div><span class="tags">${tags.join("")}</span><span class="cr">${i.cr}</span></div>`;
+}
+function renderList(p,s,t,nt){
+  const all=allItems(p);
+  const counts={all:all.length,todo:all.filter(i=>!t[i.id]).length,open:all.filter(i=>!t[i.id]&&!i.slot&&open(i,s)).length,done:all.filter(i=>t[i.id]).length};
+  document.getElementById("filters").innerHTML=[["all","All"],["todo","To do"],["open","Open now"],["done","Done"]].map(([k,l])=>`<button type="button" id="ft-${k}" data-filter="${k}" aria-pressed="${store.filter===k}">${l}<b>${counts[k]}</b></button>`).join("");
+  let html="",lastG="";
+  const plain=store.filter==="all"&&!ui.q;
+  s.blocks.forEach(({b,done,have,need,complete},bi)=>{
+    const rows=b.items.filter(i=>rowVisible(i,s,t));
+    if(!rows.length)return;
+    if(b.g!==lastG){lastG=b.g;const gv=s.g[b.g];html+=`<div class="group-h"><span>${GROUPS[b.g][0]}</span><span>${gv[0]} of ${gv[1]} credits</span></div>`}
+    const rule=b.n?(complete?`Complete · ${b.n} of ${b.n}`:`Choose ${b.n} · ${done.length} chosen`):(complete?"Complete":`${have} of ${need} credits`);
+    const folded=plain&&complete&&!ui.expanded.has(bi);
+    html+=`<div class="block"><div class="bh"><h3>${esc(b.title)}</h3><span class="rule${complete?" ok":""}">${rule}</span><span class="bprog" aria-hidden="true"><i style="width:${Math.min(100,need?100*have/need:0).toFixed(1)}%"></i></span></div>`;
+    if(folded)html+=`<div class="fold"><span>${done.length} course${done.length>1?"s":""} ticked.</span><button type="button" class="linkbtn" data-expand="${bi}">Show courses</button></div>`;
+    else{rows.forEach(i=>{html+=rowHTML(i,s,t,nt,p)});if(plain&&complete)html+=`<div class="fold" style="padding-top:14px;border-top:1px solid var(--rule)"><span></span><button type="button" class="linkbtn" data-collapse="${bi}">Hide courses</button></div>`}
+    html+=`</div>`;
+  });
+  if(!html)html=`<div class="pempty"><h3>Nothing matches.</h3><p>${ui.q?`No course on this sheet matches “${esc(ui.q)}”.`:"No courses in this view yet."}</p></div>`;
+  return html;
+}
+
+// ================= prerequisite map =================
+function mapNodes(p){
+  const seen=new Set(),out=[];
+  p.blocks.forEach(b=>b.items.forEach(i=>{
+    if(i.slot||seen.has(i.id))return;
+    const linked=codesOf(i).some(c=>PRE[c]?.r||(DEP[c]&&[...DEP[c]].some(d=>progCodes(p).has(d))));
+    if(b.g!=="core"&&!linked)return;
+    seen.add(i.id);out.push({i,opt:!!b.n});
+  }));
+  return out;
+}
+function tileHTML(i,opt,s,t,p,extra=""){
+  const st=t[i.id]?"done":open(i,s)?"open":"locked";
+  const n=itemUnlocks(i,p).size;
+  const sub=st==="done"?"Done":st==="locked"?"Locked":n>=2?`Unlocks ${n}`:"Open";
+  return `<button type="button" class="tile st-${st}${opt?" opt":""}${inTrack(i)?" trk":""}" data-node="${esc(i.id)}" ${extra}><span class="mc">${esc(i.code)}</span><span class="mn">${esc(i.name)}</span><span class="ux">${sub}</span></button>`;
+}
+function depths(start,p,next){
+  const ic=itemByCode(p),stack=new Set(),d=new Map();
+  const nbr=id=>{const it=allItems(p).find(x=>x.id===id);const out=new Set();codesOf(it).forEach(c=>next(c).forEach(a=>{const y=ic[a];if(y&&y.id!==id)out.add(y.id)}));return out};
+  (function go(id,depth){if(stack.has(id))return;if((d.get(id)||0)>=depth&&depth>0)return;if(depth>0)d.set(id,depth);stack.add(id);nbr(id).forEach(n=>go(n,depth+1));stack.delete(id)})(start,0);
+  return d;
+}
+function renderMap(p,s,t){
+  const nodes=mapNodes(p);
+  const legend=`<div class="legend"><span><i class="d"></i>Done</span><span><i></i>Open now</span><span><i class="lk"></i>Locked</span>${store.track?`<span><i class="na"></i>${esc(trackOf().short)} pick</span>`:""}</div>`;
+  const sel=ui.sel&&allItems(p).find(i=>i.id===ui.sel);
+  if(!sel){
+    ui.edges=[];
+    const rows=[["Level 4",4,"Start here"],["Level 5",5,"After 4 Level 4 courses"],["Level 6",6,"After all Level 4 and 4 Level 5"],["No level",null,"Foundation courses"]];
+    let h=`<div class="mapintro"><p>Every course on your sheet that is part of a prerequisite chain. Select one to see what it needs and what it leads to.</p>${legend}</div>`;
+    rows.forEach(([lab,l,sub])=>{const ns=nodes.filter(x=>(x.i.lvl||null)===l);if(!ns.length)return;
+      h+=`<div class="lvl"><h4>${lab}<small>${sub}</small></h4><div class="tiles">${ns.map(({i,opt})=>tileHTML(i,opt,s,t,p)).join("")}</div></div>`});
+    return h;
+  }
+  const back=depths(sel.id,p,c=>(PRE[c]?.r||[]).flat());
+  const fwd=depths(sel.id,p,c=>[...(DEP[c]||[])]);
+  const byId=id=>allItems(p).find(x=>x.id===id);
+  const optOf=id=>p.blocks.some(b=>b.n&&b.items.some(x=>x.id===id));
+  const maxB=Math.max(0,...back.values()),maxF=Math.max(0,...fwd.values());
+  const col=(ids,label)=>`<div class="ccol"><h5>${label}</h5>${ids.map(id=>tileHTML(byId(id),optOf(id),s,t,p)).join("")}</div>`;
+  let cols="";
+  for(let d=maxB;d>=1;d--){const ids=[...back].filter(([,v])=>v===d).map(([k])=>k);if(ids.length)cols+=col(ids,d===1?"Needs":"Needs first")}
+  cols+=`<div class="ccol me"><h5>This course</h5>${tileHTML(sel,optOf(sel.id),s,t,p,'aria-pressed="true"')}</div>`;
+  for(let d=1;d<=maxF;d++){const ids=[...fwd].filter(([,v])=>v===d).map(([k])=>k);if(ids.length)cols+=col(ids,d===1?"Leads to":"Then")}
+  const H=new Set([sel.id,...back.keys(),...fwd.keys()]);const ic=itemByCode(p);ui.edges=[];
+  H.forEach(xid=>{const x=byId(xid);codesOf(x).forEach(c=>(PRE[c]?.r||[]).flat().forEach(a=>{const y=ic[a];if(!y||!H.has(y.id)||y.id===xid)return;
+    if(back.has(y.id)&&fwd.has(xid))return;
+    ui.edges.push([y.id,xid,fwd.has(xid)?"var(--navy)":"var(--gold)"])}))});
+  const on=!!t[sel.id],cid=cidOf(sel),mid="mp-"+cid;const {blocked,extra}=lockParts(sel,s,on,cid);
+  const nB=back.size,nF=fwd.size;
+  let h=`<div class="focusbar"><div><span class="label">Prerequisite chain</span><h3>${esc(sel.name)}</h3></div><button type="button" class="btn ghost" data-mapback="1">All courses</button></div>`;
+  h+=`<div class="chain" id="chain"><svg class="edges" id="edges" aria-hidden="true"></svg>${cols}</div>`;
+  h+=`<div class="mdetail"><span class="dmeta">${codeLinks(sel)} · ${sel.lvl?"Level "+sel.lvl:"No level"} · ${sel.cr} credits · ${optOf(sel.id)?"Option course":"Required"}</span>
+    <p style="margin-top:8px;color:var(--navy)">${nB?`Builds on ${nB} course${nB>1?"s":""}`:"Has no prerequisites on your sheet"}${nF?`, and leads to ${nF} later course${nF>1?"s":""}.`:"; no later course on your sheet needs it."}</p>
+    ${on?"":preHTML(sel,s)}
+    <div class="row${on?" done":""}${blocked?" blocked":""}">${checkbox(sel,on,blocked,mid,cid)}<div class="name"><label for="${mid}">${on?"Completed":"Mark as completed"}</label>${extra}</div></div></div>`;
+  return h;
+}
+function drawEdges(){
+  const svg=document.getElementById("edges"),box=document.getElementById("chain");
+  if(!svg||!box)return;
+  svg.setAttribute("width",box.scrollWidth);svg.setAttribute("height",box.scrollHeight);
+  const b0=box.getBoundingClientRect();
+  const r=id=>{const el=box.querySelector(`[data-node="${qa(id)}"]`);if(!el)return null;const q=el.getBoundingClientRect();return{l:q.left-b0.left+box.scrollLeft,r:q.right-b0.left+box.scrollLeft,cy:(q.top+q.bottom)/2-b0.top}};
+  svg.innerHTML=ui.edges.map(([a,b,c])=>{const A=r(a),B=r(b);if(!A||!B)return"";const dx=Math.max(18,(B.l-A.r)/2);
+    return `<path d="M${A.r},${A.cy} C${A.r+dx},${A.cy} ${B.l-dx},${B.cy} ${B.l},${B.cy}" fill="none" stroke="${c}" stroke-width="1.4"/><circle cx="${B.l}" cy="${B.cy}" r="2.6" fill="${c}"/>`}).join("");
+}
+
+// ================= terms and scheduling =================
+const TERM_NAMES=["Spring","Summer I","Summer II","Fall"];
+function firstTerm(){const now=new Date(),m=now.getMonth();let y=now.getFullYear();let k=m<=4?1:m===5?2:m<=7?3:0;if(m>=8)y+=1;return{y,k}}
+const mkTerm=(y,k)=>({name:TERM_NAMES[k],year:y,k,summer:k===1||k===2,key:y+"-"+k});
+function termAt(n){const f=firstTerm();const a=f.y*4+f.k+n;return mkTerm(Math.floor(a/4),a%4)}
+const termOrd=key=>{const [y,k]=key.split("-").map(Number);return y*4+k};
+const termByKey=key=>{const [y,k]=key.split("-").map(Number);return mkTerm(y,k)};
+const termLabel=x=>x?`${x.name} ${x.year}`:"";
+const termEnabled=(tm,sumN)=>!tm.summer||sumN>=(tm.k===1?1:2);
+function PS(){const x=store.plan[store.cur]||(store.plan[store.cur]={pins:{},excl:[],savedId:null,dirty:false});x.pins=x.pins||{};x.excl=x.excl||[];return x}
+function SV(){return store.saved[store.cur]||(store.saved[store.cur]=[])}
+// ACCA exemption accreditation for the BSc Accounting & Finance (graduates 1 Jan 2023 – 31 Dec 2027), per acg.edu.
+const ACCA_FR=["AF3104","AF4207","AF4323"];
+// Per program, from the Accounting and Finance and the Finance pages on acg.edu.
+const ACCA={
+  af:{papers:["Business and Technology (BT)","Management Accounting (MA)","Financial Accounting (FA)","Corporate and Business Law (LW)"],found:"all Foundations in Accountancy papers",src:"Accounting and Finance"},
+  fin:{papers:["Business and Technology (BT)","Management Accounting (MA)","Financial Accounting (FA)"],found:"these Foundations in Accountancy papers: FA1 Recording Financial Transactions, MA1 Management Information, FA2 Maintaining Financial Records, MA2 Managing Costs and Finance, FBT Business and Technology, FMA Management Accounting and FFA Financial Accounting",src:"Finance"}};
+const accaOn=()=>!!ACCA[PROGRAMS[store.cur].prog]&&!!store.acca;
+const termEnd=tm=>tm?new Date(tm.year,[4,6,7,11][tm.k],28):null;
+const planOpts=()=>{const ps=PS(),m=isMember();return{acca:m&&accaOn(),track:m?(trackOf()||null):null,load:+(store.load||15),sumN:+(store.sumN??0),sumCr1:+(store.sumCr1||store.sumCr||6),sumCr2:+(store.sumCr2||store.sumCr||6),pins:ps.pins,excl:ps.excl}};
+function chainLen(i,p,memo,seen=new Set()){
+  if(memo.has(i.id))return memo.get(i.id);if(seen.has(i.id))return 0;seen.add(i.id);
+  const ic=itemByCode(p);let best=0;
+  codesOf(i).forEach(c=>(DEP[c]||[]).forEach(d=>{const it=ic[d];if(it&&it.id!==i.id)best=Math.max(best,chainLen(it,p,memo,seen))}));
+  seen.delete(i.id);memo.set(i.id,best+1);return best+1;
+}
+// Courses that span two consecutive terms (credits split evenly). Not Spring→Fall, not Summer I→Summer II.
+const MULTI={FN4980:2};
+// Courses that ran in Summer 2026 (20 May – 18 June 2026), from the registration system. Directed-study-only sections left out.
+const SUMMER_SRC="Summer 2026 (20 May – 18 June)";
+const SUMMER=new Set("AF3116 AF3131 AF4244 AH2027 AN1000 AR2017 AR3108 AR4233 BI1002 BI1008 BI1016 BI1017 BI2222 BI3215 BU2003 BU2010 BU4950 CIN4045 CL1004 CS1070 CS2133 CS3051 CS3153 CS4161 DA2019 DR2003 DR2033 DR3243 DR3344 DR4148 DR4241 EC1000 EC1003 EC1101 EC4667 EN1078 EN2102 EN2218 EN3362 ES1000 ES1005 ES1010 ES1012 FN2127 FN3105 FN4049 FR1000 GR1000 HC2300 HC2306 HFP2202 HM4041 HSE2205 HT4045 HY1000 ITC3015 MA1000 MA1008 MA2021 MA2105 MG2003 MG2010 MG2062 MG3034 MG3058 MG4028 MG4057 MG4087 MG4121 MG4292 MK2030 MK3159 MK4104 OC1000 PH1000 PH2016 PH2020 PH3005 PH3010 PO2004 PO4025 PS1000 PS1001 SC1000 SM3003 SN1000 SO1000 SO1001 SO2030 SO3007 WP1111".split(" "));
+const isMulti=i=>!i.slot&&codesOf(i).some(c=>MULTI[c]);
+const ranInSummer=i=>!i.slot&&codesOf(i).some(c=>SUMMER.has(c));
+const isLE=i=>PROGRAMS[store.cur].blocks.some(b=>b.g==="le"&&b.items.includes(i));
+// Summer II runs even fewer major courses; until its list is known, only LE, electives and the dissertation go there.
+const SUMMER2=new Set([]);
+const inSummer=(i,k=1)=>i.slot||isMulti(i)||isLE(i)||(k===2?codesOf(i).some(c=>SUMMER2.has(c)):ranInSummer(i));
+// Major and minor courses running in Spring 2027 (14 Jan – 23 Apr 2027), from the registration system.
+const SPRING_SRC="Spring 2027";
+const SPRING=new Set("AF2007 AF3104 AF3116 AF4045 AF4096 AF4218 AF4323 AF4450 BAN1023 BU2003 BU2010 BU3133 CS1070 CS2179 CS3051 CS3140 CS3245 CS4249 CS4250 CS4267 CS4562 EC1000 EC1003 EC1101 EC2350 EC3046 EC3134 EC3223 EC3227 EC3232 EC3240 EC3470 EC3473 EC3474 EC3536 EC3537 EC3542 EC4007 EC4009 EC4010 EC4129 EC4531 EC4653 EC4655 EC4667 FN2028 FN2127 FN3105 FN3213 FN3219 FN3437 FN4044 FN4045 FN4047 FN4157 FN4254 FN4430 FN4452 FN4535 FN4548 FN4955 BU4950 MK4070 SH4176 HC2300 MA1000 MA1008 MA2021 MA2025 MA2055 MA2105 MG2003 MG2014 MG2062 MG2063 MG3019 MG3033 MG3034 MG3118 MG3272 MG4057 MG4087 MG4173 MG4343 MG4415 MK2030 MK3131 MK3134 MK3135 PH1004 PH3005 WP1010 WP1111 WP1212".split(" "));
+// Not visible in the screenshots (by-arrangement internships, cut-off pages): treated as possible in spring.
+const SPRING_UNKNOWN=new Set("AF4460".split(" "));
+const runsInSpring=i=>i.slot||isMulti(i)||isLE(i)||codesOf(i).some(c=>SPRING.has(c)||SPRING_UNKNOWN.has(c));
+const SPRING_YEAR=2027;
+// Internships run every term, but a student on one takes nothing else that term.
+const INTERN=new Set(["AF4090","FN4090"]);
+const isIntern=i=>!!i&&!i.slot&&codesOf(i).some(c=>INTERN.has(c));
+const INTERN_MSG="An internship is a full-time placement, so it should be the only course that term";
+const offeredIn=(i,k,y)=>isIntern(i)?true:k===0?(y!==SPRING_YEAR||runsInSpring(i)):k===3?true:inSummer(i,k);
+const NOT_OFFERED=["Not running in Spring 2027","Didn't run last summer, so it may not be offered","Summer II runs very few major courses, so it may not be offered",""];
+const pairOK=(a,b)=>!(a.k===0&&b.k===3)&&!(a.k===1&&b.k===2);
+function nextEnabled(n,sumN){for(let m=n+1;m<n+6;m++){const tm=termAt(m);if(termEnabled(tm,sumN))return{m,tm}}return null}
+const MULTI_MSG="The dissertation runs over two terms in a row and can't go from Spring straight to Fall, or from Summer I to Summer II.";
+const capOf=(tm,o)=>tm.k===1?(o.sumCr1||o.sumCr||6):tm.k===2?(o.sumCr2||o.sumCr||6):o.load;
+function simulate(p,o){
+  const t=T(),w=W(),major=p.type==="major",items=allItems(p);
+  const excl=new Set(o.excl||[]);
+  const doneCodes=new Set(items.filter(i=>t[i.id]).flatMap(codesOf));
+  let have=compute(p).have;
+  let l4=items.filter(i=>t[i.id]&&i.lvl===4).length,l5=items.filter(i=>t[i.id]&&i.lvl===5).length;
+  const l4req=new Set(p.blocks.filter(b=>!b.n).flatMap(b=>b.items).filter(i=>i.lvl===4&&!t[i.id]).map(i=>i.id));
+  const req=p.blocks.filter(b=>!b.n).flatMap(b=>b.items).filter(i=>!t[i.id]);
+  const picks=p.blocks.filter(b=>b.n).map(b=>({b,need:Math.max(0,b.n-b.items.filter(i=>t[i.id]).length),pool:b.items.filter(i=>!t[i.id])}));
+  // Career track: in each option group, keep room for the track's courses so the planner picks them.
+  const trk=i=>!i.slot&&((!!o.track&&codesOf(i).some(c=>o.track.codes.includes(c)))||(!!o.acca&&codesOf(i).some(c=>ACCA_FR.includes(c))));
+  picks.forEach(x=>{x.reserve=Math.min(x.need,x.pool.filter(i=>trk(i)&&!excl.has(i.id)&&!Object.prototype.hasOwnProperty.call(o.pins||{},i.id)).length);x.free=x.need-x.reserve});
+  const groupOf=id=>picks.find(x=>x.pool.some(i=>i.id===id));
+  const firstOrd=termOrd(termAt(0).key);
+  const probeItem=o.probe?items.find(x=>x.id===o.probe):null,probe={};
+  const pinMap=new Map(Object.entries(o.pins||{}).filter(([id])=>id!==o.probe).filter(([id,key])=>!t[id]&&items.some(i=>i.id===id)&&termOrd(key)>=firstOrd&&termEnabled(termByKey(key),o.sumN)));
+  const carryOver=new Map();
+  const memo=new Map(),score=i=>(i.slot?0:chainLen(i,p,memo)*100+itemUnlocks(i,p).size+(isMulti(i)?50:0)+(trk(i)?30:0));
+  const remaining=()=>req.length+picks.reduce((a,x)=>a+x.need,0);
+  const plan=[];let idle=0;
+  for(let n=0;n<48;n++){
+    if(remaining()<=0&&!pinMap.size&&!carryOver.size)break;
+    const term=termAt(n);if(!termEnabled(term,o.sumN))continue;
+    const cap=capOf(term,o);
+    const st={done:doneCodes,inProg:progCodes(p),have};
+    const can5=!major||l4>=4,can6=!major||(l4req.size===0&&l5>=4);
+    const nxt=nextEnabled(n,o.sumN),multiOK=!!nxt&&pairOK(term,nxt.tm);
+    const reasons=i=>{const out=[];
+      if(!w[i.id]){
+        const r=prereq(i,st);if(r&&r.blocked){const miss=r.groups.filter(g=>g.state==="missing").map(g=>g.alts.map(fmt).join(" or "));if(r.crShort)miss.push(`${r.p.cr} credits`);out.push(`Needs ${miss.join(", ")} first`)}
+        if(i.lvl===5&&!can5)out.push("Level 5 opens after 4 Level 4 courses");
+        if(i.lvl===6&&!can6)out.push("Level 6 opens after all Level 4 and 4 Level 5 courses");
+      }
+      if(!offeredIn(i,term.k,term.year))out.push(NOT_OFFERED[term.k]);
+      if(isMulti(i)&&!multiOK)out.push(MULTI_MSG);
+      return out;};
+    const why=i=>reasons(i).join(". ");
+    if(probeItem)probe[term.key]=reasons(probeItem);
+    const chosen=[...(carryOver.get(term.key)||[])];carryOver.delete(term.key);
+    const take=(i,extra)=>{const half=isMulti(i);const c={i,cr:half?i.cr/2:i.cr,part:half?1:0,of:half?2:0,...extra};chosen.push(c);
+      if(half&&nxt)carryOver.set(nxt.tm.key,[...(carryOver.get(nxt.tm.key)||[]),{i,cr:i.cr/2,part:2,of:2,pinned:false,warn:"",src:null}])};
+    [...pinMap].filter(([,k])=>k===term.key).forEach(([id])=>{const i=items.find(x=>x.id===id);const g=groupOf(id)||null;
+      take(i,{pinned:true,warn:why(i),src:g,extra:!!g&&g.need-chosen.filter(c=>c.src===g).length<=0});pinMap.delete(id)});
+    const later=new Set(pinMap.keys());if(probeItem)later.add(probeItem.id);const inChosen=id=>chosen.some(c=>c.i.id===id);
+    const cands=[...req.filter(i=>!later.has(i.id)&&!inChosen(i.id)&&!why(i)).map(i=>({i,src:null})),
+      ...picks.filter(x=>x.need>0).flatMap(x=>x.pool.filter(i=>!later.has(i.id)&&!excl.has(i.id)&&!inChosen(i.id)&&!why(i)).map(i=>({i,src:x})))];
+    cands.sort((a,b)=>(score(b.i)-score(a.i))||((a.src?1:0)-(b.src?1:0)));
+    const internC=cands.filter(c=>isIntern(c.i)),otherC=cands.filter(c=>!isIntern(c.i));
+    const nextHasIntern=!!nxt&&[...pinMap].some(([id,k])=>k===nxt.tm.key&&isIntern(items.find(x=>x.id===id)));
+    let room=cap-chosen.reduce((a,c)=>a+c.cr,0);
+    const usedG=new Map();chosen.forEach(c=>{if(c.src&&c.part!==2)usedG.set(c.src,(usedG.get(c.src)||0)+1)});
+    const strict=n<12;
+    const fits=c=>{if(!c.src)return true;const u=usedG.get(c.src)||0;if(u>=c.src.need)return false;
+      if(strict&&!c.pinned&&!trk(c.i)){const nt=chosen.filter(x=>x.src===c.src&&x.part!==2&&!trk(x.i)).length;if(nt>=c.src.free)return false}
+      return true};
+    const takeIntern=()=>{const c=internC.find(fits);if(c){if(c.src)usedG.set(c.src,(usedG.get(c.src)||0)+1);take(c.i,{pinned:false,warn:"",src:c.src,extra:false});return true}return false};
+    const hasIntern=chosen.some(c=>isIntern(c.i));
+    if(hasIntern){chosen.forEach(c=>{if(isIntern(c.i)&&chosen.length>1)c.warn=c.warn||INTERN_MSG})}
+    else if(term.summer&&!chosen.length&&takeIntern()){}
+    else{
+      for(const c of otherC){
+        if(room<=0)break;const need=isMulti(c.i)?c.i.cr/2:c.i.cr;if(need>room)continue;
+        if(isMulti(c.i)){if(nextHasIntern)continue;const nk=nxt.tm.key,nCap=capOf(nxt.tm,o),nUsed=(carryOver.get(nk)||[]).reduce((a,x)=>a+x.cr,0);if(nUsed+need>nCap)continue}
+        if(!fits(c))continue;if(c.src)usedG.set(c.src,(usedG.get(c.src)||0)+1);
+        take(c.i,{pinned:false,warn:"",src:c.src,extra:false});room-=need;
+      }
+      if(!chosen.length)takeIntern();
+    }
+    if(!chosen.length){if(!term.summer&&!pinMap.size&&!carryOver.size&&++idle>=2)break;continue}
+    idle=0;
+    chosen.forEach(c=>{const {i,src}=c;have+=c.cr;
+      if(c.part===2){codesOf(i).forEach(x=>doneCodes.add(x));return}
+      if(!c.part)codesOf(i).forEach(x=>doneCodes.add(x));
+      if(i.lvl===4){l4++;l4req.delete(i.id)}if(i.lvl===5)l5++;
+      const ri=req.indexOf(i);if(ri>=0)req.splice(ri,1);
+      if(src){src.need=Math.max(0,src.need-1);src.pool=src.pool.filter(x=>x.id!==i.id);if(trk(i))src.reserve=Math.max(0,src.reserve-1);else src.free=Math.max(0,src.free-1)}
+    });
+    plan.push({term,items:chosen,cr:chosen.reduce((a,c)=>a+c.cr,0),cap});
+  }
+  const stuck=remaining()>0?[...req.filter(i=>!i.slot).map(i=>i.code),...req.filter(i=>i.slot).map(i=>i.name),...picks.filter(x=>x.need>0).map(x=>`${x.need} from ${x.b.title}`)]:[];
+  if(!o.probe)ui.planned=new Set(plan.flatMap(x=>x.items.map(c=>c.i.id)));
+  return{plan,last:plan.length?plan[plan.length-1].term:null,stuck,probe};
+}
+
+// ================= my plan view =================
+const shortReason=r=>/^Needs /.test(r)?r.replace(/ first$/,"").replace(/^Needs/,"needs"):/^Level 5/.test(r)?"Level 5 not open yet":/^Level 6/.test(r)?"Level 6 not open yet":/Spring 2027/.test(r)?"not running in Spring 2027":/last summer/.test(r)?"didn't run last summer":/Summer II/.test(r)?"rarely offered in Summer II":/dissertation/i.test(r)?"can't start here":r;
+function termOptions(sel,o,i,p){const pr=simulate(p,{...o,probe:i.id}).probe;let h="";
+  for(let n=0;n<16;n++){const tm=termAt(n);if(!termEnabled(tm,o.sumN))continue;
+    let rs=pr[tm.key];if(!rs){rs=[];if(!offeredIn(i,tm.k,tm.year))rs.push(NOT_OFFERED[tm.k]);if(isMulti(i)){const nx=nextEnabled(n,o.sumN);if(!nx||!pairOK(tm,nx.tm))rs.push(MULTI_MSG)}}
+    const bad=rs.length>0,cur=tm.key===sel;
+    h+=`<option value="${tm.key}" ${cur?"selected":""} ${bad&&!cur?"disabled":""}>${termLabel(tm)}${bad?" · "+rs.map(shortReason).join(", "):""}</option>`}
+  return h}
+function swapOptions(alts,term,o,p,id){
+  const base={...o,pins:{...o.pins},excl:[...o.excl,id]};delete base.pins[id];
+  const rows=alts.map(a=>{const rs=(simulate(p,{...base,probe:a.id}).probe[term.key])||(offeredIn(a,term.k,term.year)?[]:[NOT_OFFERED[term.k]]);return{a,rs}});
+  rows.sort((x,y)=>(x.rs.length?1:0)-(y.rs.length?1:0));
+  return rows.map(({a,rs})=>`<option value="${esc(a.id)}" ${rs.length?"disabled":""}>${esc(a.code)} · ${esc(a.name)}${rs.length?" · "+rs.map(shortReason).join(", "):""}</option>`).join("");
+}
+const optionBlock=(p,id)=>p.blocks.find(b=>b.n&&b.items.some(i=>i.id===id));
+const shortName=i=>i.slot?i.name.replace(/^LE course in /,""):i.name;
+const slotTag=i=>/^LE /.test(i.name)?"LE":"Elective";
+function settingsHTML(o){
+  return `<div class="pset">
+    <label for="load">Fall / spring<select id="load">${[9,12,15,18].map(v=>`<option value="${v}" ${v===o.load?"selected":""}>${v} credits</option>`).join("")}</select></label>
+    <label for="sumN">Summers<select id="sumN"><option value="0" ${o.sumN===0?"selected":""}>None</option><option value="1" ${o.sumN===1?"selected":""}>Summer I only</option><option value="2" ${o.sumN===2?"selected":""}>Summer I and II</option></select></label>
+    ${o.sumN?`<label for="sumCr1">Summer I<select id="sumCr1">${[3,6].map(v=>`<option value="${v}" ${v===o.sumCr1?"selected":""}>${v} credits</option>`).join("")}</select></label>`:""}
+    ${o.sumN===2?`<label for="sumCr2">Summer II<select id="sumCr2">${[3,6].map(v=>`<option value="${v}" ${v===o.sumCr2?"selected":""}>${v} credits</option>`).join("")}</select></label>`:""}
+  </div>`;
+}
+function planRow(c,term,p,o){
+  const i=c.i,id=i.id,cid=cidOf(i),pid="pe-"+cid,ed=ui.edit===id,blk=optionBlock(p,id);
+  let h=`<li class="pc${c.pinned?" pin":""}${c.warn?" warn":""}${ed?" ed":""}"><button type="button" class="pcb" data-edit="${esc(id)}" aria-expanded="${ed}" aria-controls="${pid}"><span class="code">${i.slot?slotTag(i):esc(i.code)}</span><span class="pnm">${esc(shortName(i))}${c.of?`<span class="ppart">Part ${c.part} of ${c.of}</span>`:""}${isIntern(i)?`<span class="ppart">Full-time placement</span>`:""}${o.acca&&!i.slot&&codesOf(i).some(c=>ACCA_FR.includes(c))?`<span class="ppart trk">ACCA FR</span>`:""}${o.track&&!i.slot&&codesOf(i).some(c=>o.track.codes.includes(c))?`<span class="ppart trk">${esc(o.track.short)}</span>`:""}</span><span class="pcr">${c.cr}</span></button>`;
+  if(c.warn)h+=`<p class="pw">${esc(c.warn)}</p>`;
+  else if(c.extra)h+=`<p class="pw">Extra course: that option group is already complete.</p>`;
+  if(ed&&c.part===2){h+=`<div class="ped" id="${pid}"><p class="muted" style="margin:0">Part 2 follows straight after part 1. Move part 1 to change when the dissertation runs.</p></div>`;return h+`</li>`}
+  if(ed){
+    const alts=blk?blk.items.filter(a=>a.id!==id&&!T()[a.id]&&!a.slot&&!ui.planned.has(a.id)):[];
+    h+=`<div class="ped" id="${pid}">
+      <label for="mv-${cid}">${c.part===1?"Move part 1 to":"Move to"} <span class="mvh">· greyed-out terms aren't possible yet</span><select id="mv-${cid}" data-move="${esc(id)}">${termOptions(term.key,o,i,p)}</select></label>
+      ${alts.length?`<label for="sw-${cid}">Swap for another ${esc(blk.title.toLowerCase())} course <span class="mvh">· greyed-out courses can't be taken in ${esc(termLabel(term))}</span><select id="sw-${cid}" data-swap="${esc(id)}" data-term="${term.key}"><option value="">Choose a course</option>${swapOptions(alts,term,o,p,id)}</select></label>`:""}
+      <div class="pedb">${c.pinned?`<button type="button" class="linkbtn" data-unpin="${esc(id)}">Let the planner place it</button>`:`<span class="muted">Placed by the planner</span>`}${blk?`<button type="button" class="linkbtn" data-excl="${esc(id)}">Remove this option</button>`:""}${i.slot?"":`<a class="linkbtn" href="${syl(codesOf(i)[0])}" target="_blank" rel="noopener">Syllabus</a>`}</div>
+    </div>`;
+  }
+  return h+`</li>`;
+}
+// ---- Members' tools: unlocked with the code pinned in the members' WhatsApp community, which admins approve against the sign-up form (change it each semester) ----
+const JOIN_FORM="https://forms.cloud.microsoft/e/Vzj69WUK97";
+const UNLOCK_HASH="efc35d16";
+const hashCode=x=>{let v=0x811c9dc5;for(const ch of new TextEncoder().encode("afsoc:"+x)){v^=ch;v=Math.imul(v,0x01000193)>>>0}return v.toString(16).padStart(8,"0")};
+const isMember=()=>store.unlocked===UNLOCK_HASH;
+const LOCK_ICON=`<svg class="lk" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="7" rx="1"/><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none"/></svg>`;
+function lockCard(what,compact){const k=compact?"r":"m";
+  return `<div class="gate${compact?" sm":""}"><span class="plab">Members' tools</span>
+    <h3>${esc(what)} is for Society members.</h3>
+    <p>Sign up to the Accounting &amp; Finance Society with the form. It's free. Then ask to join the members' WhatsApp group from the confirmation page. Once we've checked your ACG email and approved you, you'll find the code pinned there.</p>
+    <ol class="gsteps"><li><a class="btn" href="${JOIN_FORM}" target="_blank" rel="noopener">Sign up to the Society ↗</a></li>
+    <li><div class="gin"><label class="vh" for="unlockIn-${k}">Unlock code</label><input id="unlockIn-${k}" data-unlockin="${k}" autocomplete="off" spellcheck="false" placeholder="Enter your code"><button type="button" class="btn ghost" data-unlock="${k}">Unlock</button></div></li></ol>
+    <p class="gerr" id="gerr-${k}" role="alert"></p>
+    <details class="gforgot"><summary>Already signed up but forgot the code?</summary>
+      <ul><li>It's pinned in the Society's members' WhatsApp group.</li>
+      <li>Not in the community yet? Ask to join from the form's confirmation page, and we'll approve you once we've matched you to your sign-up.</li>
+      <li>Or email <span class="em">dc.afsoc@acg.edu</span> from your ACG address.</li></ul></details>
+    ${compact?"":`<p class="muted">Unlocks your term-by-term plan, saved plans, image and PDF downloads, career tracks, ACCA planning and What if. The checklist, prerequisite map and your next semester stay free for everyone.</p>`}</div>`;
+}
+function tryUnlock(k){const el=document.getElementById("unlockIn-"+k),er=document.getElementById("gerr-"+k);if(!el)return;
+  const v=el.value.trim().toUpperCase().replace(/\s+/g,"");
+  if(!v){er.textContent="Enter the code pinned in the members' WhatsApp group.";el.focus();return}
+  if(hashCode(v)!==UNLOCK_HASH){er.textContent="That code doesn't match. Check the code pinned in the members' WhatsApp group.";el.select();return}
+  store.unlocked=UNLOCK_HASH;save();render();setToast("Unlocked. Welcome to the Society's tools.");
+  const t=document.querySelector('#plRoot [aria-pressed="true"][data-view],#plRoot [aria-pressed="true"][data-tab]');t?.focus();}
+function renderPlan(p,s){
+  if(!isMember())return lockCard("Your term-by-term plan");
+  const o=planOpts(),ps=PS(),left=p.total-s.have;
+  if(left<=0)return `<div class="planhead"><div><span class="plab">Projected finish</span><div class="pfin">Requirements met</div><p class="muted">Check with your advisor that you're cleared to graduate.</p></div></div>`+saveSection(p,null);
+  const r=simulate(p,o);
+  const alt=o.sumN?simulate(p,{...o,sumN:0}):simulate(p,{...o,sumN:2,sumCr1:6,sumCr2:6});
+  ui.planned=new Set(r.plan.flatMap(x=>x.items.map(c=>c.i.id)));
+  const fall=r.plan.filter(x=>!x.term.summer).length,sum=r.plan.length-fall;
+  const pins=Object.keys(ps.pins).filter(id=>ui.planned.has(id)).length,removed=ps.excl.length;
+  const savedName=ps.savedId&&SV().find(x=>x.id===ps.savedId)?.name;
+  const status=pins||removed?[pins?`${pins} course${pins>1?"s":""} placed by you`:"",removed?`${removed} option${removed>1?"s":""} removed`:""].filter(Boolean).join(" · "):"Suggested by the planner";
+  let h=`<div class="planhead">
+    <div><span class="plab">Projected finish</span><div class="pfin">${r.stuck.length?"Can't tell yet":termLabel(r.last)}</div>
+      <p class="muted">${r.stuck.length?`Some requirements can't be scheduled from what's ticked: ${esc(r.stuck.slice(0,4).join(", "))}.`:`${left} credits to go · ${fall} fall/spring term${fall!==1?"s":""}${sum?` · ${sum} summer session${sum!==1?"s":""}`:""}`}</p>
+      ${o.track?`<p class="ptrk">Option courses follow your career track: <b>${esc(o.track.name)}</b>. <button type="button" class="linkbtn lb-l" data-tab="track" data-tabfocus="1">Change</button></p>`:`<p class="ptrk">Pick a career track and the plan will choose your option courses to match. <button type="button" class="linkbtn lb-l" data-tab="track" data-tabfocus="1">Choose a track</button></p>`}
+      <p class="muted" style="margin-top:6px">Spring 2027 uses the courses on its schedule. Later springs and all falls assume every course runs.</p>
+      ${o.sumN?`<p class="muted" style="margin-top:6px">Summer I uses Liberal Education courses, electives and the major courses that ran in ${SUMMER_SRC}. Summer II, which runs even fewer major courses, only gets Liberal Education courses, electives and the dissertation.</p>`:""}
+      ${!r.stuck.length&&!alt.stuck.length&&termLabel(alt.last)!==termLabel(r.last)?`<p class="cmp">${o.sumN?"Without summer sessions":"With both summer sessions"}: <b>${termLabel(alt.last)}</b></p>`:""}
+    </div>${settingsHTML(o)}</div>
+  <div class="pstatus"><span class="pchip${pins||removed?" ed":""}">${status}</span>${pins||removed?`<button type="button" class="linkbtn" data-preset="1">Reset to the suggestion</button>`:""}<span class="psaved">${savedName?(ps.dirty?`Changed since you saved “${esc(savedName)}”`:`Saved as “${esc(savedName)}”`):"Not saved yet"}</span></div>
+  <p class="muted phint">Select a course to move it to another term${p.blocks.some(b=>b.n)?" or swap an option course":""}. The planner fits the rest around your choices.</p>
+  <div class="terms">${r.plan.map((x,n)=>`<article class="term${x.term.summer?" su":""}"><header><span class="tno">${String(n+1).padStart(2,"0")}</span><h4>${termLabel(x.term)}</h4><span class="tcr${x.cr>x.cap?" over":""}">${x.cr} of ${x.cap} cr</span></header><ol>${x.items.map(c=>planRow(c,x.term,p,o)).join("")}</ol></article>`).join("")}</div>`;
+  if(r.stuck.length)h+=`<div class="pnote"><span class="plab">Couldn't be scheduled</span><p>${esc(r.stuck.join(" · "))}</p><p class="muted">These are waiting on a prerequisite or rule that nothing in the plan meets. Check the locked courses in the checklist, or mark a waiver.</p></div>`;
+  if(removed){const items=allItems(p);h+=`<div class="pnote"><span class="plab">Options you removed</span><ul class="rmv">${ps.excl.map(id=>{const i=items.find(x=>x.id===id);return i?`<li><span class="code">${esc(i.code)}</span><span>${esc(i.name)}</span><button type="button" class="linkbtn" data-unexcl="${esc(id)}">Put back</button></li>`:""}).join("")}</ul></div>`}
+  return h+saveSection(p,r);
+}
+
+// ================= save and share =================
+function nextPlanName(){const names=new Set(SV().map(x=>x.name));for(let k=0;k<26;k++){const n="Plan "+String.fromCharCode(65+k);if(!names.has(n))return n}return"My plan"}
+const fmtDate=ts=>new Date(ts).toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
+function settingsText(x){const tr=x.track?TRACKS.find(t=>t.id===x.track):null;return settingsText0(x)+(tr?` · ${tr.short} track`:"")}
+function settingsText0(x){const c1=x.sumCr1||x.sumCr||6,c2=x.sumCr2||x.sumCr||6;return `${x.load} cr per fall/spring${+x.sumN===2?` · Summer I ${c1} cr, Summer II ${c2} cr`:+x.sumN===1?` · Summer I ${c1} cr`:" · no summers"}`}
+function saveSection(p,r){
+  const ps=PS(),list=SV(),cur=ps.savedId&&list.find(x=>x.id===ps.savedId);
+  let h=`<section class="saveband" aria-labelledby="svh"><div class="svgrid"><div>
+    <span class="plab">Save this plan</span><h3 id="svh">Keep it, compare it, take it to your advisor.</h3>
+    <div class="svrow"><label class="vh" for="planName">Plan name</label><input id="planName" maxlength="40" value="${esc(cur&&ps.dirty?nextPlanName():cur?cur.name:nextPlanName())}"><button type="button" class="btn" data-saveplan="1">Save plan</button>${cur&&ps.dirty?`<button type="button" class="btn ghost" data-updateplan="1">Update “${esc(cur.name)}”</button>`:""}</div>
+    <p class="muted" style="margin-top:8px">Saved plans stay in this browser. Download a copy to keep it anywhere.</p>
+    <div class="exp">
+      <button type="button" class="exb" data-export="png"><b>Image</b><span>PNG for your phone or WhatsApp</span></button>
+      <button type="button" class="exb" data-export="pdf"><b>PDF</b><span>One page to email your advisor</span></button>
+      <button type="button" class="exb" data-export="txt"><b>Copy as text</b><span>Paste into an email or notes</span></button>
+      <button type="button" class="exb" data-export="backup"><b>Backup file</b><span>Moves your ticks and plans to another device</span></button>
+    </div>
+    <div class="toast" id="ptoast" role="status"></div>
+    <textarea class="fallback" id="pfallback" hidden readonly aria-label="Plan as text"></textarea>
+  </div><div>
+    <span class="plab">Saved plans · ${esc(PROGRAMS[store.cur].label.replace("BSc Business Administration – ","BSc "))}</span>`;
+  h+=list.length?`<div class="splist">${list.map(x=>`<div class="sp${x.id===ps.savedId?" on":""}"><div><b>${esc(x.name)}</b><span>Finish ${esc(x.finish||"–")} · ${esc(settingsText(x))} · saved ${fmtDate(x.ts)}</span></div><div class="spb">${x.id===ps.savedId&&!ps.dirty?`<span class="spcur">Open</span>`:`<button type="button" class="linkbtn" data-openplan="${x.id}">Open</button>`}<button type="button" class="linkbtn${ui.delArm===x.id?" arm":""}" data-delplan="${x.id}">${ui.delArm===x.id?"Select again to delete":"Delete"}</button></div></div>`).join("")}</div>`
+    :`<p class="spempty">No saved plans yet. Save a few to compare, for example one with summer sessions and one without.</p>`;
+  h+=`<div class="bk"><button type="button" class="linkbtn" data-bkopen="1">Open a backup file</button><input type="file" id="bkIn" class="vh" tabindex="-1" accept=".json,application/json"><span class="muted"> to bring your planner to this device.</span></div>`;
+  if(ui.pendingImport){const d=ui.pendingImport.data,ticks=Object.values(d.ticks||{}).reduce((a,x)=>a+Object.keys(x||{}).length,0),plans=Object.values(d.saved||{}).reduce((a,x)=>a+(x||[]).length,0);
+    h+=`<div class="bkc" role="alert"><p><b>Backup from ${esc(fmtDate(ui.pendingImport.exported||Date.now()))}</b>: ${ticks} ticked course${ticks!==1?"s":""}, ${plans} saved plan${plans!==1?"s":""}.</p><p class="muted">Opening it replaces what's in this browser.</p><div class="btns" style="margin-top:10px"><button type="button" class="btn" data-bkreplace="1">Replace and open</button><button type="button" class="btn ghost" data-bkcancel="1">Cancel</button></div></div>`}
+  return h+`</div></div></section>`;
+}
+function snapshot(name){const o=planOpts(),p=PROGRAMS[store.cur],r=simulate(p,o);
+  return{id:Date.now().toString(36),name:(name||"").trim().slice(0,40)||nextPlanName(),ts:Date.now(),load:o.load,sumN:o.sumN,sumCr1:o.sumCr1,sumCr2:o.sumCr2,track:store.track||"",pins:{...o.pins},excl:[...o.excl],finish:r.stuck.length?"not yet clear":termLabel(r.last)}}
+function setToast(msg){const el=document.getElementById("ptoast")||document.getElementById("toast");if(el)el.textContent=msg}
+
+async function offerFile(filename,data){
+  if(window.claude&&typeof window.claude.use==="function"){
+    let d=null;try{d=await window.claude.use("downloads")}catch(e){}
+    if(d){try{const res=await d.save({filename,data});return{ok:true,status:res&&res.status}}catch(e){return{ok:false,code:(e&&e.code)||"unavailable"}}}
+    if(window.top!==window)return{ok:false,code:"unavailable"};
+  }
+  const blob=data instanceof Blob?data:new Blob([data]);
+  const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=filename;document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(url);a.remove()},2000);return{ok:true};
+}
+function fileMsg(res,what){
+  if(res.ok)return res.status==="delivered"?"":`${what} ready. Check your downloads.`;
+  if(res.code==="declined")return"Download cancelled.";
+  if(res.code==="rate_limited")return"A download is already waiting for your answer.";
+  return"Downloads aren't available here. Use Copy as text instead.";
+}
+const today=()=>new Date().toISOString().slice(0,10);
+const fileBase=()=>`AF-degree-plan-${PROGRAMS[store.cur].prog}-${today()}`;
+
+function fitText(g,txt,max){if(g.measureText(txt).width<=max)return txt;let s=txt;while(s.length>1&&g.measureText(s+"…").width>max)s=s.slice(0,-1);return s.trimEnd()+"…"}
+function spaced(g,v){if("letterSpacing" in g)g.letterSpacing=v}
+async function planCanvas(){
+  const p=PROGRAMS[store.cur],s=compute(p),o=planOpts(),r=simulate(p,o);
+  try{await Promise.all(['300 40px "Newsreader"','400 20px "Newsreader"','600 13px "Source Sans 3"','400 15px "Source Sans 3"'].map(f=>document.fonts.load(f)))}catch(e){}
+  const logo=await new Promise(res=>{const im=new Image();im.onload=()=>res(im);im.onerror=()=>res(null);im.src="assets/logo-white.png"});
+  const SER='"Newsreader", Georgia, "Times New Roman", serif',SAN='"Source Sans 3", "Helvetica Neue", Arial, sans-serif';
+  const g0=document.createElement("canvas").getContext("2d");
+  const W=1240,PAD=60,COLS=3,GAP=18,CW=(W-PAD*2-GAP*(COLS-1))/COLS,ROW=31,HEAD=62,BAND=210,STATS=118;
+  g0.font=`400 14.5px ${SAN}`;
+  const wrap=(txt,max)=>{if(g0.measureText(txt).width<=max)return[txt];const words=txt.split(" ");let a="";let k=0;
+    for(;k<words.length;k++){const t2=a?a+" "+words[k]:words[k];if(g0.measureText(t2).width>max)break;a=t2}
+    return[a||words[0],fitText(g0,words.slice(a?k:1).join(" "),max)]};
+  const NAMEW=CW-142;
+  const cards=r.plan.map(x=>{const lines=x.items.map(it=>wrap(shortName(it.i)+(it.of?` (part ${it.part} of ${it.of})`:""),NAMEW));return{x,lines,h:HEAD+lines.reduce((a,l)=>a+(l.length>1?ROW+19:ROW),0)+16}});
+  const rows=[];for(let k=0;k<cards.length;k+=COLS)rows.push(cards.slice(k,k+COLS));
+  const gridH=rows.reduce((a,rw)=>a+Math.max(...rw.map(c=>c.h))+GAP,0);
+  const H=BAND+STATS+44+Math.max(gridH,80)+(r.stuck.length?50:0)+92;
+  const SC=2,cv=document.createElement("canvas");cv.width=W*SC;cv.height=H*SC;const g=cv.getContext("2d");g.scale(SC,SC);g.textBaseline="alphabetic";
+  g.fillStyle="#FFFFFF";g.fillRect(0,0,W,H);
+  g.fillStyle="#13232D";g.fillRect(0,0,W,BAND);
+  let tx=PAD;if(logo){const lh=104,lw=logo.width*lh/logo.height;g.drawImage(logo,PAD,52,lw,lh);tx=PAD+lw+30}
+  g.fillStyle="#D5BA80";g.font=`600 13px ${SAN}`;spaced(g,"2.5px");g.fillText("DEGREE PLAN · ACCOUNTING & FINANCE SOCIETY",tx,84);spaced(g,"0px");
+  g.fillStyle="#FFFFFF";g.font=`300 38px ${SER}`;g.fillText(fitText(g,p.label,W-tx-PAD-300),tx,128);
+  g.fillStyle="rgba(255,255,255,.72)";g.font=`400 16px ${SAN}`;g.fillText(`${p.catalog} catalog · ${s.have} of ${p.total} credits completed`,tx,160);
+  g.textAlign="right";g.fillStyle="#D5BA80";g.font=`600 13px ${SAN}`;spaced(g,"2.5px");g.fillText("PROJECTED FINISH",W-PAD,84);spaced(g,"0px");
+  g.fillStyle="#FFFFFF";g.font=`300 46px ${SER}`;g.fillText(r.stuck.length?"Not yet clear":termLabel(r.last)||"Done",W-PAD,134);
+  g.fillStyle="rgba(255,255,255,.72)";g.font=`400 15px ${SAN}`;g.fillText(settingsText(o),W-PAD,162);g.textAlign="left";
+  g.fillStyle="#F6F5F2";g.fillRect(0,BAND,W,STATS);
+  const fall=r.plan.filter(x=>!x.term.summer).length;
+  const stats=[[String(p.total-s.have),"Credits to go"],[String(fall),"Fall / spring terms"],[String(r.plan.length-fall),"Summer sessions"],[String(r.plan.reduce((a,x)=>a+x.items.filter(c=>c.part!==2).length,0)),"Courses planned"]];
+  const sw=(W-PAD*2)/4;stats.forEach(([n,l],k)=>{const x=PAD+k*sw;if(k){g.fillStyle="#E2DFD8";g.fillRect(x,BAND+26,1,STATS-52)}
+    g.fillStyle="#1E3644";g.font=`300 40px ${SER}`;g.fillText(n,x+(k?24:0),BAND+66);g.fillStyle="#7A7A76";g.font=`600 12px ${SAN}`;spaced(g,"2px");g.fillText(l.toUpperCase(),x+(k?24:0),BAND+92);spaced(g,"0px")});
+  let y=BAND+STATS+44;
+  if(!r.plan.length){g.fillStyle="#1E3644";g.font=`300 26px ${SER}`;g.fillText("Every requirement is ticked.",PAD,y+30);y+=80}
+  rows.forEach(rw=>{const mh=Math.max(...rw.map(c=>c.h));
+    rw.forEach((c,ci)=>{const x=PAD+ci*(CW+GAP),su=c.x.term.summer;
+      g.fillStyle=su?"#FBF7EE":"#FFFFFF";g.fillRect(x,y,CW,mh);g.strokeStyle=su?"#E9DCC0":"#E2DFD8";g.lineWidth=1;g.strokeRect(x+.5,y+.5,CW-1,mh-1);
+      g.fillStyle=su?"#A57F35":"#1E3644";g.font=`400 22px ${SER}`;g.fillText(termLabel(c.x.term),x+18,y+38);
+      g.textAlign="right";g.fillStyle="#7A7A76";g.font=`600 11px ${SAN}`;spaced(g,"1.5px");g.fillText(`${c.x.cr} CR`,x+CW-18,y+37);spaced(g,"0px");g.textAlign="left";
+      g.fillStyle=su?"#E9DCC0":"#E2DFD8";g.fillRect(x+18,y+HEAD-8,CW-36,1);
+      let yy=y+HEAD+16;
+      c.x.items.forEach((it,k)=>{const i=it.i,ln=c.lines[k];
+        g.fillStyle="#A57F35";g.font=`600 11px ${SAN}`;spaced(g,"1px");const tag=i.slot?slotTag(i).toUpperCase():i.code;g.fillText(tag,x+18,yy);
+        const tw=g.measureText(tag).width;spaced(g,"0px");
+        if(it.pinned){g.beginPath();g.arc(x+18+tw+8,yy-4,3,0,Math.PI*2);g.fill()}
+        g.fillStyle=it.warn?"#A2522D":"#1E3644";g.font=`400 14.5px ${SAN}`;ln.forEach((l,j)=>g.fillText(l,x+104,yy+j*19));
+        g.textAlign="right";g.fillStyle="#7A7A76";g.font=`300 16px ${SER}`;g.fillText(String(it.cr),x+CW-18,yy);g.textAlign="left";
+        yy+=ln.length>1?ROW+19:ROW});
+    });y+=mh+GAP});
+  if(r.stuck.length){g.fillStyle="#A2522D";g.font=`400 14px ${SAN}`;g.fillText(fitText(g,"Not yet scheduled: "+r.stuck.join(", "),W-PAD*2),PAD,y+18);y+=50}
+  g.fillStyle="#A57F35";g.fillRect(PAD,H-70,40,1);
+  g.fillStyle="#7A7A76";g.font=`400 13px ${SAN}`;g.fillText("A&F Society Degree Planner · Planning aid, not official advising. Confirm your plan with your academic advisor.",PAD,H-40);
+  g.textAlign="right";g.fillText(new Date().toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}),W-PAD,H-40);g.textAlign="left";
+  return cv;
+}
+function loadJsPDF(){
+  if(window.jspdf&&window.jspdf.jsPDF)return Promise.resolve(window.jspdf);
+  return new Promise((res,rej)=>{const sc=document.createElement("script");sc.src=JSPDF_URL;sc.onload=()=>window.jspdf?res(window.jspdf):rej(new Error("no jspdf"));sc.onerror=rej;document.head.appendChild(sc)});
+}
+const JSPDF_URL="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
+async function doExport(kind){
+  const p=PROGRAMS[store.cur];
+  if(kind==="txt"){const txt=summaryText(),fb=document.getElementById("pfallback");
+    const done=()=>{setToast("Plan copied as text.");if(fb)fb.hidden=true};
+    const fail=()=>{if(fb){fb.value=txt;fb.hidden=false;fb.select()}setToast("Copy didn't work here. Select the text below and copy it.")};
+    try{navigator.clipboard.writeText(txt).then(done,fail)}catch(e){fail()}return}
+  if(kind==="backup"){const data=JSON.stringify({app:"af-degree-planner",version:1,exported:Date.now(),data:store},null,1);
+    setToast(fileMsg(await offerFile(`AF-degree-planner-backup-${today()}.json`,data),"Backup file"));return}
+  setToast(kind==="pdf"?"Preparing the PDF…":"Preparing the image…");
+  try{
+    const cv=await planCanvas();
+    if(kind==="png"){const blob=await new Promise(r=>cv.toBlob(r,"image/png"));setToast(fileMsg(await offerFile(fileBase()+".png",blob),"Image"));return}
+    const {jsPDF}=await loadJsPDF();const w=cv.width/2*0.75,h=cv.height/2*0.75;
+    const pdf=new jsPDF({orientation:w>h?"l":"p",unit:"pt",format:[w,h],compress:true});
+    pdf.addImage(cv.toDataURL("image/jpeg",0.92),"JPEG",0,0,w,h);pdf.setProperties({title:`Degree plan · ${p.label}`,creator:"A&F Society Degree Planner"});
+    setToast(fileMsg(await offerFile(fileBase()+".pdf",pdf.output("blob")),"PDF"));
+  }catch(e){setToast(kind==="pdf"?"The PDF couldn't be made. Check your connection and try again, or download the image instead.":"The image couldn't be made. Try again.")}
+}
+function readBackup(file){
+  if(!file)return;const fr=new FileReader();
+  fr.onload=()=>{try{const o=JSON.parse(fr.result);if(o.app!=="af-degree-planner"||!o.data||typeof o.data.ticks!=="object")throw 0;ui.pendingImport=o;render();document.querySelector("[data-bkreplace]")?.focus()}
+    catch(e){setToast("That file isn't a Degree Planner backup. Choose the .json file you downloaded from this page.")}};
+  fr.onerror=()=>setToast("The file couldn't be read. Try again.");fr.readAsText(file);
+}
+
+// ================= side panel =================
+function accaHTML(p,s){
+  const A=ACCA[p.prog];if(!A)return"";
+  const t=T(),items=allItems(p),o=planOpts(),r=simulate(p,o);
+  const where=c=>{const i=items.find(x=>codesOf(x).includes(c));if(!i)return["Not on your sheet","l"];if(t[i.id])return["Done","d"];
+    const pl=r.plan.find(x=>x.items.some(y=>y.i.id===i.id&&y.part!==2));return pl?[termLabel(pl.term),"o"]:["Not in your plan","l"]};
+  const rows=ACCA_FR.map(c=>{const i=items.find(x=>codesOf(x).includes(c));const [w,k]=where(c);return `<li><span class="code">${fmt(c)}</span><span>${esc(i?i.name:"")}</span><span class="st ${k}">${esc(w)}</span></li>`}).join("");
+  const allSet=ACCA_FR.every(c=>where(c)[1]!=="l");
+  const end=termEnd(r.last),late=!r.stuck.length&&end&&end>new Date(2027,11,31);
+  return `<div class="acca"><h2>ACCA exemptions</h2>
+    <p class="muted" style="margin:0 0 10px">This degree is accredited by ACCA. Graduates from 1 January 2023 to 31 December 2027 are exempt from these ACCA papers:</p>
+    <ul class="tlist">${A.papers.map(x=>`<li><span>${esc(x)}</span><span class="st d">Exempt</span></li>`).join("")}<li><span>Financial Reporting (FR)</span><span class="st ${allSet?"o":"l"}">${allSet?"On track":"Needs 3 courses"}</span></li></ul>
+    <h4>For FR you also need</h4><ul class="tlist">${rows}</ul>
+    <label class="chk" for="accaChk"><input type="checkbox" id="accaChk" ${store.acca?"checked":""}><span>Make sure my plan includes these</span></label>
+    ${late?`<p class="pwarn">Your projected finish (${esc(termLabel(r.last))}) is after 31 December 2027, when the current accreditation period ends. It may be renewed, but check with the department.</p>`:""}
+    <p class="muted" style="margin-top:10px">Also exempt from ${esc(A.found)}.</p>
+    <p class="muted" style="margin-top:10px">Source: the ${A.src} page on acg.edu. Confirm exemptions with ACCA.</p></div><div class="sep"></div>`;
+}
+function renderNext(p,s,t){
+  let op=`<div class="open"><h2>Your next semester</h2>`;
+  if(s.major){
+    const l5msg=s.can5?`<span class="pill ok-pill">L5</span> Level 5 unlocked`:`<span class="pill lock">L5</span> ${4-s.l4done} more Level 4 course${4-s.l4done>1?"s":""} to unlock`;
+    const need6=[];if(s.l4left)need6.push(`${s.l4left} required Level 4`);if(s.l5done<4)need6.push(`${4-s.l5done} more Level 5`);
+    const l6msg=s.can6?`<span class="pill ok-pill">L6</span> Level 6 unlocked`:`<span class="pill lock">L6</span> Needs ${need6.join(" and ")}`;
+    op+=`<div class="unlock"><div class="ul">${l5msg}</div><div class="ul">${l6msg}</div></div>`;
+  }else op+=`<p class="muted">Minors have no level rules. Prerequisites still apply.</p>`;
+  const req=[],picks=[];
+  s.blocks.forEach(({b,done,complete})=>{
+    if(complete)return;
+    if(b.n){const avail=b.items.filter(i=>!t[i.id]&&!i.slot&&open(i,s)&&(termAt(0).k!==0||termAt(0).year!==SPRING_YEAR||runsInSpring(i)));picks.push(`<li><span>${esc(b.title)}: choose ${b.n-done.length} more</span><span class="ulk-t">${avail.length} open</span></li>`)}
+    else b.items.filter(i=>!t[i.id]&&!i.slot&&open(i,s)).forEach(i=>req.push(i));
+  });
+  const ul=i=>itemUnlocks(i,p).size;req.sort((a,b)=>ul(b)-ul(a));
+  const nt=termAt(0),off=nt.k===0&&nt.year===SPRING_YEAR?req.filter(i=>!runsInSpring(i)):[];
+  if(off.length){req.splice(0,req.length,...req.filter(i=>runsInSpring(i)))}
+  op+=`<p class="muted" style="margin-top:10px">Next term: <b style="color:var(--navy)">${termLabel(nt)}</b>${nt.k===0&&nt.year===SPRING_YEAR?". Only courses on the Spring 2027 schedule are listed as open.":""}</p>`;
+  if(req.length)op+=`<h4>Required · most important first</h4><ul>${req.map(i=>{const n=ul(i);return `<li><span class="code">${esc(i.code)}</span><span>${esc(i.name)}</span>${n>=2?`<span class="ulk-t">Unlocks ${n}</span>`:""}</li>`}).join("")}</ul>`;
+  if(picks.length)op+=`<h4>Option groups</h4><ul>${picks.join("")}</ul>`;
+  if(off.length)op+=`<h4>Open to you, but not running in ${termLabel(nt)}</h4><ul>${off.map(i=>`<li><span class="code">${esc(i.code)}</span><span>${esc(i.name)}</span></li>`).join("")}</ul>`;
+  const waiting=s.blocks.filter(x=>!x.complete).flatMap(x=>x.b.items).filter(i=>!t[i.id]&&!i.slot&&!W()[i.id]&&lvlOpen(i,s)&&prereq(i,s)?.blocked);
+  if(waiting.length)op+=`<h4>Waiting on prerequisites</h4><ul>${waiting.slice(0,6).map(i=>{const r=prereq(i,s);const miss=r.groups.filter(g=>g.state==="missing").map(g=>g.alts.map(fmt).join(" or "));if(r.crShort)miss.push(`${r.p.cr} credits`);return `<li><span class="code">${esc(i.code)}</span><span>Needs ${esc(miss.join(", "))}</span></li>`}).join("")}${waiting.length>6?`<li><span class="muted">and ${waiting.length-6} more</span></li>`:""}</ul>`;
+  if(!req.length&&!picks.length)op+=`<p style="margin-top:12px;color:var(--navy)">Everything is ticked. Check with your advisor that you're cleared to graduate.</p>`;
+  return op+`</div>`;
+}
+function renderFinish(p,s){
+  const o=planOpts(),left=p.total-s.have;let h=isMember()?`<h2>When will I finish?</h2>`:lockCard("Your projected finish date",true);
+  if(!isMember()){}
+  else if(left<=0)h+=`<div class="est">Requirements met</div>`;
+  else{const r=simulate(p,o);h+=`<span class="plab">Projected last term</span><div class="est" style="margin-top:10px">${r.stuck.length?"Can't tell yet":termLabel(r.last)}</div><p class="muted" style="margin-top:8px">${esc(settingsText(o))}</p>
+    <div class="btns" style="margin-top:16px"><button type="button" class="btn" data-view="plan" data-jump="1">See the plan, term by term</button></div>`}
+  h+=`<div class="sep"></div><span class="plab">For your advisor</span><p style="margin:10px 0 16px">Copy a plain-text summary of what you've done, what's left${isMember()?", any waivers and your plan":" and any waivers"}.</p>
+    <div class="btns"><button class="btn ghost" id="copyBtn" type="button">Copy summary</button><button class="btn ghost" id="resetBtn" type="button">Clear this program</button></div>
+    <div class="toast" id="toast" role="status"></div><textarea class="fallback" id="fallback" hidden readonly aria-label="Summary text"></textarea>`;
+  return h;
+}
+function summaryText(){
+  const p=PROGRAMS[store.cur],t=T(),nt=N(),s=compute(p),w=W();
+  const lines=[`${p.label} (effective ${p.catalog})`,`Credits completed: ${s.have} / ${p.total}`,""];
+  if(s.major)lines.push(`Level 5: ${s.can5?"unlocked":"locked"} · Level 6: ${s.can6?"unlocked":"locked"}`,"");
+  lines.push("Completed:");
+  p.blocks.forEach(b=>b.items.filter(i=>t[i.id]).forEach(i=>lines.push(`  ✓ ${i.slot?(nt[i.id]||i.name):i.code+" "+i.name}${w[i.id]?" (waiver)":""}`)));
+  const wl=allItems(p).filter(i=>w[i.id]);
+  if(wl.length){lines.push("","Waivers to confirm (prerequisites or level rule marked as waived):");wl.forEach(i=>lines.push(`  ! ${i.code} ${i.name}`))}
+  if(isMember()&&s.have<p.total){const o=planOpts(),r=simulate(p,o);
+    lines.push("",`Plan (${settingsText(o)}): projected last term ${r.stuck.length?"not yet clear":termLabel(r.last)}`);
+    r.plan.forEach(x=>lines.push(`  ${termLabel(x.term)} (${x.cr} cr): ${x.items.map(c=>(c.i.slot?c.i.name:c.i.code)+(c.of?` (part ${c.part} of ${c.of})`:"")+(c.pinned?"*":"")).join(", ")}`));
+    if(r.plan.some(x=>x.items.some(c=>c.pinned)))lines.push("  * placed by me");
+    if(r.stuck.length)lines.push(`  Not yet scheduled: ${r.stuck.join(", ")}`);}
+  const tr=trackOf();if(tr)lines.push("",`Career interest: ${tr.name}`);
+  lines.push("","Made with the A&F Society Degree Planner. Planning aid only.");
+  return lines.join("\n");
+}
+
+// ================= render =================
+function render(){
+  if(!document.getElementById("plRoot"))return;
+  const p=PROGRAMS[store.cur],t=T(),nt=N(),s=compute(p);
+  document.getElementById("progSeg").innerHTML=PROG_TABS.map(([k,l])=>`<button type="button" id="pg-${k}" data-prog="${k}" aria-pressed="${p.prog===k}">${esc(l)}</button>`).join("");
+  const cats=CAT[p.prog];
+  document.getElementById("catRow").hidden=cats.length<2;
+  document.getElementById("catSeg").innerHTML=cats.map(k=>`<button type="button" id="ct-${k}" data-cat="${k}" aria-pressed="${k===store.cur}">${esc(PROGRAMS[k].catalog)}</button>`).join("");
+  const gs=Object.entries(s.g).filter(([,v])=>v[1]>0);
+  const GC={le:"var(--gold-l)",core:"var(--navy)",elec:"var(--gold)"},GCD={le:"var(--gold-l)",core:"#fff",elec:"var(--gold)"};
+  let cells="";gs.forEach(([k,v])=>{cells+=`<i class="f ${k}"></i>`.repeat(v[0])+`<i class="e ${k}"></i>`.repeat(Math.max(0,v[1]-v[0]))});
+  const cols=p.total===121?11:6,left=p.total-s.have;
+  document.getElementById("ledger").innerHTML=`<div class="lgh"><span class="lnum">${s.have}</span><span class="lof">of ${p.total} credits</span><span class="lsub">${left>0?`${left} to go`:"All requirements met"} · ${esc(p.catalog)} catalog</span></div>
+    <div class="cells" style="grid-template-columns:repeat(${cols},1fr);${cols===6?"max-width:200px":""}" role="img" aria-label="${s.have} of ${p.total} credits completed. One square per credit.">${cells}</div>
+    <div class="lcap">One square for every credit of the degree.</div>
+    <div class="lkey">${gs.map(([k,v])=>`<span><span class="dot" style="background:${GCD[k]}"></span>${GROUPS[k][0]} <b>${v[0]}/${v[1]}</b></span>`).join("")}</div>`;
+  document.getElementById("summary").innerHTML=`<div class="wrap"><span class="sprog">${esc(p.label)}</span><span class="scr">${s.have} / ${p.total} credits</span>
+    <div class="bar" aria-hidden="true">${gs.map(([k,v])=>`<span style="width:${(100*v[0]/p.total).toFixed(2)}%;background:${GC[k]}"></span>`).join("")}</div></div>`;
+  const view=["list","plan","map"].includes(store.view)?store.view:"list";
+  document.getElementById("viewTabs").innerHTML=[["list","Checklist"],["plan","My plan"],["map","Prerequisite map"]].map(([k,l])=>`<button type="button" id="vw-${k}" data-view="${k}" aria-pressed="${view===k}">${l}${k==="plan"&&!isMember()?LOCK_ICON:""}</button>`).join("");
+  const L=document.getElementById("listView"),PV=document.getElementById("planView"),M=document.getElementById("map");
+  L.hidden=view!=="list";PV.hidden=view!=="plan";M.hidden=view!=="map";
+  document.getElementById("blocks").innerHTML=view==="list"?renderList(p,s,t,nt):"";
+  PV.innerHTML=view==="plan"?renderPlan(p,s):"";
+  M.innerHTML=view==="map"?renderMap(p,s,t):"";
+  if(view==="map")requestAnimationFrame(drawEdges);
+  const TABS=[["next","Next"],["track","Career"],["whatif","What if"],["finish","Finish"]];
+  if(!TABS.some(x=>x[0]===store.tab))store.tab="next";
+  document.getElementById("railTabs").innerHTML=TABS.map(([k,l])=>`<button type="button" id="tb-${k}" data-tab="${k}" aria-pressed="${store.tab===k}">${l}${(k==="track"||k==="whatif"||k==="finish")&&!isMember()?LOCK_ICON:""}</button>`).join("");
+  const RB=document.getElementById("railBody");
+  RB.className="railbody"+(store.tab==="whatif"?" wi":"");
+  RB.innerHTML=store.tab==="next"?renderNext(p,s,t):store.tab==="track"?(isMember()?accaHTML(p,s)+renderTrack(p,s,t):lockCard("Career tracks and ACCA planning",true)):store.tab==="whatif"?(isMember()?renderWhatIf(p):lockCard("What if",true)):renderFinish(p,s);
+}
+const dirty=()=>{const ps=PS();if(ps.savedId)ps.dirty=true};
+const refocus=sel=>{const el=document.querySelector(sel);if(el)el.focus({preventScroll:true})};
+
+// ================= events =================
+let resetArmed=false;
+document.addEventListener("click",e=>{
+  if(!document.getElementById("plRoot"))return;
+  const q=sel=>e.target.closest(sel);let b;
+  if(b=q("[data-prog]")){store.cur=CAT[b.dataset.prog][0];ui.sel=null;ui.edit=null;ui.expanded.clear();save();render();refocus("#pg-"+b.dataset.prog);return}
+  if(b=q("[data-cat]")){store.cur=b.dataset.cat;ui.sel=null;ui.edit=null;ui.expanded.clear();save();render();refocus("#ct-"+b.dataset.cat);return}
+  if(b=q("[data-view]")){store.view=b.dataset.view;save();render();if(b.dataset.jump){document.getElementById("viewTabs").scrollIntoView({block:"start",behavior:"smooth"})}refocus("#vw-"+store.view);return}
+  if(b=q("[data-filter]")){store.filter=b.dataset.filter;save();render();refocus("#ft-"+b.dataset.filter);return}
+  if(b=q("[data-tab]")){store.tab=b.dataset.tab;save();render();if(b.dataset.tabfocus){document.querySelector("#plRoot .rail")?.scrollIntoView({block:"nearest",behavior:"smooth"});refocus("#trackSel")}else refocus("#tb-"+b.dataset.tab);return}
+  if(b=q("[data-expand],[data-collapse]")){const bi=+(b.dataset.expand??b.dataset.collapse);if(b.dataset.expand!==undefined)ui.expanded.add(bi);else ui.expanded.delete(bi);render();return}
+  if(b=q("[data-mapback]")){ui.sel=null;render();refocus("#vw-map");return}
+  if(b=q("[data-node]")){const id=b.dataset.node;ui.sel=id;render();document.getElementById("map")?.scrollIntoView({block:"start",behavior:"smooth"});refocus(`.ccol.me [data-node="${qa(id)}"]`);return}
+  if(b=q("[data-adopt]")){const k=b.dataset.adopt;const {tk}=carry(PROGRAMS[k]);store.ticks[k]=Object.assign(store.ticks[k]||{},tk);store.cur=k;store.whatif="";store.tab="next";ui.sel=null;save();render();document.getElementById("plRoot").scrollIntoView();return}
+  if(b=q("[data-waive],[data-unwaive]")){const id=b.dataset.waive||b.dataset.unwaive;if(b.dataset.waive)W()[id]=true;else delete W()[id];save();render();refocus(`input[data-id="${qa(id)}"]`);return}
+  // plan editing
+  if(b=q("[data-edit]")){const id=b.dataset.edit;ui.edit=ui.edit===id?null:id;render();refocus(`[data-edit="${qa(id)}"]`);return}
+  if(b=q("[data-unpin]")){const id=b.dataset.unpin;delete PS().pins[id];dirty();save();render();refocus(`[data-edit="${qa(id)}"]`);return}
+  if(b=q("[data-excl]")){const id=b.dataset.excl,ps=PS();delete ps.pins[id];if(!ps.excl.includes(id))ps.excl.push(id);ui.edit=null;dirty();save();render();setToast("Option removed. The planner picked another.");return}
+  if(b=q("[data-unexcl]")){const ps=PS();ps.excl=ps.excl.filter(x=>x!==b.dataset.unexcl);dirty();save();render();return}
+  if(b=q("[data-preset]")){const ps=PS();ps.pins={};ps.excl=[];ui.edit=null;dirty();save();render();return}
+  // saving
+  if(b=q("[data-saveplan]")){const list=SV();if(list.length>=8){setToast("You can keep up to 8 saved plans per program. Delete one first.");return}
+    const snap=snapshot(document.getElementById("planName")?.value);list.unshift(snap);const ps=PS();ps.savedId=snap.id;ps.dirty=false;save();render();setToast(`Saved as “${snap.name}”.`);return}
+  if(b=q("[data-updateplan]")){const ps=PS(),list=SV(),k=list.findIndex(x=>x.id===ps.savedId);if(k<0)return;const snap=snapshot(list[k].name);snap.id=list[k].id;list[k]=snap;ps.dirty=false;save();render();setToast(`Updated “${snap.name}”.`);return}
+  if(b=q("[data-openplan]")){const x=SV().find(y=>y.id===b.dataset.openplan);if(!x)return;const ps=PS();ps.pins={...x.pins};ps.excl=[...x.excl];ps.savedId=x.id;ps.dirty=false;store.load=x.load;store.sumN=x.sumN;store.sumCr1=x.sumCr1||x.sumCr||6;if(x.track!==undefined)store.track=x.track;store.sumCr2=x.sumCr2||x.sumCr||6;ui.edit=null;save();render();setToast(`Opened “${x.name}”.`);document.getElementById("viewTabs").scrollIntoView({block:"start",behavior:"smooth"});return}
+  if(b=q("[data-delplan]")){const id=b.dataset.delplan;if(ui.delArm!==id){ui.delArm=id;render();refocus(`[data-delplan="${qa(id)}"]`);setTimeout(()=>{if(ui.delArm===id){ui.delArm=null;render()}},4000);return}
+    store.saved[store.cur]=SV().filter(x=>x.id!==id);const ps=PS();if(ps.savedId===id){ps.savedId=null;ps.dirty=false}ui.delArm=null;save();render();setToast("Plan deleted.");return}
+  if(b=q("[data-unlock]")){tryUnlock(b.dataset.unlock);return}
+  if(b=q("[data-export]")){doExport(b.dataset.export);return}
+  if(b=q("[data-bkopen]")){document.getElementById("bkIn")?.click();return}
+  if(b=q("[data-bkcancel]")){ui.pendingImport=null;render();return}
+  if(b=q("[data-bkreplace]")){const d=ui.pendingImport.data;store=Object.assign({cur:"fin26",ticks:{},notes:{},waived:{},view:"plan",track:"",whatif:"",plan:{},saved:{}},d);
+    if(!PROGRAMS[store.cur])store.cur="fin26";["ticks","notes","waived","plan","saved"].forEach(k=>{if(typeof store[k]!=="object"||!store[k])store[k]={}});
+    ui.pendingImport=null;ui.edit=null;save();render();setToast("Backup opened.");return}
+  // side panel
+  if(e.target.id==="copyBtn"){
+    const txt=summaryText();const toast=document.getElementById("toast"),fbk=document.getElementById("fallback");
+    const done=()=>{toast.textContent="Summary copied.";fbk.hidden=true};
+    const fail=()=>{fbk.value=txt;fbk.hidden=false;fbk.select();toast.textContent="Copy didn't work here. Select the text below and copy it."};
+    try{navigator.clipboard.writeText(txt).then(done,fail)}catch(err){fail()}
+    return;
+  }
+  if(e.target.id==="resetBtn"){
+    const bt=e.target;
+    if(!resetArmed){resetArmed=true;bt.textContent="Select again to clear";bt.classList.add("warn");setTimeout(()=>{if(!document.body.contains(bt))return;resetArmed=false;bt.textContent="Clear this program";bt.classList.remove("warn")},3000);return}
+    store.ticks[store.cur]={};store.notes[store.cur]={};store.waived[store.cur]={};store.plan[store.cur]={pins:{},excl:[],savedId:null,dirty:false};save();resetArmed=false;render();
+    const ts=document.getElementById("toast");if(ts)ts.textContent="Cleared. Your saved plans are kept.";
+  }
+});
+document.addEventListener("change",e=>{
+  if(!document.getElementById("plRoot"))return;const el=e.target;
+  if(el.dataset.id){const id=el.dataset.id;const t=T();if(el.checked)t[id]=true;else delete t[id];save();const fid=el.id;render();refocus("#"+fid);return}
+  if(el.dataset.move){const id=el.dataset.move;PS().pins[id]=el.value;dirty();save();render();refocus(`[data-move="${qa(id)}"]`);setToast(`Moved to ${termLabel(termByKey(el.value))}.`);return}
+  if(el.dataset.swap){if(!el.value)return;const old=el.dataset.swap,nw=el.value,ps=PS();delete ps.pins[old];if(!ps.excl.includes(old))ps.excl.push(old);ps.excl=ps.excl.filter(x=>x!==nw);ps.pins[nw]=el.dataset.term;ui.edit=nw;dirty();save();render();refocus(`[data-edit="${qa(nw)}"]`);return}
+  if(el.id==="load"||el.id==="sumN"||el.id==="sumCr1"||el.id==="sumCr2"){store[el.id]=+el.value;dirty();save();render();refocus("#"+el.id);return}
+  if(el.id==="accaChk"){store.acca=el.checked;dirty();save();render();refocus("#accaChk");return}
+  if(el.id==="trackSel"){store.track=el.value;dirty();save();render();refocus("#trackSel");return}
+  if(el.id==="wiSel"){store.whatif=el.value;save();render();refocus("#wiSel");return}
+  if(el.id==="bkIn"){readBackup(el.files&&el.files[0]);el.value="";return}
+});
+document.addEventListener("input",e=>{
+  if(!document.getElementById("plRoot"))return;
+  if(e.target.id==="q"){ui.q=e.target.value.trim();const p=PROGRAMS[store.cur];document.getElementById("blocks").innerHTML=renderList(p,compute(p),T(),N());return}
+  if(e.target.dataset.note!==undefined){N()[e.target.dataset.note]=e.target.value;save()}
+});
+document.addEventListener("keydown",e=>{if(!document.getElementById("plRoot"))return;if(e.key==="Enter"&&e.target.dataset&&e.target.dataset.unlockin){e.preventDefault();tryUnlock(e.target.dataset.unlockin);return}if(e.key==="Escape"){if(ui.edit){const id=ui.edit;ui.edit=null;render();refocus(`[data-edit="${qa(id)}"]`)}else if(ui.sel){ui.sel=null;render()}}});
+let rz;window.addEventListener("resize",()=>{if(!document.getElementById("plRoot"))return;cancelAnimationFrame(rz);rz=requestAnimationFrame(drawEdges)});
+
+function markup(){
+  return `<div id="plRoot">
+  <section class="head phead plhead" style="padding:0"><div class="ph"><img src="assets/events/athex25.jpg" alt=""></div>
+    <div class="wrap inner">
+      <div>
+        <p class="over-l">Members' tools · Degree Planner</p>
+        <h1>Plan your degree, course by course.</h1>
+        <p>Tick what you've completed. The planner applies the level rules and every prerequisite, shows what you can take next, and builds a term-by-term plan you can edit and save.</p>
+        <p class="pdisc"><b>Planning aid, not official advising.</b> Always confirm your plan with your academic advisor before you register.</p>
+        <div class="pick">
+          <div class="prow"><span class="plabel">Program</span><div class="seg" id="progSeg" role="group" aria-label="Program"></div></div>
+          <div class="prow" id="catRow"><span class="plabel">Catalog</span><div class="seg" id="catSeg" role="group" aria-label="Catalog year"></div><span class="hint">The one you entered under.</span></div>
+        </div>
+      </div>
+      <div class="ledger" id="ledger"></div>
+    </div>
+  </section>
+  <div class="summary" id="summary"></div>
+  <div class="work"><div class="wrap grid">
+    <div class="plmain">
+      <div class="viewtabs" id="viewTabs" role="group" aria-label="View"></div>
+      <div id="listView">
+        <div class="tools">
+          <label class="search" for="q"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Find a course by code or name" autocomplete="off"></label>
+          <div class="filters" id="filters" role="group" aria-label="Show"></div>
+        </div>
+        <div id="blocks"></div>
+      </div>
+      <div id="planView" hidden></div>
+      <div id="map" hidden></div>
+    </div>
+    <aside><div class="rail"><div class="railtabs" id="railTabs" role="group" aria-label="Advice"></div><div class="railbody" id="railBody"></div></div></aside>
+  </div></div>
+  <div class="notes"><div class="wrap">
+    <div><b>Planning aid, not official advising.</b> Built from the Academic Advising requirement sheets (BSc Finance and BSc Business Administration – Accounting &amp; Finance, effective Fall 2021 and Fall 2026; Finance minor, effective Fall 2026; Accounting &amp; Financial Management minor, effective Fall 2021). Confirm your plan with your academic advisor.</div>
+    <div>Prerequisites come from each course's syllabus on acg.edu (select a course code to open it), read in November 2026. Some syllabi are older than the requirement sheets, and a few cite course codes with typos (for example FN 2128); those were matched by course title. The AF 4460 syllabus couldn't be read. Waivers, placement and the minimum CI for minors (2.0) aren't tracked.</div>
+    <div>The plan schedules courses that unlock the most first, within your chosen load, and fits the rest around courses you place yourself. Spring 2027 uses the major courses on its schedule; later springs and all falls assume every course runs. The dissertation and internships can be taken in any term, and an internship is the only course in its term. Summer I uses Liberal Education courses, electives and the major courses that ran in Summer 2026; Summer II only gets Liberal Education courses, electives and the dissertation. The dissertation is split over two terms in a row. It doesn't check timetable clashes. Career tracks are the Society's suggestions, not degree requirements. Your ticks and saved plans stay in this browser; download a backup file to move them to another device.</div>
+  </div></div>
+  </div>`;
+}
+function mount(){ui.sel=null;ui.q="";ui.edit=null;render()}
+window.AFPlanner={markup,mount};
+})();
+</script>
+<script>
+(function(){
+  const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const ext = 'target="_blank" rel="noopener"';
+  const VIEWS = ["home","about","events","partners","join","desks","planner"];
+  const TOPICS = [["Speak at an event","Speaker enquiry"],["Host a company visit","Company visit enquiry"],["Sponsor the Society","Sponsorship enquiry"],["Recruit our members","Recruitment enquiry"],["Something else","Enquiry"]];
+  const ROMAN = ["I","II","III","IV","V","VI"];
+  let D=null, year=0, etype="All", topic=0, cardName="";
+
+  const label = t => `<span class="label">${esc(t)}</span>`;
+  const crest = () => `<div class="crest" aria-hidden="true"><span></span><img src="assets/logo-navy.png" alt=""><span></span></div>`;
+  const allEvents = () => D.years.flatMap(y => y.events.map(e => ({...e, year:y.year})));
+  const phead = (over, title, text, photo) => `
+    <section class="head phead" style="padding:0"><div class="ph"><img src="${esc(photo)}" alt=""></div>
+      <div class="wrap inner"><p class="over-l">${esc(over)}</p><h1>${esc(title)}</h1>${text?`<p>${esc(text)}</p>`:""}</div></section>`;
+  const twoway = () => `
+    <section class="stone" style="padding:0"><div class="wrap twoway">
+      <div>${label("Students")}<h3>Membership is open to every Deree student.</h3><p>Accounting and Finance majors and minors are members automatically. Every other major is welcome as an associate member.</p><a class="btn" href="#join">Become a member</a></div>
+      <div>${label("Organisations")}<h3>Meet Deree's strongest finance students.</h3><p>Speak at an event, host a visit or run a case study with the Society.</p><a class="btn ghost" href="#partners">Partner with us</a></div>
+    </div></section>`;
+
+  function alumni(){
+    const a=D.alumni; if(!a) return "";
+    return `
+    <section><div class="wrap">
+      <div class="center">${label("Alumni destinations")}<h2>Where Deree alumni have built careers</h2><p style="max-width:52ch;margin:18px auto 0">${esc(a.intro)}</p>
+      ${a.draft?`<p class="draft">Draft: placeholder firms for layout only. Replace with confirmed alumni employers before launch.</p>`:""}</div>
+      <div class="logos">${a.firms.map(f=>`<div class="logo" title="${esc(f.name)}">${f.logo?`<img ${f.ratio?`class="sz" style="--h:${Math.min(92,Math.max(22,Math.sqrt(5200/f.ratio)*(f.scale||1))).toFixed(1)}px"`:""} src="${esc(f.logo)}" alt="${esc(f.name)}" loading="lazy">`:`<span>${esc(f.name)}</span>`}</div>`).join("")}</div>
+    </div></section>`;
+  }
+
+  /* odometer figures: at rest they show the final number */
+  function odo(val){
+    return [...String(val)].map(ch => /\d/.test(ch)
+      ? `<span class="col" aria-hidden="true"><span style="transform:translateY(-${ch}em)">${[0,1,2,3,4,5,6,7,8,9].map(n=>`<i>${n}</i>`).join("")}</span></span>`
+      : `<span class="sym" aria-hidden="true">${esc(ch)}</span>`).join("");
+  }
+  function roll(){
+    const box=document.getElementById("figs"); if(!box||!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const io=new IntersectionObserver(es=>{ if(!es[0].isIntersecting) return; io.disconnect();
+      box.querySelectorAll(".col > span").forEach((s,i)=>{const end=s.style.transform;s.style.transition="none";s.style.transform="translateY(0)";s.getBoundingClientRect();s.style.transition="";s.style.transitionDelay=(i*.07)+"s";s.style.transform=end;});
+    },{threshold:.5});
+    io.observe(box);
+  }
+
+  function home(){
+    const s=D.society, h=D.home, sl=h.slides;
+    const latest = allEvents().filter(e=>e.photo).slice(0,3);
+    return `
+    <section class="head hero" style="padding:0">
+      <div class="slides">${sl.map((x,i)=>`<figure class="slide${i===0?" on":""}"><img src="${esc(x.photo)}" alt="" ${i?'loading="lazy"':""}></figure>`).join("")}</div>
+      <div class="wrap inner">
+        <img class="mark" src="assets/logo-white.png" alt="Accounting & Finance Society logo">
+        <p class="over-l">${esc(s.college)} · Founded ${esc(s.founded)}</p>
+        <h1>Greece's first student accounting &amp; finance society</h1>
+        <p class="sub">${esc(h.sub)}</p>
+        <div class="ctas"><a class="btn g" href="#join">Become a member</a><a class="btn w" href="#partners">Partner with us</a></div>
+      </div>
+      <div class="film"><span class="cap" id="slideCap" aria-live="polite">${esc(sl[0].caption)}</span>
+        <div class="dots">${sl.map((x,i)=>`<button type="button" data-s="${i}" aria-label="Show photo ${i+1}: ${esc(x.caption)}" aria-current="${i===0}"><span><i></i></span></button>`).join("")}</div></div>
+    </section>
+    ${deskCallout()}
+
+    <section><div class="wrap center"><p class="statement">${esc(h.statement)}</p>${crest()}</div></section>
+
+    <section style="padding-top:0"><div class="wrap">
+      <div class="center">${label("What we do")}<h2>Three ways we open the profession</h2></div>
+      <div class="pillars">${h.pillars.map((p,i)=>`
+        <article class="pillar"><div class="pimg"><img src="${esc(p.photo)}" alt="" loading="lazy"></div>
+          <div><span class="no">${ROMAN[i]}.</span><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p><a class="more" href="#${esc(p.link)}">See our events</a></div></article>`).join("")}
+      </div>
+    </div></section>
+
+    <section class="stone s"><div class="wrap">
+      <div class="center">${label("The Society in figures")}</div>
+      <div class="figs" id="figs">${[["Founded",s.founded],...D.numbers.slice(0,3)].map(([l,v])=>`<div class="fig"><div class="odo" aria-label="${esc(v)}">${odo(v)}</div><p>${esc(l)}</p></div>`).join("")}</div>
+    </div></section>
+
+    ${alumni()}
+
+    <section class="heritage"><div class="wrap"><img class="m" src="assets/logo-white.png" alt=""><h2>${esc(h.heritage)}</h2><p>${esc(s.college)}</p></div></section>
+
+    <section><div class="wrap">
+      <div class="toprow"><div>${label("Latest")}<h2>Recent events</h2></div><a class="more" href="#events">All events</a></div>
+      <div class="latest">${latest.map(e=>`<a class="card" href="#events"><div class="im"><img src="${esc(e.photo)}" alt="" loading="lazy"></div><span class="meta">${esc(e.type)} · ${esc(e.date)}</span><h3>${esc(e.title)}</h3></a>`).join("")}</div>
+    </div></section>
+
+    ${twoway()}`;
+  }
+
+  function about(){
+    const s=D.society, b=D.board;
+    return `
+    ${phead("About the Society","Who we are", "", D.pages.about)}
+    <section class="stone"><div class="wrap">
+      <div class="center">${label("Governing Body "+b.year)}<h2>Leadership</h2></div>
+      ${(()=>{
+        const order=["president","vice president","treasurer","secretary","pr officer"];
+        const rank=m=>{const i=order.indexOf((m.role||"").trim().toLowerCase());return i<0?order.length:i};
+        const ms=b.members.slice().sort((x,y)=>rank(x)-rank(y));
+        return `<div class="people">${ms.map(m=>`<div class="person"><div class="im"><img src="${esc(m.photo)}" alt="${esc(m.name)}" loading="lazy"></div>
+          <h3>${esc(m.name)}</h3><span class="role">${esc(m.role)}</span>${m.linkedin?`<a href="${esc(m.linkedin)}" ${ext}>LinkedIn ↗</a>`:""}</div>`).join("")}</div>`;
+      })()}
+      <div class="advisor"><b>${esc(b.advisor.name)}</b><span>${esc(b.advisor.role)}</span></div>
+    </div></section>
+    <section><div class="wrap center"><p class="statement">${esc(s.mission)}</p>${crest()}</div></section>
+    <section style="padding-top:0"><div class="wrap split">
+      <div>${label("Our story")}<h2>Greece's first</h2></div>
+      <div class="body"><p>The Accounting &amp; Finance Society was founded at Deree – The American College of Greece in ${esc(s.founded)}, the first student society in Greece devoted to accounting and finance.</p>
+        <p>It is an academic society of the School of Business, run by an elected Governing Body of students with a Faculty Advisor. Every year it takes members inside the institutions of the Greek financial system and brings senior professionals onto campus.</p></div>
+    </div></section>
+    <section class="stone"><div class="wrap">
+      ${label("What we do")}<h2>The year's programme</h2>
+      <div class="rows">${D.programmes.map(p=>`<div class="row"><h3>${esc(p.title)}</h3><p>${esc(p.text)}</p></div>`).join("")}</div>
+    </div></section>
+    ${twoway()}`;
+  }
+
+  function evRow(e){
+    return `<article class="ev"><div class="d">${esc(e.date)}</div>
+      <div><span class="meta">${esc(e.type||"")}</span><h3>${esc(e.title)}</h3><p>${esc(e.text)}</p></div>
+      <div>${e.photo?`<div class="im"><img src="${esc(e.photo)}" alt="" loading="lazy"></div>`:""}</div></article>`;
+  }
+  function evList(){
+    const list=D.years[year].events.filter(e=>etype==="All"||e.type===etype);
+    return list.length?list.map(evRow).join(""):`<p class="empty">No ${esc(etype.toLowerCase())} in ${esc(D.years[year].year)}.</p>`;
+  }
+  function typeButtons(){
+    const types=["All",...new Set(D.years[year].events.map(e=>e.type))];
+    if(!types.includes(etype)) etype="All";
+    return types.map(t=>`<button type="button" data-type="${esc(t)}" aria-pressed="${t===etype}">${esc(t)}</button>`).join("");
+  }
+  function events(){
+    const s=D.society, f=allEvents().find(e=>e.highlight&&e.photo);
+    const up = D.upcoming&&D.upcoming.length ? D.upcoming.map(evRow).join("")
+      : `<div class="notice"><h3>New dates will be announced soon.</h3><p>Members hear first, through the members' WhatsApp group. <a href="#join">Become a member</a> or follow us on <a href="${esc(s.instagram)}" ${ext}>Instagram</a>.</p></div>`;
+    return `
+    ${phead("Events","Events", "Company visits, talks, recruitment sessions, qualifications and competitions throughout the academic year.", D.pages.events)}
+    <section class="s"><div class="wrap">${label("Coming up")}${up}</div></section>
+    ${f?`<section class="stone"><div class="wrap">${label("Featured")}
+      <div class="feature"><img src="${esc(f.photo)}" alt="" loading="lazy"><div><span class="meta" style="margin-top:0">${esc(f.type)} · ${esc(f.date)}</span><h2 style="font-size:clamp(2rem,3.6vw,2.8rem)">${esc(f.title)}</h2><p>${esc(f.text)}</p></div></div></div></section>`:""}
+    <section><div class="wrap">
+      ${label("Archive")}<h2>Past events</h2>
+      <div class="filters">
+        <div class="grp" role="group" aria-label="Academic year">${D.years.map((y,i)=>`<button type="button" data-y="${i}" aria-pressed="${i===year}">${esc(y.year)}</button>`).join("")}</div>
+        <span class="sep" aria-hidden="true"></span>
+        <div class="grp" role="group" aria-label="Type of event" id="types">${typeButtons()}</div>
+      </div>
+      <div id="evlist">${evList()}</div>
+    </div></section>
+    ${twoway()}`;
+  }
+
+  function partners(){
+    const s=D.society, p=D.partners;
+    return `
+    ${phead("Partnerships","Partner with us", p.intro, D.pages.partners)}
+    <section><div class="wrap">
+      ${label("Ways to work with the Society")}<h2>How organisations work with us</h2>
+      <div class="offers">${p.offer.map((o,i)=>`<div class="offer"><span class="no">${ROMAN[i]}.</span><h3>${esc(o)}</h3></div>`).join("")}</div>
+    </div></section>
+    <section class="stone"><div class="wrap">
+      ${label("2024–26")}<h2>Organisations we have worked with</h2>
+      <ul class="orglist">${p.organisations.map(o=>`<li>${esc(o)}</li>`).join("")}</ul>
+    </div></section>
+    ${alumni()}
+    <section class="stone"><div class="wrap contact">
+      <div>${label("Get in touch")}<h2>Write to the Governing Body</h2>
+        <p style="margin-top:18px">Choose what your letter is about, write it, and send it. It reaches the board's inbox directly.</p>
+        <div class="topics" role="group" aria-label="What is it about?">${TOPICS.map((t,i)=>`<button type="button" data-t="${i}" aria-pressed="${i===topic}">${esc(t[0])}</button>`).join("")}</div>
+        <p class="side">Prefer your own email? <span class="em" id="email">${esc(s.email)}</span> <button type="button" class="tl" id="copy">Copy</button></p>
+        <p class="side">Recruiters can check any Society certificate on our <a href="${esc(s.certificateCheck)}" ${ext}>verification page</a>.</p>
+      </div>
+      <div class="env"><div class="letter" id="letter">${letterForm()}</div></div>
+    </div></section>`;
+  }
+  function letterForm(){
+    return `
+      <div class="wax" aria-hidden="true"><img src="assets/mark-white.png" alt=""></div>
+      <div class="lhead"><img src="assets/logo-navy.png" alt=""><span>Accounting &amp; Finance Society<br>Deree – The American College of Greece</span></div>
+      <form id="cform" novalidate>
+        <div class="fld"><div class="k">To</div><div class="v">The Governing Body</div></div>
+        <div class="fld"><div class="k">Subject</div><div class="v" id="subj">${esc(TOPICS[topic][1])}</div></div>
+        <p class="dear">Dear Governing Body,</p>
+        <label for="cMsg" class="hp">Message</label>
+        <textarea id="cMsg" name="message" required minlength="10" placeholder="Write your message here…"></textarea>
+        <div class="from">
+          <div><label for="cName">From</label><input id="cName" name="name" required autocomplete="name" placeholder="Your name"></div>
+          <div><label for="cOrg">Organisation</label><input id="cOrg" name="organisation" autocomplete="organization" placeholder="Optional"></div>
+          <div class="wide"><label for="cEmail">Reply to</label><input id="cEmail" name="email" type="email" required autocomplete="email" placeholder="you@company.com"></div>
+        </div>
+        <input class="hp" type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true">
+        <button type="submit" class="btn" id="cSend" style="margin-top:12px">Send letter</button>
+        <p class="ferr" id="cErr" role="alert" hidden></p>
+        <p class="sign">We use your details only to reply to you.</p>
+      </form>`;
+  }
+  function sentView(name){
+    const d=new Date();
+    return `<div class="sent"><div class="pm"><div>SENT<b>${d.getDate()}.${d.getMonth()+1}</b>ATHENS</div></div>
+      <h3>Thank you${name?`, ${esc(name.split(" ")[0])}`:""}.</h3><p>Your letter is with the Governing Body. We will reply by email.</p>
+      <p style="margin-top:22px"><button type="button" class="tl" id="again">Write another letter</button></p></div>`;
+  }
+  function wireForm(){
+    const f=document.getElementById("cform"); if(!f) return;
+    f.addEventListener("submit", async e=>{
+      e.preventDefault();
+      const err=document.getElementById("cErr"), btn=document.getElementById("cSend"), v=k=>f.elements[k].value.trim();
+      const bad = v("message").length<10 ? "Please write a message of at least a few words."
+        : !v("name") ? "Please add your name."
+        : !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v("email")) ? "Please add an email address we can reply to." : "";
+      if(bad){err.textContent=bad;err.hidden=false;return;}
+      const key=D.society.contactFormKey, live=(D.society.liveHosts||[]).some(h=>location.hostname===h||location.hostname.endsWith("."+h));
+      if(!key||!live){err.textContent=`Sending switches on when the site goes live. For now, please email ${D.society.email}.`;err.hidden=false;return;}
+      if(f.elements.botcheck.checked) return;
+      err.hidden=true; btn.disabled=true; btn.textContent="Sending…";
+      try{
+        const r=await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+          body:JSON.stringify({access_key:key,subject:`${TOPICS[topic][1]} – ${v("organisation")||v("name")}`,from_name:"A&F Society website",name:v("name"),organisation:v("organisation"),email:v("email"),topic:TOPICS[topic][0],message:v("message")})});
+        const j=await r.json().catch(()=>({})); if(!r.ok||j.success===false) throw 0;
+        const L=document.getElementById("letter"); L.innerHTML=sentView(v("name"));
+        document.getElementById("again").addEventListener("click",()=>{L.innerHTML=letterForm();wireForm();});
+      }catch(_){err.textContent=`Your letter couldn't be sent. Check your connection and try again, or email ${D.society.email}.`;err.hidden=false;btn.disabled=false;btn.textContent="Send letter";}
+    });
+  }
+
+  function join(){
+    const s=D.society, j=D.join, yr=new Date().getFullYear();
+    return `
+    ${phead("Membership","Join the Society", j.who, D.pages.join)}
+    <section><div class="wrap joingrid">
+      <div>${label("How to join")}<h2>Three steps</h2>
+        <ol class="steps">${j.steps.map(x=>`<li><span>${esc(x)}</span></li>`).join("")}</ol>
+        <a class="btn" href="${esc(s.joinForm)}" ${ext}>Open the sign-up form ↗</a>
+        <p class="note">${esc(j.formNote)}</p></div>
+      <div>
+        <div class="mcard" aria-label="Preview of a member card">
+          <div class="r1"><img src="assets/logo-white.png" alt=""><span class="kind">Member</span></div>
+          <div class="chip"></div>
+          <div class="nm" id="cardName">${esc(cardName||"Your Name")}</div>
+          <div class="mt"><span>DEREE · ACG</span><span>MEMBER SINCE ${yr}</span></div>
+        </div>
+        <div class="namebox"><label for="nameIn">See your name on the card</label>
+          <input id="nameIn" type="text" maxlength="40" autocomplete="name" placeholder="Your name" value="${esc(cardName)}">
+          <small>A preview only. Nothing you type here is saved or sent.</small></div>
+      </div>
+    </div></section>
+    <section class="stone"><div class="wrap">
+      <div class="center">${label("Questions")}<h2>Membership questions</h2></div>
+      <div class="faq">${(j.faq||[]).map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
+    </div></section>`;
+  }
+
+  /* Join a Desk: state follows the dates in site.json (Athens time); ?desks=open|soon|closed previews a state */
+  function deskState(){
+    const q=new URLSearchParams(location.search).get("desks"); if(["open","soon","closed"].includes(q)) return q;
+    const o=D.desks, n=Date.now();
+    return n<Date.parse(o.opens)?"soon":n>Date.parse(o.closes)?"closed":"open";
+  }
+  function applyBtn(){
+    const o=D.desks, st=deskState();
+    if(st==="open"&&o.form) return `<a class="btn g" href="${esc(o.form)}" ${ext}>Apply now ↗</a>`;
+    if(st==="open") return `<span class="wait">The application form opens shortly</span>`;
+    if(st==="soon") return `<span class="wait">Applications open ${esc(o.opensText.replace(/ \d{4}$/,""))}</span>`;
+    return `<span class="wait">Applications for ${esc(o.term)} are closed</span>`;
+  }
+  function deskCallout(){
+    const o=D.desks; if(!o) return ""; const st=deskState(); if(st==="closed") return "";
+    return `<section class="callout" style="padding:0"><div class="wrap"><div><span class="k">${st==="open"?"Applications open":"Coming "+esc(o.opensText.replace(/^\w+ /,"").replace(/ \d{4}$/,""))}</span>
+      <p>Join a Desk: 12 student roles in Research, Events and Media for ${esc(o.term)}.</p></div><a class="more" href="#desks">${st==="open"?"Apply by "+esc(o.deadlineText.replace(/^\w+ /,"").replace(/ \d{4}$/,"")):"See the roles"}</a></div></section>`;
+  }
+  function desks(){
+    const o=D.desks, st=deskState(), total=o.list.reduce((a,d)=>a+d.roles.reduce((b,r)=>b+r[1],0),0);
+    return `
+    ${phead(o.term+(st==="open"?" · Applications open":st==="soon"?" · Applications open "+o.opensText.replace(/^\w+ /,"").replace(/ \d{4}$/,""):""),"Join a Desk", total+" student roles across Research, Events and Media.", o.photo)}
+    <section><div class="wrap center"><p class="statement">${esc(o.intro)}</p>${crest()}</div></section>
+    <section style="padding-top:0"><div class="wrap">
+      <div class="center">${label("The Desks")}<h2>Three Desks, ${total} roles</h2></div>
+      <div class="desks">${o.list.map((d,i)=>`
+        <article class="desk"><div><span class="no">${ROMAN[i]}.</span><h3>${esc(d.name)}</h3><p class="lead">${esc(d.lead)}</p>
+          <div class="roles">${d.roles.map(r=>`<span><b>${r[1]}</b>${esc(r[0])}</span>`).join("")}</div></div>
+          <div><ul class="tasks">${d.tasks.map(t=>`<li><span>${esc(t)}</span></li>`).join("")}</ul><p class="credit">${esc(d.credit)}</p></div></article>`).join("")}</div>
+    </div></section>
+    <section class="stone"><div class="wrap">
+      <div class="center">${label("What you get")}<h2>Experience that counts</h2></div>
+      <div class="bens">${o.benefits.map((b,i)=>`<div class="ben"><span class="no">${ROMAN[i]}.</span><h3>${esc(b[0])}</h3><p>${esc(b[1])}</p></div>`).join("")}</div>
+    </div></section>
+    <section><div class="wrap">
+      <div class="center">${label("The commitment")}<p class="commit">${esc(o.commitment)}</p></div>
+      <ol class="tline">${o.timeline.map(t=>`<li><b>${esc(t[0])}</b><span>${esc(t[1])}</span></li>`).join("")}</ol>
+    </div></section>
+    <section class="applyband"><div class="wrap">
+      <img src="assets/logo-white.png" alt="" style="width:96px;height:auto;margin-bottom:30px">
+      <h2>${st==="closed"?"Thank you to everyone who applied":"Apply by "+esc(o.deadlineText)}</h2>
+      <p class="when">${st==="closed"?"The next call opens before the autumn semester":"One short form · About ten minutes · Any major"}</p>
+      <div class="ctas">${applyBtn()}</div>
+      ${st==="closed"?"":`<p class="amb">${esc(o.ambassadors)}</p>`}
+    </div></section>
+    <section class="stone"><div class="wrap">
+      <div class="center">${label("Questions")}<h2>About the Desks</h2></div>
+      <div class="faq">${o.faq.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
+    </div></section>`;
+  }
+
+  function footer(){
+    const s=D.society, y=new Date().getFullYear();
+    return `<div class="wrap">
+      <div><img src="assets/logo-white.png" alt="Accounting & Finance Society"><p style="margin-top:20px;max-width:30ch">${esc(s.name)}<br>${esc(s.college)}<br>Founded ${esc(s.founded)}</p></div>
+      <div><h4>The Society</h4><a href="#about">About</a><a href="#events">Events</a><a href="#partners">Partners</a><a href="#join">Join</a><a href="#desks">Join a Desk</a><a href="#planner">Degree Planner</a></div>
+      <div><h4>Follow</h4><a href="${esc(s.instagram)}" ${ext}>Instagram</a><a href="${esc(s.linkedin)}" ${ext}>LinkedIn</a></div>
+      <div><h4>Contact</h4><a href="#partners">Write to the board</a><a href="${esc(s.certificateCheck)}" ${ext}>Certificate check</a><span style="display:block;padding:4px 0;user-select:all">${esc(s.email)}</span></div>
+      <p class="madeby">Designed by Faidon Papathanasiou, President 2026–27</p>
+      <div class="base"><span>© ${y} ${esc(s.name)}, ${esc(s.college)}. All rights reserved.</span><span>Student society website. Not an official publication of ${esc(s.college)}.</span><span class="tm">The CFA® Program is administered by CFA Institute, which grants the CFA® charter. CFA®, Chartered Financial Analyst®, CIPM®, and CFA Institute Investment Foundations® are registered trademarks owned by CFA Institute.</span></div>
+    </div>`;
+  }
+
+  /* hero film: each slide can set its own duration (ms) in site.json */
+  let timer=null, idx=0, auto=false; const DUR=7000;
+  const durOf=i=>(D.home.slides[i]&&D.home.slides[i].duration)||DUR;
+  function goSlide(i){
+    const sl=D.home.slides, figs=document.querySelectorAll(".slide"), dots=document.querySelectorAll(".film button"); if(!figs.length) return;
+    idx=(i+sl.length)%sl.length;
+    figs.forEach((f,k)=>f.classList.toggle("on",k===idx));
+    dots.forEach((d,k)=>{d.setAttribute("aria-current","false"); if(k===idx){d.style.setProperty("--dur",durOf(idx)+"ms");d.getBoundingClientRect();requestAnimationFrame(()=>d.setAttribute("aria-current","true"));}});
+    document.getElementById("slideCap").textContent=sl[idx].caption;
+    if(auto){clearTimeout(timer);timer=setTimeout(next,durOf(idx));}
+  }
+  function next(){ if(!document.querySelector(".slide")){auto=false;return;} if(document.hidden){timer=setTimeout(next,1000);return;} goSlide(idx+1); }
+  function startFilm(){
+    clearTimeout(timer); timer=null; idx=0; auto=false;
+    if(!document.querySelector(".slide")) return;
+    document.querySelectorAll(".film button").forEach(b=>b.addEventListener("click",()=>goSlide(+b.dataset.s)));
+    if(matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    auto=true; goSlide(0);
+  }
+  function hdr(){
+    const top=document.getElementById("top"), open=!document.getElementById("drawer").hidden;
+    top.classList.toggle("over", !!document.querySelector(".head") && !open && window.scrollY<40);
+  }
+
+  const planner=()=>window.AFPlanner?window.AFPlanner.markup():`<div class="wrap err">The Degree Planner could not load. Refresh the page.</div>`;
+  const R={home,about,events,partners,join,desks,planner};
+  function show(){
+    const v=VIEWS.includes(location.hash.slice(1))?location.hash.slice(1):"home";
+    document.getElementById("app").innerHTML=`<div class="view">${R[v]()}</div>`;
+    document.querySelectorAll(".nav a").forEach(a=>{ if(a.getAttribute("href")==="#"+v) a.setAttribute("aria-current","page"); else a.removeAttribute("aria-current"); });
+    document.getElementById("drawer").hidden=true; document.getElementById("menuBtn").setAttribute("aria-expanded","false");
+    window.scrollTo(0,0); wire(); startFilm(); hdr();
+    if(v==="planner"&&window.AFPlanner) window.AFPlanner.mount();
+  }
+  function wire(){
+    roll();
+    document.querySelectorAll("[data-y]").forEach(b=>b.addEventListener("click",()=>{
+      year=+b.dataset.y; document.querySelectorAll("[data-y]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+      document.getElementById("types").innerHTML=typeButtons(); wireTypes(); document.getElementById("evlist").innerHTML=evList();
+    }));
+    wireTypes();
+    const c=document.getElementById("copy");
+    if(c) c.addEventListener("click",()=>{
+      const done=()=>{c.textContent="Copied";setTimeout(()=>c.textContent="Copy",1600)};
+      const sel=()=>{const r=document.createRange();r.selectNodeContents(document.getElementById("email"));const w=getSelection();w.removeAllRanges();w.addRange(r)};
+      try{navigator.clipboard.writeText(D.society.email).then(done,sel)}catch(e){sel()}
+    });
+    document.querySelectorAll("[data-t]").forEach(b=>b.addEventListener("click",()=>{
+      topic=+b.dataset.t; document.querySelectorAll("[data-t]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+      const s=document.getElementById("subj"); if(s) s.textContent=TOPICS[topic][1];
+    }));
+    wireForm();
+    const n=document.getElementById("nameIn");
+    if(n) n.addEventListener("input",()=>{cardName=n.value;document.getElementById("cardName").textContent=n.value.trim()||"Your Name";});
+  }
+  function wireTypes(){
+    document.querySelectorAll("[data-type]").forEach(b=>b.addEventListener("click",()=>{
+      etype=b.dataset.type; document.querySelectorAll("[data-type]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+      document.getElementById("evlist").innerHTML=evList();
+    }));
+  }
+  document.getElementById("menuBtn").addEventListener("click",e=>{const d=document.getElementById("drawer");d.hidden=!d.hidden;e.currentTarget.setAttribute("aria-expanded",String(!d.hidden));hdr();});
+  window.addEventListener("hashchange",show);
+  window.addEventListener("scroll",hdr,{passive:true});
+  fetch("data/site.json",{cache:"no-cache"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{D=d;document.getElementById("foot").innerHTML=footer();show();})
+    .catch(()=>{document.getElementById("app").innerHTML='<div class="wrap err">The page content could not load. Refresh the page, or email dc.afsoc@acg.edu.</div>'});
+})();
+</script>
+
+
+
+</body></html>
