@@ -14,7 +14,9 @@
   "certificateCheck": "https://af-deree.github.io/verify/",
   "contactFormKey": "6010aa4d-0193-4d3a-9693-6cace8e293e2",
   "liveHosts": [
-   "af-deree.github.io"
+   "af-deree.github.io",
+   "dereeafsociety.com",
+   "dereeafsociety.gr"
   ]
  },
  "stats": [
