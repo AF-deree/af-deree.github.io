@@ -205,6 +205,8 @@ section.s{padding-block:88px}
 .advisor{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 28px;align-items:baseline;margin-top:56px;padding-top:24px;border-top:1px solid var(--rule)}
 .advisor b{font:300 1.6rem var(--serif);color:var(--navy)}
 .advisor span{font:600 .72rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.advisor.has-photo{display:block;text-align:center}
+.advisor.has-photo .person{width:min(210px,calc(50% - 9px));margin:0 auto}
 
 /* events */
 .notice{border:1px solid var(--rule);background:var(--white);padding:44px 28px;text-align:center}
@@ -1938,7 +1940,7 @@ window.AFPlanner={markup,mount};
         return `<div class="people">${ms.map(m=>`<div class="person"><div class="im"><img src="${esc(m.photo)}" alt="${esc(m.name)}" loading="lazy"></div>
           <h3>${esc(m.name)}</h3><span class="role">${esc(m.role)}</span>${m.linkedin?`<a href="${esc(m.linkedin)}" ${ext}>LinkedIn ↗</a>`:""}</div>`).join("")}</div>`;
       })()}
-      <div class="advisor"><b>${esc(b.advisor.name)}</b><span>${esc(b.advisor.role)}</span></div>
+      ${b.advisor.photo?`<div class="advisor has-photo"><div class="person"><div class="im"><img src="${esc(b.advisor.photo)}" alt="${esc(b.advisor.name)}" loading="lazy"></div><h3>${esc(b.advisor.name)}</h3><span class="role">${esc(b.advisor.role)}</span></div></div>`:`<div class="advisor"><b>${esc(b.advisor.name)}</b><span>${esc(b.advisor.role)}</span></div>`}
     </div></section>
     <section><div class="wrap center"><p class="statement">${esc(s.mission)}</p>${crest()}</div></section>
     <section style="padding-top:0"><div class="wrap split">
