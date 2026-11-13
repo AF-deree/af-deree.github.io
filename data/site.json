@@ -73,7 +73,8 @@
   ],
   "advisor": {
    "name": "Prof. George Sainis",
-   "role": "Faculty Advisor"
+   "role": "Faculty Advisor",
+   "photo": "assets/board/sainis.jpg"
   }
  },
  "programmes": [
