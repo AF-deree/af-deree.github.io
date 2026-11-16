@@ -103,7 +103,72 @@
    "text": "Members have represented Deree at the CFA Institute Research Challenge and Nestlé's Finance Skills Day."
   }
  ],
- "upcoming": [],
+ "upcoming": [
+    {
+      "start": "2026-11-18",
+      "date": "18 Nov 2026",
+      "type": "Talks",
+      "host": "Department of Accounting, Economics and Finance",
+      "title": "Value Investing: Who, What and Why?",
+      "short": "Value Investing: Who, What and Why?",
+      "speaker": "Prof. George Athanassakos, Ben Graham Chair in Value Investing, Ivey Business School, Western University",
+      "text": "A presentation of FN 4548 – Value Investing, a new course starting in Spring 2027. A rare chance to hear from one of the leading academics in the field before registration opens, and especially useful for Finance majors planning their Spring 2027 courses.",
+      "time": "14:30–15:30",
+      "place": "Simulated Trading Room (STR)",
+      "audience": "All students",
+      "link": "https://forms.cloud.microsoft/e/Zq4KXxkwB7",
+      "linkLabel": "Register",
+      "photo": ""
+    },
+    {
+      "start": "2026-11-23",
+      "date": "23 Nov 2026",
+      "type": "Talks",
+      "host": "",
+      "title": "Helping Brilliant Ideas Become Successful Businesses: An Introduction to Venture Capital and Its Fundamentals",
+      "short": "An Introduction to Venture Capital",
+      "speaker": "Mr. Konstantinos Karakostas, igrow",
+      "text": "How venture capital turns early-stage ideas into businesses: how investors find and assess startups, how deals are structured, and how the ecosystem works. A Q&A follows.",
+      "time": "14:30–15:30",
+      "place": "Simulated Trading Room (STR)",
+      "audience": "Seniors graduating by Dec 2027",
+      "link": "https://forms.cloud.microsoft/e/0hEpxGRZ3W",
+      "linkLabel": "Register",
+      "photo": ""
+    },
+    {
+      "start": "2026-11-25",
+      "date": "25 Nov 2026",
+      "type": "Society",
+      "host": "",
+      "title": "General Assembly 2026–27",
+      "short": "General Assembly 2026–27",
+      "speaker": "",
+      "text": "Meet the new Governing Body, hear the Society's plans for the year and find out how to join a Desk. All members are encouraged to attend.",
+      "time": "14:30–15:30",
+      "place": "Simulated Trading Room (STR)",
+      "audience": "All members",
+      "link": "",
+      "linkLabel": "",
+      "photo": ""
+    },
+    {
+      "start": "2026-12-07",
+      "date": "7 Dec 2026",
+      "type": "Talks",
+      "host": "",
+      "title": "CFA® Program Presentation",
+      "short": "CFA® Program Presentation",
+      "speaker": "Presented by CFA Society Greece",
+      "text": "An introduction to the CFA® charter, the exam pathway and what it means for a career in investment management.",
+      "time": "14:30–15:30",
+      "place": "Room to be announced",
+      "audience": "All students",
+      "link": "",
+      "linkLabel": "",
+      "photo": ""
+    }
+  ],
  "years": [
   {
    "year": "2026–27",
